@@ -270,141 +270,28 @@ body.tv .main{padding:1rem;max-width:100%;}
 .toast{background:var(--bg-panel);border:1px solid var(--border-bright);border-radius:var(--r);padding:9px 13px;font-size:12px;color:var(--text-secondary);animation:sR 0.25s ease;min-width:210px;display:flex;align-items:center;gap:7px;}
 .toast.success{border-color:rgba(34,197,94,0.35);}.toast.error{border-color:rgba(239,68,68,0.35);}
 @keyframes sR{from{opacity:0;transform:translateX(16px);}to{opacity:1;transform:translateX(0);}}
-@media(max-width:768px){.header{padding:0 1rem;gap:0.8rem;}.nav{display:none;}.main{padding:1rem;}.agrid{grid-template-columns:1fr;}.ctop{grid-template-columns:1fr 1fr;}}
+/* MOBILE BOTTOM NAV */
+.mobile-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(3,5,8,0.95);backdrop-filter:blur(24px) saturate(160%);
+  border-top:1px solid var(--border);padding:8px;z-index:150;gap:4px;justify-content:space-around;}
+.mobile-nav button{flex:1;padding:10px 8px;font-family:var(--mono);font-size:8px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--text-dim);background:transparent;border:1px solid transparent;border-radius:var(--r);cursor:pointer;transition:var(--t);
+  display:flex;flex-direction:column;align-items:center;gap:4px;}
+.mobile-nav button .icon{font-size:16px;}
+.mobile-nav button:active{background:var(--accent-glow);}
+.mobile-nav button.active{color:var(--accent);border-color:var(--accent-dim);background:var(--accent-glow);}
+
+@media(max-width:768px){
+  .header{padding:0 1rem;gap:0.8rem;height:48px;}
+  .nav{display:none;}
+  .mobile-nav{display:flex;}
+  .main{padding:1rem;padding-bottom:70px;}
+  .agrid{grid-template-columns:1fr;}
+  .ctop{grid-template-columns:1fr 1fr;}
+  .hright{display:none;}
+  .logo-t{font-size:8px;}
+  body{padding-bottom:env(safe-area-inset-bottom);}
+}
 </style>
-
-<!-- OpenClaw Live Data (Generated: 2026-04-08T03:32:46.978Z) -->
-<script>
-window.OPENCLAW_LIVE_DATA = {
-  "timestamp": 1775619166978,
-  "lastUpdated": "2026-04-08T03:32:46.978Z",
-  "agents": {
-    "main": {
-      "id": "main",
-      "name": "Maxwell",
-      "role": "CEO Chief of Staff",
-      "persona": "Direct. Strategic. No fluff.",
-      "model": "claude/claude-sonnet-4-5",
-      "fallback": "gemini/gemini-2.5-flash-lite",
-      "status": "active",
-      "task": "Managing Mission Control integration",
-      "tokens": 137240,
-      "cost": 1.002708,
-      "sessions": 2,
-      "burnHistory": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        111
-      ]
-    },
-    "iris": {
-      "id": "iris",
-      "name": "Iris",
-      "role": "Meeting Intelligence",
-      "persona": "Precise. Thorough. Data-first.",
-      "model": "google/gemini-2.5-flash",
-      "fallback": "gemini/gemini-2.5-flash-lite",
-      "status": "idle",
-      "task": "Processing Fireflies transcripts",
-      "tokens": 0,
-      "cost": 0,
-      "sessions": 0,
-      "burnHistory": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "atlas": {
-      "id": "atlas",
-      "name": "Atlas",
-      "role": "Chief Technical Officer",
-      "persona": "Systematic. Cost-conscious. Reliable.",
-      "model": "google/gemini-2.5-flash",
-      "fallback": "gemini/gemini-2.5-flash-lite",
-      "status": "idle",
-      "task": "Maintaining Mission Control",
-      "tokens": 0,
-      "cost": 0,
-      "sessions": 0,
-      "burnHistory": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  "costs": {
-    "today": 1.224387,
-    "todayTokens": 174996,
-    "month": 8.570708999999999,
-    "monthTokens": 1224972,
-    "projected": 36.731609999999996,
-    "saved": 1.0407289499999999,
-    "models": {
-      "claude-sonnet-4-5": {
-        "tokens": 137240,
-        "cost": 1.002708
-      },
-      "gemini-2.5-flash": {
-        "tokens": 0,
-        "cost": 0
-      },
-      "gemma4:26b (local)": {
-        "tokens": 37756,
-        "cost": 0
-      }
-    }
-  },
-  "activity": [
-    {
-      "time": "09:13",
-      "agent": "MAXWELL",
-      "text": "Injecting live data into Mission Control"
-    },
-    {
-      "time": "08:52",
-      "agent": "MAXWELL",
-      "text": "Published Mission Control v3 dashboard"
-    },
-    {
-      "time": "08:45",
-      "agent": "MAXWELL",
-      "text": "Created Xero integration plan"
-    },
-    {
-      "time": "07:35",
-      "agent": "IRIS",
-      "text": "Updated cron schedule to Brisbane timezone"
-    }
-  ]
-};
-console.log('📊 OpenClaw live data loaded at', new Date(window.OPENCLAW_LIVE_DATA.timestamp));
-console.log('Agents:', window.OPENCLAW_LIVE_DATA.agents);
-console.log('Costs:', window.OPENCLAW_LIVE_DATA.costs);
-
-// Auto-load data when page loads
-window.addEventListener('DOMContentLoaded', function() {
-  if (typeof loadLiveData === 'function') {
-    setTimeout(() => {
-      console.log('🔄 Loading live data into dashboard...');
-      loadLiveData(window.OPENCLAW_LIVE_DATA);
-    }, 500);
-  }
-});
-</script>
 </head>
 <body>
 <div class="health-bar"><div class="hs ok" id="hs-gw"></div><div class="hs ok" id="hs-mx"></div><div class="hs ok" id="hs-ir"></div><div class="hs ok" id="hs-api"></div></div>
@@ -907,5 +794,32 @@ if (window.OPENCLAW_LIVE_DATA) {
 renderAgents();renderTasks();renderModels({});renderBriefings();renderActions();renderFeed();
 setInterval(()=>{if(S.conn)reqData();},30000);
 </script>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-nav">
+  <button class="mobile-tab active" data-tab="agents"><span class="icon">⬡</span><span>Agents</span></button>
+  <button class="mobile-tab" data-tab="tasks"><span class="icon">◈</span><span>Tasks</span></button>
+  <button class="mobile-tab" data-tab="costs"><span class="icon">◎</span><span>Costs</span></button>
+  <button class="mobile-tab" data-tab="intel"><span class="icon">◉</span><span>Intel</span></button>
+</nav>
+
+<script>
+// Mobile tab switching
+document.querySelectorAll('.mobile-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.mobile-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    // Trigger same tab switch as desktop
+    document.querySelectorAll('.nt').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tp').forEach(p => p.classList.remove('active'));
+    const targetBtn = document.querySelector(`.nt[data-tab="${tab}"]`);
+    const targetPane = document.getElementById(`tab-${tab}`);
+    if (targetBtn) targetBtn.classList.add('active');
+    if (targetPane) targetPane.classList.add('active');
+  });
+});
+</script>
+
 </body>
 </html>
