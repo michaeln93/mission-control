@@ -292,6 +292,139 @@ body.tv .main{padding:1rem;max-width:100%;}
   body{padding-bottom:env(safe-area-inset-bottom);}
 }
 </style>
+
+<!-- OpenClaw Live Data (Generated: 2026-04-09T00:00:20.735Z) -->
+<script>
+window.OPENCLAW_LIVE_DATA = {
+  "timestamp": 1775692820735,
+  "lastUpdated": "2026-04-09T00:00:20.735Z",
+  "agents": {
+    "main": {
+      "id": "main",
+      "name": "Maxwell",
+      "role": "CEO Chief of Staff",
+      "persona": "Direct. Strategic. No fluff.",
+      "model": "claude/claude-sonnet-4-5",
+      "fallback": "gemini/gemini-2.5-flash-lite",
+      "status": "active",
+      "task": "Managing Mission Control integration",
+      "tokens": 137240,
+      "cost": 1.002708,
+      "sessions": 2,
+      "burnHistory": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        111
+      ]
+    },
+    "iris": {
+      "id": "iris",
+      "name": "Iris",
+      "role": "Meeting Intelligence",
+      "persona": "Precise. Thorough. Data-first.",
+      "model": "google/gemini-2.5-flash",
+      "fallback": "gemini/gemini-2.5-flash-lite",
+      "status": "idle",
+      "task": "Processing Fireflies transcripts",
+      "tokens": 0,
+      "cost": 0,
+      "sessions": 0,
+      "burnHistory": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "atlas": {
+      "id": "atlas",
+      "name": "Atlas",
+      "role": "Chief Technical Officer",
+      "persona": "Systematic. Cost-conscious. Reliable.",
+      "model": "google/gemini-2.5-flash",
+      "fallback": "gemini/gemini-2.5-flash-lite",
+      "status": "idle",
+      "task": "Maintaining Mission Control",
+      "tokens": 0,
+      "cost": 0,
+      "sessions": 0,
+      "burnHistory": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "costs": {
+    "today": 1.224387,
+    "todayTokens": 174996,
+    "month": 8.570708999999999,
+    "monthTokens": 1224972,
+    "projected": 36.731609999999996,
+    "saved": 1.0407289499999999,
+    "models": {
+      "claude-sonnet-4-5": {
+        "tokens": 137240,
+        "cost": 1.002708
+      },
+      "gemini-2.5-flash": {
+        "tokens": 0,
+        "cost": 0
+      },
+      "gemma4:26b (local)": {
+        "tokens": 37756,
+        "cost": 0
+      }
+    }
+  },
+  "activity": [
+    {
+      "time": "09:13",
+      "agent": "MAXWELL",
+      "text": "Injecting live data into Mission Control"
+    },
+    {
+      "time": "08:52",
+      "agent": "MAXWELL",
+      "text": "Published Mission Control v3 dashboard"
+    },
+    {
+      "time": "08:45",
+      "agent": "MAXWELL",
+      "text": "Created Xero integration plan"
+    },
+    {
+      "time": "07:35",
+      "agent": "IRIS",
+      "text": "Updated cron schedule to Brisbane timezone"
+    }
+  ]
+};
+console.log('📊 OpenClaw live data loaded at', new Date(window.OPENCLAW_LIVE_DATA.timestamp));
+console.log('Agents:', window.OPENCLAW_LIVE_DATA.agents);
+console.log('Costs:', window.OPENCLAW_LIVE_DATA.costs);
+
+// Auto-load data when page loads
+window.addEventListener('DOMContentLoaded', function() {
+  if (typeof loadLiveData === 'function') {
+    setTimeout(() => {
+      console.log('🔄 Loading live data into dashboard...');
+      loadLiveData(window.OPENCLAW_LIVE_DATA);
+    }, 500);
+  }
+});
+</script>
 </head>
 <body>
 <div class="health-bar"><div class="hs ok" id="hs-gw"></div><div class="hs ok" id="hs-mx"></div><div class="hs ok" id="hs-ir"></div><div class="hs ok" id="hs-api"></div></div>
