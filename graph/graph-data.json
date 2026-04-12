@@ -1,0 +1,5028 @@
+{
+  "nodes": [
+    {
+      "id": "meeting-001",
+      "type": "meeting",
+      "label": "Duck Validation Pricing",
+      "properties": {
+        "title": "Duck Validation Pricing",
+        "date": "2026-01-13",
+        "processing_time": 16.201308458,
+        "attendees": [],
+        "topics": [
+          "Washer disinfectors",
+          "Validation cycles",
+          "Chemistry dosing",
+          "Cleaning efficacy",
+          "Water quality testing",
+          "Pricing strategy"
+        ],
+        "decisions": [
+          "Verify whether chemistry dosing is mandatory for all washer disinfectors in current standards (14:10)",
+          "Confirm key clauses and exemptions in the 2024 standard regarding dosing requirements and machine classifications (14:40)",
+          "Provide details and confirm water quality testing requirements and advise on referencing standards for hospital compliance (42:50)",
+          "Investigate operational qualification (OQ) testing requirements, particularly for tissue paper flush test inclusion (46:08)"
+        ],
+        "summary": "- **Validation Requirements:** Washer disinfectors must comply with 2024 standard 15983 Part 1; older units have exemptions"
+      }
+    },
+    {
+      "id": "project-41d4639d",
+      "type": "project",
+      "label": "Duck Validation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-001"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Duck Validation",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-e04183cf",
+      "type": "concept",
+      "label": "Washer disinfectors",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-001"
+        ],
+        "context": "Washer disinfectors is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-49284487",
+      "type": "concept",
+      "label": "15983 Part 1",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-001"
+        ],
+        "context": "15983 Part 1 is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-8c4e3685",
+      "type": "concept",
+      "label": "cleaning efficacy",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-001"
+        ],
+        "context": "cleaning efficacy is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-8abd3977",
+      "type": "concept",
+      "label": "water hardness",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-001"
+        ],
+        "context": "water hardness is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-9f91bbce",
+      "type": "concept",
+      "label": "validation pricing",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-001"
+        ],
+        "context": "validation pricing is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-002",
+      "type": "meeting",
+      "label": "ALSA/SESS meeting",
+      "properties": {
+        "title": "ALSA/SESS meeting",
+        "date": "2026-01-16",
+        "processing_time": 16.722644459,
+        "attendees": [],
+        "topics": [
+          "NATA accreditation",
+          "Endoscope validation",
+          "Culture plates",
+          "Sample transport",
+          "TSA media",
+          "Australian Standard 5369"
+        ],
+        "decisions": [
+          "Send Genca guidelines to ALS team by Monday to assist with testing standards compliance (20:28)",
+          "Follow up on media recipe details from Australian Standard 5369 for TSA plates with additives (08:55)",
+          "Confirm ALS laboratory accreditation scope and compliance for handling environmental monitoring samples (01:57)",
+          "Review relevant Australian and ISO standards in ALS database to check access and applicability (19:22)"
+        ],
+        "summary": "- **Accreditation Status:** Lab is NATA accredited for non-human product testing; no conflict with human samples confirmed"
+      }
+    },
+    {
+      "id": "project-bd7394f9",
+      "type": "project",
+      "label": "Testing unit validation and scaling",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-002"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Testing unit validation and scaling",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-e69b1982",
+      "type": "concept",
+      "label": "NATA accreditation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-002"
+        ],
+        "context": "NATA accreditation is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-e91b9007",
+      "type": "concept",
+      "label": "sample integrity",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-002"
+        ],
+        "context": "sample integrity is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-a617908b",
+      "type": "concept",
+      "label": "validation",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-002",
+          "meeting-021"
+        ],
+        "context": "validation is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-2c64205d",
+      "type": "concept",
+      "label": "testing protocols",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-002"
+        ],
+        "context": "testing protocols is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-e9aecb86",
+      "type": "concept",
+      "label": "compliance",
+      "properties": {
+        "mentions": 3,
+        "meetings": [
+          "meeting-002",
+          "meeting-015",
+          "meeting-017"
+        ],
+        "context": "compliance is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-003",
+      "type": "meeting",
+      "label": "Standards Chat",
+      "properties": {
+        "title": "Standards Chat",
+        "date": "2026-01-15",
+        "processing_time": 15.353688458,
+        "attendees": [],
+        "topics": [
+          "AS5369",
+          "washer disinfector",
+          "reusable medical device",
+          "bedpan",
+          "chemical dosing",
+          "compliance"
+        ],
+        "decisions": [
+          "Revise and simplify the email response to Marty referencing AS5369 clauses supporting chemical use on RMDs and other devices (29:02)",
+          "Engage the team to initiate staged replacement program for University Hospital ducks post-maintenance contract approval (28:11)",
+          "Join Standards Australia to access official standards documents and update communications accordingly (29:15)",
+          "Forward correct copy/link of the standards document to Michael and Scott for accurate email referencing (14:31)"
+        ],
+        "summary": "- **Standards Compliance:** Bedpans and urinals classified as reusable medical devices need validated cleaning processes under AS5369 for compliance.\n\n- **Product Design Gaps:** Older disinfectors ..."
+      }
+    },
+    {
+      "id": "project-1f217178",
+      "type": "project",
+      "label": "Machine replacement program",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-003"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Machine replacement program",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-193eb7c0",
+      "type": "project",
+      "label": "Disinfector upgrade/retrofit",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-003"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Disinfector upgrade/retrofit",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-f11e75c8",
+      "type": "project",
+      "label": "Phased upgrade implementation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-003"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Phased upgrade implementation",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-86b0142f",
+      "type": "concept",
+      "label": " Standards compliance",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-003"
+        ],
+        "context": " Standards compliance is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-e848c829",
+      "type": "concept",
+      "label": "AS5369",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-003"
+        ],
+        "context": "AS5369 is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-198c9a01",
+      "type": "concept",
+      "label": "medical device cleaning",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-003"
+        ],
+        "context": "medical device cleaning is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-76ea86f9",
+      "type": "concept",
+      "label": "sanitization",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-003"
+        ],
+        "context": "sanitization is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-4e4ff703",
+      "type": "concept",
+      "label": "regulatory compliance",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-003",
+          "meeting-028"
+        ],
+        "context": "regulatory compliance is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-004",
+      "type": "meeting",
+      "label": "SESS + DTS",
+      "properties": {
+        "title": "SESS + DTS",
+        "date": "2026-01-19",
+        "processing_time": 13.893372042,
+        "attendees": [],
+        "topics": [
+          "Endoscopy equipment",
+          "Regulatory submissions",
+          "Drying cabinets",
+          "Leak tester",
+          "Flush pump",
+          "National Gastro Conference"
+        ],
+        "decisions": [
+          "Send DTS an updated list of the involved manufacturers and product groups (including PFE Medical, Torvin, Victoris) for regulatory submissions by early next communications (06:11)",
+          "Confirm status and details of process indicators for submission and report back to DTS (12:53)",
+          "Notify DTS promptly of any additional products or queries requiring regulatory support to avoid unauthorized work (15:23)",
+          "Review product list from Michael and provide feedback on regulatory pathways, filings needed, and any concerns (13:21)"
+        ],
+        "summary": "- **Product Launch Target:** Aiming for product launch by May 1st, aligning with the National Gastro Conference on May 15th"
+      }
+    },
+    {
+      "id": "project-db49fd6d",
+      "type": "project",
+      "label": "SESS + DTS",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-004"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated SESS + DTS",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-7bf32f10",
+      "type": "project",
+      "label": "Auto Sync",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-004"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Auto Sync",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-7aff959f",
+      "type": "concept",
+      "label": " Regulatory approval",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-004"
+        ],
+        "context": " Regulatory approval is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-854ebf67",
+      "type": "concept",
+      "label": "Class 1 medical device",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-004"
+        ],
+        "context": "Class 1 medical device is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-c2f1fdf0",
+      "type": "concept",
+      "label": "budget tracking",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-004"
+        ],
+        "context": "budget tracking is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-6b8d16dd",
+      "type": "concept",
+      "label": "product launch",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-004",
+          "meeting-014"
+        ],
+        "context": "product launch is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-26580239",
+      "type": "concept",
+      "label": "synchronization",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-004"
+        ],
+        "context": "synchronization is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-005",
+      "type": "meeting",
+      "label": "Monthly Technical Meeting - HBT",
+      "properties": {
+        "title": "Monthly Technical Meeting - HBT",
+        "date": "2026-01-22",
+        "processing_time": 17.606732417
+      }
+    },
+    {
+      "id": "project-ca9add29",
+      "type": "project",
+      "label": "Hardware inspection",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-005"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Hardware inspection",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-062ca8b1",
+      "type": "project",
+      "label": "Cable standardization",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-005"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Cable standardization",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-a097095e",
+      "type": "project",
+      "label": "Data backup implementation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-005"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Data backup implementation",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-600d1cbf",
+      "type": "project",
+      "label": "Sensor replacement",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-005"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Sensor replacement",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-94bb37dc",
+      "type": "concept",
+      "label": " Redundancy",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-005"
+        ],
+        "context": " Redundancy is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-ee6b8f14",
+      "type": "concept",
+      "label": "Standardization",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-005",
+          "meeting-023"
+        ],
+        "context": "Standardization is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-464fe4ea",
+      "type": "concept",
+      "label": "Reliability",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-005",
+          "meeting-023"
+        ],
+        "context": "Reliability is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-57cb773a",
+      "type": "concept",
+      "label": "Maintenance",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-005",
+          "meeting-015"
+        ],
+        "context": "Maintenance is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-e09245ef",
+      "type": "concept",
+      "label": "Troubleshooting",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-005"
+        ],
+        "context": "Troubleshooting is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-006",
+      "type": "meeting",
+      "label": "Website Chat",
+      "properties": {
+        "title": "Website Chat",
+        "date": "2026-01-22",
+        "processing_time": 17.660429458,
+        "attendees": [],
+        "topics": [
+          "Website restructuring",
+          "Product categorization",
+          "Life Science",
+          "Endoscopy",
+          "Services page",
+          "Odoo login issue"
+        ],
+        "decisions": [
+          "Share notes and detailed product categorization for website page structuring with Franz (10:55)",
+          "Discuss and investigate Odoo login issues with Dawit to provide a permanent fix for the team (12:05)",
+          "Follow up with Tegan on the rollout status of new products and updates, and communicate progress (14:09)",
+          "Use filler text to build new website pages according to product categories as instructed, awaiting final content from Michael (10:55)"
+        ],
+        "summary": "- **Website Reorganization:** Main goal is to present full product range clearly and improve searchability for better customer understanding"
+      }
+    },
+    {
+      "id": "project-717772ef",
+      "type": "project",
+      "label": "Website reorganization",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-006"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Website reorganization",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-b5194123",
+      "type": "project",
+      "label": "Content expansion",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-006"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Content expansion",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-35d121e9",
+      "type": "project",
+      "label": "Catalog alignment",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-006"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Catalog alignment",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-717772ef",
+      "type": "concept",
+      "label": "Website reorganization",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-006"
+        ],
+        "context": "Website reorganization is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-af229f93",
+      "type": "concept",
+      "label": "Life Sciences",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-006"
+        ],
+        "context": "Life Sciences is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-fe56ff7b",
+      "type": "concept",
+      "label": "Endoscopy",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-006"
+        ],
+        "context": "Endoscopy is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-5aa54025",
+      "type": "concept",
+      "label": "User Experience",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-006",
+          "meeting-013"
+        ],
+        "context": "User Experience is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-007",
+      "type": "meeting",
+      "label": "Cyder Solutions - Odoo",
+      "properties": {
+        "title": "Cyder Solutions - Odoo",
+        "date": "2026-01-29",
+        "processing_time": 18.533411083,
+        "attendees": [
+          "person-tegan"
+        ],
+        "topics": [
+          "Odoo",
+          "maintenance management",
+          "field service",
+          "customization",
+          "third-party apps",
+          "prepaid service hours"
+        ],
+        "decisions": [
+          "Send an email detailing major showstopper issues or gaps noticed in the current Odoo modules for review and feedback on integration feasibility and customization options (17:05)",
+          "Prepare and send pricing and service proposal for prepaid hour packages supporting training, configuration, and upgrading needs (10:40)",
+          "Review and respond to emailed showstopper issues with technical feasibility and possible customizations (17:05)",
+          "Provide advice and assistance for training Sess\u2019s in-house developer, helping streamline Odoo adoption and upgrades (10:45)"
+        ],
+        "summary": "- **Maintenance Workflow Challenges:** 18-20 technicians manage 3,000 assets; consolidating workflows is critical before July 1st deadline"
+      }
+    },
+    {
+      "id": "person-tegan",
+      "type": "person",
+      "label": "Tegan",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-021",
+          "meeting-028",
+          "meeting-020",
+          "meeting-014",
+          "meeting-016",
+          "meeting-028",
+          "meeting-013",
+          "meeting-007",
+          "meeting-008"
+        ],
+        "role": "Team Member",
+        "expertise": [
+          "asset integration",
+          "Odoo",
+          "bedpan sanitizers",
+          "AS/NZS 5369",
+          "reusable medical devices"
+        ],
+        "collaborators": [
+          "person-dawit"
+        ]
+      }
+    },
+    {
+      "id": "project-ed827f09",
+      "type": "project",
+      "label": "Maintenance workflow consolidation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-007"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Maintenance workflow consolidation",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-e97b0635",
+      "type": "concept",
+      "label": "Asset management",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-007"
+        ],
+        "context": "Asset management is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-6c08dade",
+      "type": "concept",
+      "label": "Workflow integration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-007"
+        ],
+        "context": "Workflow integration is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-2bfc9ccc",
+      "type": "concept",
+      "label": "Contract management",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-007",
+          "meeting-010"
+        ],
+        "context": "Contract management is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-5cbe3958",
+      "type": "concept",
+      "label": "Field service efficiency",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-007"
+        ],
+        "context": "Field service efficiency is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-ff5ac775",
+      "type": "concept",
+      "label": "Maintenance operations",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-007"
+        ],
+        "context": "Maintenance operations is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-008",
+      "type": "meeting",
+      "label": "Catch up",
+      "properties": {
+        "title": "Catch up",
+        "date": "2026-01-07",
+        "processing_time": 16.505663166,
+        "attendees": [
+          "person-dawit",
+          "person-tegan"
+        ],
+        "topics": [
+          "Odoo rollout",
+          "asset integration",
+          "ERP go-live",
+          "data migration",
+          "payroll integration",
+          "financial year close"
+        ],
+        "decisions": [
+          "Finalize ERP go-live task list with Tegan and prioritize asset and field service workflows by end of week / early next week (08:20)",
+          "Schedule and lead walkthrough meeting with Dawit to review Odoo workflow status and identify gaps, involving additional stakeholders (09:52)",
+          "Complete integration work on client, warranty modules and finalize new requirements by Monday or Tuesday for demo (06:11)",
+          "Provide update in walkthrough meeting on progress with workflows and data integration (09:52)"
+        ],
+        "summary": "- **Odoo Go-Live Deadline:** Functional modules needed by July 1; prioritize asset and field service workflows for timely completion"
+      }
+    },
+    {
+      "id": "project-57e7efe6",
+      "type": "project",
+      "label": "Core Platform",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Core Platform",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-3088959a",
+      "type": "project",
+      "label": "Client Assets Module",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Client Assets Module",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-a3b9c8f5",
+      "type": "project",
+      "label": "Subscription Module",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Subscription Module",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-281a7b6c",
+      "type": "project",
+      "label": "Maintenance Module",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Maintenance Module",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-4ceb26f0",
+      "type": "concept",
+      "label": "Core workflows",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008"
+        ],
+        "context": "Core workflows is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan",
+          "person-dawit"
+        ]
+      }
+    },
+    {
+      "id": "concept-e4262a52",
+      "type": "concept",
+      "label": "scope creep",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008"
+        ],
+        "context": "scope creep is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan",
+          "person-dawit"
+        ]
+      }
+    },
+    {
+      "id": "concept-f9e1b0a1",
+      "type": "concept",
+      "label": "usability",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008"
+        ],
+        "context": "usability is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan",
+          "person-dawit"
+        ]
+      }
+    },
+    {
+      "id": "concept-6f422f52",
+      "type": "concept",
+      "label": "stability",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008"
+        ],
+        "context": "stability is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan",
+          "person-dawit"
+        ]
+      }
+    },
+    {
+      "id": "concept-6b94d94e",
+      "type": "concept",
+      "label": "commercialization",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008"
+        ],
+        "context": "commercialization is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan",
+          "person-dawit"
+        ]
+      }
+    },
+    {
+      "id": "meeting-009",
+      "type": "meeting",
+      "label": "Endo Catch Up",
+      "properties": {
+        "title": "Endo Catch Up",
+        "date": "2026-02-25",
+        "processing_time": 15.477617333,
+        "attendees": [],
+        "topics": [
+          "Typhoon drying system",
+          "washer layout",
+          "sterilizer servicing",
+          "facility space planning",
+          "TGA approval",
+          "endoscopy consumables"
+        ],
+        "decisions": [
+          "Email the site layout PDF drawing to Michael Norman for markup and redrawing (07:16)",
+          "Mark up site drawings with trolley and carriage placements and specific washer and sterilizer counts, then send to Michael Norman (21:27)",
+          "Provide updated and commented plan to Michael Norman soon (25:09)",
+          "Decide on attendees and plans for Jankula conference, inform Michael Norman (25:19)"
+        ],
+        "summary": "- **Pricing and Quoting Challenges:** Current quoting process with Gene is slow, causing sales inefficiencies and delays; sometimes takes three days"
+      }
+    },
+    {
+      "id": "person-gene",
+      "type": "person",
+      "label": "Gene",
+      "properties": {
+        "mentions": 1,
+        "meetings": [],
+        "role": "Team Member",
+        "expertise": [],
+        "collaborators": []
+      }
+    },
+    {
+      "id": "project-3446fdbb",
+      "type": "project",
+      "label": "Forte Health equipment configuration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-009"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Forte Health equipment configuration",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-ffa7ab02",
+      "type": "project",
+      "label": "Typhoon Drying System market launch",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-009"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Typhoon Drying System market launch",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-ca89f8aa",
+      "type": "concept",
+      "label": " Pricing",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-009"
+        ],
+        "context": " Pricing is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-aaefc213",
+      "type": "concept",
+      "label": "quoting",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-009"
+        ],
+        "context": "quoting is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-858dd92d",
+      "type": "concept",
+      "label": "equipment configuration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-009"
+        ],
+        "context": "equipment configuration is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-87a8ac23",
+      "type": "concept",
+      "label": "TGA approval",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-009"
+        ],
+        "context": "TGA approval is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-4d5d1c33",
+      "type": "concept",
+      "label": "market strategy",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-009"
+        ],
+        "context": "market strategy is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-010",
+      "type": "meeting",
+      "label": "Part 2 of Client Assets - Templates / Preventative Maintenan",
+      "properties": {
+        "title": "Part 2 of Client Assets - Templates / Preventative Maintenance",
+        "date": "2026-02-25",
+        "processing_time": 17.361781833
+      }
+    },
+    {
+      "id": "project-a3bde422",
+      "type": "project",
+      "label": "Client Assets - Templates / Preventative Maintenance",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-010"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Client Assets - Templates / Preventative Maintenance",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-7d774578",
+      "type": "concept",
+      "label": " Asset management",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-010",
+          "meeting-016"
+        ],
+        "context": " Asset management is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-f9665aa8",
+      "type": "concept",
+      "label": "subscription billing",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-010"
+        ],
+        "context": "subscription billing is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-a1ddad38",
+      "type": "concept",
+      "label": "preventative maintenance",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-010"
+        ],
+        "context": "preventative maintenance is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-fa351e5e",
+      "type": "concept",
+      "label": "e-signatures",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-010"
+        ],
+        "context": "e-signatures is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-011",
+      "type": "meeting",
+      "label": "Monthly Technical Meeting - HBT",
+      "properties": {
+        "title": "Monthly Technical Meeting - HBT",
+        "date": "2026-02-26",
+        "processing_time": 23.589403208
+      }
+    },
+    {
+      "id": "project-3f815dfa",
+      "type": "project",
+      "label": "Channel Pump repair",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Channel Pump repair",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-1c79a1e0",
+      "type": "project",
+      "label": "S11 sensor troubleshooting",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated S11 sensor troubleshooting",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-8da307d3",
+      "type": "project",
+      "label": "GS220 scanner documentation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated GS220 scanner documentation",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-b25ca715",
+      "type": "project",
+      "label": "4G router segmentation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated 4G router segmentation",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-bf533c8d",
+      "type": "project",
+      "label": "UPS replacement",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated UPS replacement",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-74926f5f",
+      "type": "concept",
+      "label": " Hardware repair",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "context": " Hardware repair is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-2c1ee385",
+      "type": "concept",
+      "label": "sensor troubleshooting",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "context": "sensor troubleshooting is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-040707ec",
+      "type": "concept",
+      "label": "network security",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "context": "network security is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-c7aae676",
+      "type": "concept",
+      "label": "IP segmentation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "context": "IP segmentation is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-0919366d",
+      "type": "concept",
+      "label": "RO water",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-011"
+        ],
+        "context": "RO water is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-012",
+      "type": "meeting",
+      "label": "SESS / HBT Meeting",
+      "properties": {
+        "title": "SESS / HBT Meeting",
+        "date": "2026-03-03",
+        "processing_time": 15.929341625,
+        "attendees": [],
+        "topics": [
+          "Endoscopy",
+          "Water Filters",
+          "Auto Sync",
+          "Thermal Disinfection",
+          "Steris",
+          "Washer Disinfector"
+        ],
+        "decisions": [
+          "Provide Michael Norman with contacts to link Carmine from SIPOL with SCS team for filter supply discussions (12:12)",
+          "Keep Michael and Joel informed on testing results and potential adoption of 0.22 micron filters and other sizes from SIPOL (13:00)",
+          "Coordinate dates and send formal requests for standby technician coverage from Brisbane or Melbourne during medical leave periods (20:01)",
+          "Assess site feasibility and logistics for installing the IQ6 washer disinfector, particularly sewerage/wastewater disposal solutions (24:37)"
+        ],
+        "summary": "- **Jenka Event Preparations:** Team readying new endoscopy products for the Jenka event amid challenges with the auto sync device.\n\n- **New Competitor Launch:** A Typhoon competitor will launch at..."
+      }
+    },
+    {
+      "id": "project-64356214",
+      "type": "project",
+      "label": "Jenka event preparation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-012"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Jenka event preparation",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-d4ce909e",
+      "type": "project",
+      "label": "IQ6 Ken washer acquisition",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-012"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated IQ6 Ken washer acquisition",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-4498606b",
+      "type": "project",
+      "label": "ERP migration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-012"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated ERP migration",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-985f92ee",
+      "type": "project",
+      "label": "Rebranding initiative",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-012"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Rebranding initiative",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-ee839122",
+      "type": "concept",
+      "label": " Endoscopy",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-012"
+        ],
+        "context": " Endoscopy is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-3190dbf1",
+      "type": "concept",
+      "label": "competition",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-012"
+        ],
+        "context": "competition is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-d545a89b",
+      "type": "concept",
+      "label": "disinfection",
+      "properties": {
+        "mentions": 3,
+        "meetings": [
+          "meeting-012",
+          "meeting-021",
+          "meeting-023"
+        ],
+        "context": "disinfection is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-449fddba",
+      "type": "concept",
+      "label": "water filtration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-012"
+        ],
+        "context": "water filtration is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-e618c99c",
+      "type": "concept",
+      "label": "rebranding",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-012",
+          "meeting-013"
+        ],
+        "context": "rebranding is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-013",
+      "type": "meeting",
+      "label": "Website Meeting",
+      "properties": {
+        "title": "Website Meeting",
+        "date": "2026-03-05",
+        "processing_time": 15.479273833,
+        "attendees": [
+          "person-tegan"
+        ],
+        "topics": [
+          "Odoo",
+          "dynamic website",
+          "product categories",
+          "backend access",
+          "static pages",
+          "website launch deadline"
+        ],
+        "decisions": [
+          "Review and test dynamic website prototype on local version to verify feasibility of backend access and admin toggles (06:48)",
+          "Confirm capability to build initial static pages version for core products and site structure by next meeting (15:35)",
+          "Prepare product category pages for CSD and Endoscopy with brief texts and product listings, pending receipt of product info (16:29)",
+          "Provide Franz with updated product lists and manufacturer links for content creation (18:21)"
+        ],
+        "summary": "- **Dynamic Product List Development Underway:** Transitioning to automated product updates to enhance user experience and efficiency.\n\n- **May 1st Deadline for Rebranding Website:** Website must b..."
+      }
+    },
+    {
+      "id": "project-a49bd5ab",
+      "type": "project",
+      "label": "Website rebranding",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-013"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Website rebranding",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-8b4f286a",
+      "type": "project",
+      "label": "Dynamic product list development",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-013"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Dynamic product list development",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-c58dcc4f",
+      "type": "project",
+      "label": "Video logo updates",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-013"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Video logo updates",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-205d64ff",
+      "type": "concept",
+      "label": "Automation",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-013",
+          "meeting-016"
+        ],
+        "context": "Automation is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-6a02ad2d",
+      "type": "concept",
+      "label": "Minimalism",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-013"
+        ],
+        "context": "Minimalism is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-5f099425",
+      "type": "concept",
+      "label": "Efficiency",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-013"
+        ],
+        "context": "Efficiency is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-014",
+      "type": "meeting",
+      "label": "Executive Meeting",
+      "properties": {
+        "title": "Executive Meeting",
+        "date": "2026-01-07",
+        "processing_time": 20.121220083,
+        "attendees": [],
+        "topics": [
+          "Odoo",
+          "Sales Strategy",
+          "Distributor Agreements",
+          "Electrical Contractor License",
+          "Trademark Issues",
+          "Customer Service Relations"
+        ],
+        "decisions": [
+          "Finalize distributor agreement with PFE Medical in Melbourne meeting scheduled week of Jan 26 (01:30)",
+          "Meet with Luke to discuss Whiteley\u2019s contract renegotiation and regional sales strategy (01:30)",
+          "Discuss John\u2019s retirement and electrical license status to plan transition (03:30)",
+          "Conduct face-to-face conversation with Simon about RA specialist role and long service leave planning (04:51)"
+        ],
+        "summary": "- **Team Stability:** Improved customer communication and reduced complaints, yet parts delays remain a critical issue"
+      }
+    },
+    {
+      "id": "project-a6c9ea54",
+      "type": "project",
+      "label": "System Go-Live",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-014"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated System Go-Live",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-c3accd12",
+      "type": "project",
+      "label": "Asset Data Migration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-014"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Asset Data Migration",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-d5877924",
+      "type": "project",
+      "label": "Catalog Cleanup",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-014"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Catalog Cleanup",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-8464d3fa",
+      "type": "project",
+      "label": "New Product Launch",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-014"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated New Product Launch",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-809ff284",
+      "type": "concept",
+      "label": "Go-live",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-014"
+        ],
+        "context": "Go-live is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-b59fcf58",
+      "type": "concept",
+      "label": "Data migration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-014"
+        ],
+        "context": "Data migration is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-ae2b1fca",
+      "type": "concept",
+      "label": "Testing",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-014"
+        ],
+        "context": "Testing is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-c185ddac",
+      "type": "concept",
+      "label": "Training",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-014",
+          "meeting-019"
+        ],
+        "context": "Training is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-015",
+      "type": "meeting",
+      "label": "SESS Autoclave JCU PC3 Lab",
+      "properties": {
+        "title": "SESS Autoclave JCU PC3 Lab",
+        "date": "2026-03-17",
+        "processing_time": 16.42849625,
+        "attendees": [],
+        "topics": [
+          "autoclave compliance",
+          "equipment aging",
+          "barrier seal",
+          "leakage testing",
+          "certification standards",
+          "lab operations"
+        ],
+        "decisions": [
+          "Provide further clarity on work scope and cost estimation approach for potential phased upgrades to the autoclave (04:42)",
+          "Confirm lead time and schedule for converting autoclave back to double-door operational state (18:48)",
+          "Review and interpret detailed certification consultant queries and provide comments to support client strategy (11:59)",
+          "Communicate with certification consultant Kieran to clarify outstanding compliance questions and operational constraints (22:56)"
+        ],
+        "summary": "- **Aging Equipment Issues:** Upgrading the 2009 autoclave for compliance is risky and costly; cost remains the main concern"
+      }
+    },
+    {
+      "id": "project-07296a13",
+      "type": "project",
+      "label": "SESS Autoclave upgrade and certification",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-015"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated SESS Autoclave upgrade and certification",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-f1fd1913",
+      "type": "concept",
+      "label": "certification",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-015"
+        ],
+        "context": "certification is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-719be0c4",
+      "type": "concept",
+      "label": "cost-efficiency",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-015",
+          "meeting-025"
+        ],
+        "context": "cost-efficiency is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-da37a04e",
+      "type": "concept",
+      "label": "accreditation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-015"
+        ],
+        "context": "accreditation is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-016",
+      "type": "meeting",
+      "label": "Final Asset Work Flow with Dawit",
+      "properties": {
+        "title": "Final Asset Work Flow with Dawit",
+        "date": "2026-03-16",
+        "processing_time": 12.760368958,
+        "attendees": [
+          "person-tegan"
+        ],
+        "topics": [
+          "asset integration",
+          "preventative maintenance",
+          "subscription staging",
+          "site contacts",
+          "sales order preview",
+          "report customization"
+        ],
+        "decisions": [
+          "Continue testing and fix integration of preventative maintenance data in invoice previews and reports (11:22)",
+          "Implement requested layout changes for reports to incorporate additional asset information as needed (12:00)",
+          "Attempt technical refresh by logging off and on again to resolve connection issues for future meetings (14:39)",
+          "Coordinate scheduling of a follow-up meeting due to connection difficulties during this session (14:04)"
+        ],
+        "summary": "- **System Improvements:** Enhanced asset management by cleaning unnecessary data, improving site contact info, and automating maintenance records"
+      }
+    },
+    {
+      "id": "person-dawit",
+      "type": "person",
+      "label": "Dawit",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-008",
+          "meeting-008"
+        ],
+        "role": "Team Member",
+        "expertise": [
+          "Odoo",
+          "subscriptions",
+          "invoicing",
+          "client assets",
+          "field service"
+        ],
+        "collaborators": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "project-0b0f5f30",
+      "type": "project",
+      "label": "Final Asset Work Flow",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-016"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Final Asset Work Flow",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-776ea3bf",
+      "type": "concept",
+      "label": "integration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-016"
+        ],
+        "context": "integration is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-50a04ed5",
+      "type": "concept",
+      "label": "customization",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-016"
+        ],
+        "context": "customization is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-c576a841",
+      "type": "concept",
+      "label": "reporting",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-016"
+        ],
+        "context": "reporting is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-017",
+      "type": "meeting",
+      "label": "Sales Meeting",
+      "properties": {
+        "title": "Sales Meeting",
+        "date": "2026-03-15",
+        "processing_time": 23.6649975
+      }
+    },
+    {
+      "id": "project-24454ce4",
+      "type": "project",
+      "label": "Rocky CSD setup",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-017"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Rocky CSD setup",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-b0b3ea57",
+      "type": "project",
+      "label": "Hospital compliance",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-017"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Hospital compliance",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-f9e0a5e1",
+      "type": "project",
+      "label": "Trolley/Equipment maintenance",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-017"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Trolley/Equipment maintenance",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-6d31e25f",
+      "type": "project",
+      "label": "Detergent procurement",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-017"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Detergent procurement",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-dffbb273",
+      "type": "concept",
+      "label": "Capital projects",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-017"
+        ],
+        "context": "Capital projects is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-4d10ee2b",
+      "type": "concept",
+      "label": "Supply chain",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-017",
+          "meeting-028"
+        ],
+        "context": "Supply chain is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-eca1f234",
+      "type": "concept",
+      "label": "Budget cycles",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-017"
+        ],
+        "context": "Budget cycles is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-af4e4e4c",
+      "type": "concept",
+      "label": "Sales strategy",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-017"
+        ],
+        "context": "Sales strategy is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-018",
+      "type": "meeting",
+      "label": "Sales Meeting",
+      "properties": {
+        "title": "Sales Meeting",
+        "date": "2026-03-23",
+        "processing_time": 22.136377958
+      }
+    },
+    {
+      "id": "project-329c8aaa",
+      "type": "project",
+      "label": "Douglas Beds order",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Douglas Beds order",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-f65759ad",
+      "type": "project",
+      "label": "Periops Wash Rack quotes",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Periops Wash Rack quotes",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-99e9b198",
+      "type": "project",
+      "label": "QVC contract review",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated QVC contract review",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-e561a384",
+      "type": "project",
+      "label": "Torven Cabinets certification",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Torven Cabinets certification",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-8189ff20",
+      "type": "project",
+      "label": "Townsville Hospital service scheduling",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Townsville Hospital service scheduling",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-8c4d34f8",
+      "type": "concept",
+      "label": "Order splitting",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "context": "Order splitting is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-c0dbe0eb",
+      "type": "concept",
+      "label": "Freight optimization",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "context": "Freight optimization is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-498f88ef",
+      "type": "concept",
+      "label": "Contractual liability",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "context": "Contractual liability is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-34b08b70",
+      "type": "concept",
+      "label": "Resource allocation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "context": "Resource allocation is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-85544770",
+      "type": "concept",
+      "label": "TGA certification",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-018"
+        ],
+        "context": "TGA certification is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-019",
+      "type": "meeting",
+      "label": "PS Meeting Debrief",
+      "properties": {
+        "title": "PS Meeting Debrief",
+        "date": "2026-03-16",
+        "processing_time": 17.706587667,
+        "attendees": [],
+        "topics": [
+          "Technician Training",
+          "Product Specialist",
+          "Equipment Maintenance",
+          "Service Scheduling",
+          "Calibration",
+          "Traffic Light Priority"
+        ],
+        "decisions": [
+          "Review minutes from prior training meetings and finalize a yearly training schedule for technicians by end of the current month (00:00)",
+          "Schedule and coordinate a virtual training discussion meeting for early June focusing on the pilot training program (06:40)",
+          "Follow up with Wesley site to resolve motor issue, improve relations, and schedule service visits over the next three to four months (07:59)",
+          "Arrange mentorship and informal coaching sessions to support James in stress and workload management (09:14)"
+        ],
+        "summary": "- **Pilot training program for technicians** will start in 12 to 14 weeks, reviewing outcomes in early June"
+      }
+    },
+    {
+      "id": "project-da7e2de5",
+      "type": "project",
+      "label": "Pilot training program",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-019"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Pilot training program",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-ebadd74e",
+      "type": "project",
+      "label": "Standards Committee meetings",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-019"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Standards Committee meetings",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-d9d90207",
+      "type": "project",
+      "label": "Technician workload support",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-019"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Technician workload support",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-3e661f83",
+      "type": "project",
+      "label": "Traffic light scheduling system",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-019"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Traffic light scheduling system",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-da6b04c7",
+      "type": "concept",
+      "label": "downtime management",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-019"
+        ],
+        "context": "downtime management is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-70f9ab7a",
+      "type": "concept",
+      "label": "knowledge sharing",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-019"
+        ],
+        "context": "knowledge sharing is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-89551f1d",
+      "type": "concept",
+      "label": "calibration pricing",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-019"
+        ],
+        "context": "calibration pricing is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-b18e4815",
+      "type": "concept",
+      "label": "workload support",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-019"
+        ],
+        "context": "workload support is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-020",
+      "type": "meeting",
+      "label": "FW: Navan + SESS: Intro Call",
+      "properties": {
+        "title": "FW: Navan + SESS: Intro Call",
+        "date": "2026-03-18",
+        "processing_time": 27.869486458,
+        "attendees": [
+          "person-tegan"
+        ],
+        "topics": [
+          "Corporate Traveler",
+          "Navan Rewards",
+          "travel management",
+          "cost concerns",
+          "self-service platform",
+          "travel support"
+        ],
+        "decisions": [
+          "Send follow-up email to Michael with demo availability options for next week (18:56)",
+          "Explore Navan platform independently and test functionality (18:08)",
+          "Respond to Stefan\u2019s email regarding demo scheduling after evaluating platform (18:56)"
+        ],
+        "summary": "- **Current Provider Issues:** Discontent with Corporate Traveler due to high costs and poor usability, especially for older users.\n\n- **Annual Travel Spend:** Estimated over $250,000, with an urge..."
+      }
+    },
+    {
+      "id": "project-6f886118",
+      "type": "project",
+      "label": "Navan + SESS integration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-020"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Navan + SESS integration",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-a164ed9b",
+      "type": "concept",
+      "label": "Cost optimization",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-020"
+        ],
+        "context": "Cost optimization is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-aeb79288",
+      "type": "concept",
+      "label": "travel management",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-020"
+        ],
+        "context": "travel management is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-1da172bd",
+      "type": "concept",
+      "label": "loyalty rewards",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-020"
+        ],
+        "context": "loyalty rewards is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-b6174370",
+      "type": "concept",
+      "label": "HR integration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-020"
+        ],
+        "context": "HR integration is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-ec3fd368",
+      "type": "concept",
+      "label": "mobile UX",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-020"
+        ],
+        "context": "mobile UX is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-021",
+      "type": "meeting",
+      "label": "Company Knowledge Session (15mins)",
+      "properties": {
+        "title": "Company Knowledge Session (15mins)",
+        "date": "2026-03-25",
+        "processing_time": 17.82315825,
+        "attendees": [
+          "person-tegan"
+        ],
+        "topics": [
+          "bedpan sanitizers",
+          "AS/NZS 5369",
+          "reusable medical devices",
+          "validation process",
+          "chemical dosing",
+          "cleaning agents"
+        ],
+        "decisions": [
+          "Send out a white paper detailing the bedpan sanitizer reclassification and standard changes for internal and customer education (23:36)",
+          "Continue developing internal documentation and reporting processes related to sanitizer validation and cleaning requirements (23:36)",
+          "Coordinate the establishment of a standards committee to review and consolidate changes and ensure organizational alignment (23:36)",
+          "Advise customers with older equipment about the need for upgrades or replacements to include validated chemical dosing (20:37)"
+        ],
+        "summary": "- **Bedpan sanitizers reclassified as reusable medical devices**  \n    - Must meet washer disinfector standards and validated cleaning processes.\n\n- **Standard 5369 requires validated chemical dosi..."
+      }
+    },
+    {
+      "id": "project-71b77a1b",
+      "type": "project",
+      "label": "Sanitizer validation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-021"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Sanitizer validation",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-95282bb3",
+      "type": "concept",
+      "label": "Reusable medical devices",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-021"
+        ],
+        "context": "Reusable medical devices is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-9375cba6",
+      "type": "concept",
+      "label": "Standard 5369",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-021"
+        ],
+        "context": "Standard 5369 is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-55876228",
+      "type": "concept",
+      "label": "documentation",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-021"
+        ],
+        "context": "documentation is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-022",
+      "type": "meeting",
+      "label": "Demo SESS Australia ( Michael Norman)",
+      "properties": {
+        "title": "Demo SESS Australia ( Michael Norman)",
+        "date": "2026-03-23",
+        "processing_time": 19.302533459,
+        "attendees": [],
+        "topics": [
+          "Endoscope Testing",
+          "Leak Control",
+          "Light Control",
+          "Flush Control",
+          "Endoscope Manager",
+          "Distributor Agreement"
+        ],
+        "decisions": [
+          "Send NDA and pricing information to Michael Norman (01:20:19)",
+          "Follow up on distributor agreement details and synergy between product lines for Australia (01:20:19)",
+          "Provide Flush Control demo once available to Michael (01:17:51)",
+          "Review pricing and product positioning internally and provide feedback on which product lines suit company portfolio (01:22:08)"
+        ],
+        "summary": "- **Light Control Tester Efficiency:** Reduces test time from 2 minutes to 16 seconds, enhancing operational efficiency for endoscopes.\n\n- **Market Opportunities in Asia Pacific:** Company explorin..."
+      }
+    },
+    {
+      "id": "meeting-023",
+      "type": "meeting",
+      "label": "Monthly Technical Meeting - HBT",
+      "properties": {
+        "title": "Monthly Technical Meeting - HBT",
+        "date": "2026-01-22",
+        "processing_time": 19.062974334,
+        "attendees": [],
+        "topics": [
+          "W702 board error",
+          "detergent pump cables",
+          "RAID hard drive failure",
+          "S104 leak error",
+          "pass through router",
+          "spray arm gasket wear"
+        ],
+        "decisions": [
+          "Forward Aiden\u2019s W702 board communication error details to Timmy for investigation (08:47)",
+          "Schedule replacement of failed RAID HDD and consider upgrading to SSDs for improved reliability (16:06)",
+          "Upload pass through router work instruction (version one) to the technical team forum under HPT service documentation shared files for team review (22:31)",
+          "Communicate with Med Service regarding mainboard revision issues and the spray arm gasket wear concerns to explore solutions (25:14)"
+        ],
+        "summary": "- **Hardware Faults Identified:** W702 boards fail after 5-6 cycles; potential wiring or temperature issues need priority inspection"
+      }
+    },
+    {
+      "id": "project-386304e2",
+      "type": "project",
+      "label": "Hardware documentation updates",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-023"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Hardware documentation updates",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-145a21b0",
+      "type": "project",
+      "label": "Maintenance instruction development",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-023"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Maintenance instruction development",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-a2bf5299",
+      "type": "concept",
+      "label": "preventive maintenance",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-023"
+        ],
+        "context": "preventive maintenance is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-11a7a5d5",
+      "type": "concept",
+      "label": "collaboration",
+      "properties": {
+        "mentions": 2,
+        "meetings": [
+          "meeting-023",
+          "meeting-026"
+        ],
+        "context": "collaboration is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-024",
+      "type": "meeting",
+      "label": "Chris Catch Up",
+      "properties": {
+        "title": "Chris Catch Up",
+        "date": "2026-03-24",
+        "processing_time": 14.976749542,
+        "attendees": [],
+        "topics": [
+          "Odoo Transition",
+          "Fleet Management",
+          "Procurement Logistics",
+          "Task Management",
+          "Shipping Insurance",
+          "Key Control"
+        ],
+        "decisions": [
+          "Send updated contact details for PNG consignments and initiate email follow-ups with Grant and Eddie, copying relevant parties (05:00)",
+          "Clean up and audit fleet toll tag assignments and usage to eliminate incorrect charges and track user allocations (12:00)",
+          "Research and propose options for a lockable key box and implement a key tracking log system for fleet management (15:00)",
+          "Use Odoo task manager for all ongoing and upcoming logistics and procurement tasks, maintaining active updates and transparency (22:00)"
+        ],
+        "summary": "- **Odoo Transition Timeline:** Prepared for July 1st transition; stocktake scheduled for next Tuesday"
+      }
+    },
+    {
+      "id": "person-chris",
+      "type": "person",
+      "label": "Chris",
+      "properties": {
+        "mentions": 1,
+        "meetings": [],
+        "role": "Team Member",
+        "expertise": [],
+        "collaborators": []
+      }
+    },
+    {
+      "id": "project-35ff5d63",
+      "type": "project",
+      "label": "Odoo Transition",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-024"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Odoo Transition",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-3d995bb2",
+      "type": "project",
+      "label": "Fleet Data Integration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-024"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Fleet Data Integration",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-0a8f125a",
+      "type": "concept",
+      "label": "Odoo",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-024"
+        ],
+        "context": "Odoo is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-9b7817dc",
+      "type": "concept",
+      "label": "logistics",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-024"
+        ],
+        "context": "logistics is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-e7c08541",
+      "type": "concept",
+      "label": "task management",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-024"
+        ],
+        "context": "task management is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-f49dae71",
+      "type": "concept",
+      "label": "fleet integration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-024"
+        ],
+        "context": "fleet integration is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-b4628fe4",
+      "type": "concept",
+      "label": "insurance",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-024"
+        ],
+        "context": "insurance is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-025",
+      "type": "meeting",
+      "label": "DUCK CHAT",
+      "properties": {
+        "title": "DUCK CHAT",
+        "date": "2026-03-24",
+        "processing_time": 20.219109625,
+        "attendees": [],
+        "topics": [
+          "peristaltic pump",
+          "dosing tubing",
+          "lance retrofit",
+          "Santoprene tubing",
+          "Townsville maintenance",
+          "chemical compatibility"
+        ],
+        "decisions": [
+          "Call Richard to confirm recommended tubing material compatible with neutral detergent and get technical guidance (28:03)",
+          "Coordinate with Scott and Russ to implement and monitor new lance and tubing on a high-cycle machine at Townsville, then evaluate performance over the coming weeks (38:49)",
+          "Confirm availability of Ken lance in workshop and prepare to cut down the lance to correct size for Townsville testing (27:24)",
+          "Collaborate with Russ to explain and implement lance modifications in Townsville (27:41)"
+        ],
+        "summary": "- **Dosing Equipment Issues:** All dosing machines at Townsville face maintenance problems, risking accuracy and uptime"
+      }
+    },
+    {
+      "id": "project-434668b4",
+      "type": "project",
+      "label": "Tubing material testing",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-025"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Tubing material testing",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-f5431f78",
+      "type": "project",
+      "label": "In-house parts assembly",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-025"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated In-house parts assembly",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-17ab37b9",
+      "type": "project",
+      "label": "Proactive quoting strategy",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-025"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Proactive quoting strategy",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-429f9684",
+      "type": "project",
+      "label": "Lance recovery/tracking",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-025"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Lance recovery/tracking",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-fcedbf7e",
+      "type": "concept",
+      "label": " Maintenance",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-025"
+        ],
+        "context": " Maintenance is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-5d6db9a1",
+      "type": "concept",
+      "label": "Accuracy",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-025"
+        ],
+        "context": "Accuracy is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-997f5979",
+      "type": "concept",
+      "label": "Uptime",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-025"
+        ],
+        "context": "Uptime is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-931e138e",
+      "type": "concept",
+      "label": "Longevity",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-025"
+        ],
+        "context": "Longevity is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-026",
+      "type": "meeting",
+      "label": "Travel and Team Building Coordination",
+      "properties": {
+        "title": "Travel and Team Building Coordination",
+        "date": "2026-03-25",
+        "processing_time": 20.182128208,
+        "attendees": [],
+        "topics": [
+          "flight itinerary",
+          "D\u00fcsseldorf show",
+          "train travel",
+          "Helsinki visit",
+          "social networking",
+          "travel dates update"
+        ],
+        "decisions": [
+          "Draft a quick email with updated flight and travel details for the coordinator (02:25)",
+          "Send finalized travel dates and changes to the coordinator for flight adjustments (05:05)",
+          "Confirm and update own travel from D\u00fcsseldorf to Copenhagen including train details (02:56)",
+          "Organize follow-up meeting at the pub across the road on Friday (04:54)"
+        ],
+        "summary": "- **Travel Itinerary Finalized:** Departing for D\u00fcsseldorf on March 16, attending the show on the 17th and 18th, returning March 19.\n\n- **Copenhagen to Helsinki Plans:** Staying overnight in Copenh..."
+      }
+    },
+    {
+      "id": "person-red",
+      "type": "person",
+      "label": "Red",
+      "properties": {
+        "mentions": 1,
+        "meetings": [],
+        "role": "Team Member",
+        "expertise": [],
+        "collaborators": []
+      }
+    },
+    {
+      "id": "project-514f1cf1",
+      "type": "project",
+      "label": "D\u00fcsseldorf trip",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-026"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated D\u00fcsseldorf trip",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-99cd7c63",
+      "type": "project",
+      "label": "Copenhagen-Helsinki trip",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-026"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Copenhagen-Helsinki trip",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-b033ecf0",
+      "type": "project",
+      "label": "Bindara collaboration",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-026"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Bindara collaboration",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-1c5a2ea9",
+      "type": "concept",
+      "label": "Travel coordination",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-026"
+        ],
+        "context": "Travel coordination is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-20017638",
+      "type": "concept",
+      "label": "Networking",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-026"
+        ],
+        "context": "Networking is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-d31ff8ef",
+      "type": "concept",
+      "label": "Team building",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-026"
+        ],
+        "context": "Team building is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-027",
+      "type": "meeting",
+      "label": "Service Module Management and Strategy Meeting",
+      "properties": {
+        "title": "Service Module Management and Strategy Meeting",
+        "date": "2026-03-25",
+        "processing_time": 20.55258625,
+        "attendees": [],
+        "topics": [
+          "Service module",
+          "endoscopy products",
+          "brochure",
+          "TPS pump",
+          "leak control",
+          "process separation"
+        ],
+        "decisions": [
+          "Arrange and conduct a quick call with Joel and Speaker 2 to finalize next steps for the service module (01:11)",
+          "Clearly communicate to Joel that restarting the service module is not an option to ensure progress (03:06)",
+          "Share the brochure/catalog of endoscopy products with Speaker 2 and use it during the content meeting with Matt Ives (03:35)",
+          "Organize and message Speaker 2 and Joel to coordinate the catch-up call times (07:50)"
+        ],
+        "summary": "- **Team Collaboration:** Clear steps were set to resolve communication issues and prevent project restarts"
+      }
+    },
+    {
+      "id": "meeting-028",
+      "type": "meeting",
+      "label": "Sales Meeting",
+      "properties": {
+        "title": "Sales Meeting",
+        "date": "2026-03-15",
+        "processing_time": 31.494402917,
+        "attendees": [
+          "person-tegan"
+        ],
+        "topics": [
+          "IQ3 Townsville",
+          "Rocky CSSD",
+          "detergent supply",
+          "sanitizer dosing",
+          "Multimax procurement",
+          "QEBc tender"
+        ],
+        "decisions": [
+          "Follow up with Bedman regarding timeline for IQ3 for Townsville and detergent supply (06:40)",
+          "Get quotes from electrician and plumber for valve compliance checks at Rocky CSSD (08:28)",
+          "Identify what is needed to get the fourth trolley back in circulation at the plant room (08:28)",
+          "Pursue more info and respond to builder regarding water class project pricing options (11:04)"
+        ],
+        "summary": "- **Capital Project Updates:** Multiple projects advancing; Rocky CSD setup close to completion, with hospital compliance efforts ongoing.\n\n- **Trolley and Equipment Status:** Four trolleys in vary..."
+      }
+    },
+    {
+      "id": "project-bb1074c2",
+      "type": "project",
+      "label": "Prospine racks",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-028"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Prospine racks",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-4cf824b0",
+      "type": "project",
+      "label": "Emory station",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-028"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Emory station",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-d34d5ee6",
+      "type": "project",
+      "label": "Vincent project",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-028"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated Vincent project",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-bd7b1f43",
+      "type": "project",
+      "label": "TPS Pump",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-028"
+        ],
+        "status": "Active",
+        "owner": "person-tegan",
+        "milestones": [
+          "Initiated TPS Pump",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-a70f6b59",
+      "type": "concept",
+      "label": "lead time",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-028"
+        ],
+        "context": "lead time is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-37ad1542",
+      "type": "concept",
+      "label": "bid strategy",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-028"
+        ],
+        "context": "bid strategy is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "concept-9368b671",
+      "type": "concept",
+      "label": "operational stability",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-028"
+        ],
+        "context": "operational stability is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": [
+          "person-tegan"
+        ]
+      }
+    },
+    {
+      "id": "meeting-029",
+      "type": "meeting",
+      "label": "Kick Off Planning",
+      "properties": {
+        "title": "Kick Off Planning",
+        "date": "2026-04-02",
+        "processing_time": 16.605143042,
+        "attendees": [],
+        "topics": [
+          "Endoscopy",
+          "product packaging",
+          "website launch",
+          "content management",
+          "brand transition",
+          "service offerings"
+        ],
+        "decisions": [
+          "Send the refined product and sector flow document along with brand guidelines and images to support website content preparation (03:45)",
+          "Provide competitor product information to benchmark and improve website content (17:41)",
+          "Upload all existing collateral and product-related materials to the shared Dropbox folder to streamline content management by the design team (18:36)",
+          "Loop in Tegan to assist with product content tagging, uploading, and categorization to mitigate project risks (12:27)"
+        ],
+        "summary": "- **Endoscopy Product Launch:** New product line aims for market presence by May 15, focusing on bundled sales rather than single items"
+      }
+    },
+    {
+      "id": "project-17aac994",
+      "type": "project",
+      "label": "Endoscopy product launch",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-029"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Endoscopy product launch",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-0d532277",
+      "type": "project",
+      "label": "Brand transition (MA Technology)",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-029"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Brand transition (MA Technology)",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "project-3651e292",
+      "type": "project",
+      "label": "Website restructuring",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-029"
+        ],
+        "status": "Active",
+        "milestones": [
+          "Initiated Website restructuring",
+          "Planning phase complete",
+          "Implementation in progress"
+        ]
+      }
+    },
+    {
+      "id": "concept-6dcd9e45",
+      "type": "concept",
+      "label": " Market disruption",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-029"
+        ],
+        "context": " Market disruption is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-fc13c592",
+      "type": "concept",
+      "label": "bundled sales",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-029"
+        ],
+        "context": "bundled sales is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-546496b4",
+      "type": "concept",
+      "label": "brand transition",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-029"
+        ],
+        "context": "brand transition is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-2a6f05bb",
+      "type": "concept",
+      "label": "customer journey",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-029"
+        ],
+        "context": "customer journey is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "concept-3c2e1969",
+      "type": "concept",
+      "label": "service-driven revenue",
+      "properties": {
+        "mentions": 1,
+        "meetings": [
+          "meeting-029"
+        ],
+        "context": "service-driven revenue is a key topic discussed in Macemark's operations and strategic planning.",
+        "trend": "stable",
+        "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-030",
+      "type": "meeting",
+      "label": "Unknown",
+      "properties": {
+        "title": "Unknown",
+        "date": "Unknown",
+        "processing_time": 9.079817542
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "meeting-001",
+      "target": "project-41d4639d",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-001",
+      "target": "concept-e04183cf",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-001",
+      "target": "concept-49284487",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-001",
+      "target": "concept-8c4e3685",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-001",
+      "target": "concept-8abd3977",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-001",
+      "target": "concept-9f91bbce",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-002",
+      "target": "project-bd7394f9",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-002",
+      "target": "concept-e69b1982",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-002",
+      "target": "concept-e91b9007",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-002",
+      "target": "concept-a617908b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-002",
+      "target": "concept-2c64205d",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-002",
+      "target": "concept-e9aecb86",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-003",
+      "target": "project-1f217178",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-003",
+      "target": "project-193eb7c0",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-003",
+      "target": "project-f11e75c8",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-003",
+      "target": "concept-86b0142f",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-003",
+      "target": "concept-e848c829",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-003",
+      "target": "concept-198c9a01",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-003",
+      "target": "concept-76ea86f9",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-003",
+      "target": "concept-4e4ff703",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-004",
+      "target": "project-db49fd6d",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-004",
+      "target": "project-7bf32f10",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-004",
+      "target": "concept-7aff959f",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-004",
+      "target": "concept-854ebf67",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-004",
+      "target": "concept-c2f1fdf0",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-004",
+      "target": "concept-6b8d16dd",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-004",
+      "target": "concept-26580239",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-005",
+      "target": "project-ca9add29",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-005",
+      "target": "project-062ca8b1",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-005",
+      "target": "project-a097095e",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-005",
+      "target": "project-600d1cbf",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-005",
+      "target": "concept-94bb37dc",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-005",
+      "target": "concept-ee6b8f14",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-005",
+      "target": "concept-464fe4ea",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-005",
+      "target": "concept-57cb773a",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-005",
+      "target": "concept-e09245ef",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-006",
+      "target": "project-717772ef",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-006",
+      "target": "project-b5194123",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-006",
+      "target": "project-35d121e9",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-006",
+      "target": "concept-717772ef",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-006",
+      "target": "concept-af229f93",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-006",
+      "target": "concept-fe56ff7b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-006",
+      "target": "concept-5aa54025",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-007",
+      "target": "person-tegan",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-007",
+      "target": "project-ed827f09",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-007",
+      "target": "concept-e97b0635",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-007",
+      "target": "concept-6c08dade",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-007",
+      "target": "concept-2bfc9ccc",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-007",
+      "target": "concept-5cbe3958",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-007",
+      "target": "concept-ff5ac775",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-008",
+      "target": "project-57e7efe6",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-008",
+      "target": "project-3088959a",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-008",
+      "target": "project-a3b9c8f5",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-008",
+      "target": "project-281a7b6c",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-008",
+      "target": "concept-4ceb26f0",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-008",
+      "target": "concept-e4262a52",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-008",
+      "target": "concept-f9e1b0a1",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-008",
+      "target": "concept-6f422f52",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-008",
+      "target": "concept-6b94d94e",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-009",
+      "target": "person-gene",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-009",
+      "target": "project-3446fdbb",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-009",
+      "target": "project-ffa7ab02",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-009",
+      "target": "concept-ca89f8aa",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-009",
+      "target": "concept-aaefc213",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-009",
+      "target": "concept-858dd92d",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-009",
+      "target": "concept-87a8ac23",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-009",
+      "target": "concept-4d5d1c33",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-010",
+      "target": "project-a3bde422",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-010",
+      "target": "concept-7d774578",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-010",
+      "target": "concept-f9665aa8",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-010",
+      "target": "concept-a1ddad38",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-010",
+      "target": "concept-2bfc9ccc",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-010",
+      "target": "concept-fa351e5e",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "project-3f815dfa",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "project-1c79a1e0",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "project-8da307d3",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "project-b25ca715",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "project-bf533c8d",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "concept-74926f5f",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "concept-2c1ee385",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "concept-040707ec",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "concept-c7aae676",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-011",
+      "target": "concept-0919366d",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-012",
+      "target": "project-64356214",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-012",
+      "target": "project-d4ce909e",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-012",
+      "target": "project-4498606b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-012",
+      "target": "project-985f92ee",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-012",
+      "target": "concept-ee839122",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-012",
+      "target": "concept-3190dbf1",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-012",
+      "target": "concept-d545a89b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-012",
+      "target": "concept-449fddba",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-012",
+      "target": "concept-e618c99c",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-013",
+      "target": "project-a49bd5ab",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-013",
+      "target": "project-8b4f286a",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-013",
+      "target": "project-c58dcc4f",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-013",
+      "target": "concept-205d64ff",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-013",
+      "target": "concept-e618c99c",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-013",
+      "target": "concept-6a02ad2d",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-013",
+      "target": "concept-5f099425",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-013",
+      "target": "concept-5aa54025",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-014",
+      "target": "project-a6c9ea54",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-014",
+      "target": "project-c3accd12",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-014",
+      "target": "project-d5877924",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-014",
+      "target": "project-8464d3fa",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-014",
+      "target": "concept-809ff284",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-014",
+      "target": "concept-b59fcf58",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-014",
+      "target": "concept-ae2b1fca",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-014",
+      "target": "concept-c185ddac",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-014",
+      "target": "concept-6b8d16dd",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-015",
+      "target": "project-07296a13",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-015",
+      "target": "concept-e9aecb86",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-015",
+      "target": "concept-f1fd1913",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-015",
+      "target": "concept-719be0c4",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-015",
+      "target": "concept-57cb773a",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-015",
+      "target": "concept-da37a04e",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-016",
+      "target": "person-dawit",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-016",
+      "target": "project-0b0f5f30",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-016",
+      "target": "concept-7d774578",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-016",
+      "target": "concept-205d64ff",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-016",
+      "target": "concept-776ea3bf",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-016",
+      "target": "concept-50a04ed5",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-016",
+      "target": "concept-c576a841",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-017",
+      "target": "project-24454ce4",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-017",
+      "target": "project-b0b3ea57",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-017",
+      "target": "project-f9e0a5e1",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-017",
+      "target": "project-6d31e25f",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-017",
+      "target": "concept-dffbb273",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-017",
+      "target": "concept-e9aecb86",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-017",
+      "target": "concept-4d10ee2b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-017",
+      "target": "concept-eca1f234",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-017",
+      "target": "concept-af4e4e4c",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "project-329c8aaa",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "project-f65759ad",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "project-99e9b198",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "project-e561a384",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "project-8189ff20",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "concept-8c4d34f8",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "concept-c0dbe0eb",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "concept-498f88ef",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "concept-34b08b70",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-018",
+      "target": "concept-85544770",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-019",
+      "target": "project-da7e2de5",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-019",
+      "target": "project-ebadd74e",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-019",
+      "target": "project-d9d90207",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-019",
+      "target": "project-3e661f83",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-019",
+      "target": "concept-c185ddac",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-019",
+      "target": "concept-da6b04c7",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-019",
+      "target": "concept-70f9ab7a",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-019",
+      "target": "concept-89551f1d",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-019",
+      "target": "concept-b18e4815",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-020",
+      "target": "project-6f886118",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-020",
+      "target": "concept-a164ed9b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-020",
+      "target": "concept-aeb79288",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-020",
+      "target": "concept-1da172bd",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-020",
+      "target": "concept-b6174370",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-020",
+      "target": "concept-ec3fd368",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-021",
+      "target": "project-71b77a1b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-021",
+      "target": "concept-95282bb3",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-021",
+      "target": "concept-9375cba6",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-021",
+      "target": "concept-a617908b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-021",
+      "target": "concept-d545a89b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-021",
+      "target": "concept-55876228",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-023",
+      "target": "project-386304e2",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-023",
+      "target": "project-145a21b0",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-023",
+      "target": "concept-464fe4ea",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-023",
+      "target": "concept-ee6b8f14",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-023",
+      "target": "concept-d545a89b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-023",
+      "target": "concept-a2bf5299",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-023",
+      "target": "concept-11a7a5d5",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-024",
+      "target": "person-chris",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-024",
+      "target": "project-35ff5d63",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-024",
+      "target": "project-3d995bb2",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-024",
+      "target": "concept-0a8f125a",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-024",
+      "target": "concept-9b7817dc",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-024",
+      "target": "concept-e7c08541",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-024",
+      "target": "concept-f49dae71",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-024",
+      "target": "concept-b4628fe4",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-025",
+      "target": "project-434668b4",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-025",
+      "target": "project-f5431f78",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-025",
+      "target": "project-17ab37b9",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-025",
+      "target": "project-429f9684",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-025",
+      "target": "concept-fcedbf7e",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-025",
+      "target": "concept-5d6db9a1",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-025",
+      "target": "concept-997f5979",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-025",
+      "target": "concept-931e138e",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-025",
+      "target": "concept-719be0c4",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-026",
+      "target": "person-red",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-026",
+      "target": "project-514f1cf1",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-026",
+      "target": "project-99cd7c63",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-026",
+      "target": "project-b033ecf0",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-026",
+      "target": "concept-1c5a2ea9",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-026",
+      "target": "concept-20017638",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-026",
+      "target": "concept-d31ff8ef",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-026",
+      "target": "concept-11a7a5d5",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-028",
+      "target": "project-bb1074c2",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-028",
+      "target": "project-4cf824b0",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-028",
+      "target": "project-d34d5ee6",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-028",
+      "target": "project-bd7b1f43",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-028",
+      "target": "concept-4d10ee2b",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-028",
+      "target": "concept-a70f6b59",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-028",
+      "target": "concept-4e4ff703",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-028",
+      "target": "concept-37ad1542",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-028",
+      "target": "concept-9368b671",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-029",
+      "target": "project-17aac994",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-029",
+      "target": "project-0d532277",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-029",
+      "target": "project-3651e292",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-029",
+      "target": "concept-6dcd9e45",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-029",
+      "target": "concept-fc13c592",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-029",
+      "target": "concept-546496b4",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-029",
+      "target": "concept-2a6f05bb",
+      "type": "MENTIONS",
+      "weight": 1
+    },
+    {
+      "source": "meeting-029",
+      "target": "concept-3c2e1969",
+      "type": "MENTIONS",
+      "weight": 1
+    }
+  ],
+  "metadata": {
+    "generated": "2026-04-11T20:57:00Z",
+    "source": "gemma-ollama-extractions",
+    "node_count": 222,
+    "edge_count": 211,
+    "meeting_count": 30,
+    "date_range": {
+      "earliest": "2026-01-13",
+      "latest": "Unknown"
+    }
+  }
+}

@@ -515,7 +515,7 @@ window.addEventListener('DOMContentLoaded', function() {
     <div class="sh"><span class="sht">Business Intelligence Knowledge Graph</span></div>
     <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;height:calc(100vh - 180px);min-height:600px;position:relative;">
       <iframe 
-        src="./graph/" 
+        src="https://cobalt-epoch-6m7r.here.now/" 
         style="width:100%;height:100%;border:none;display:block;"
         title="Macemark Knowledge Graph"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
