@@ -214,6 +214,8 @@ body.tv .main{padding:1rem;max-width:100%;}
 .ccs{font-size:11px;color:var(--text-dim);margin-top:3px;}
 .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem;}
 @media(max-width:900px){.cgrid{grid-template-columns:1fr;}}
+#tab-graph iframe{min-height:500px;}
+@media(max-width:900px){#tab-graph iframe{height:70vh !important;min-height:400px;}#tab-graph .sh{flex-direction:column;align-items:flex-start;gap:0.5rem;}}
 .bkd{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;}
 .bkh{padding:10px 14px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-dim);}
 .mr{padding:9px 14px;display:flex;align-items:center;gap:11px;border-bottom:1px solid var(--border);}
@@ -293,11 +295,11 @@ body.tv .main{padding:1rem;max-width:100%;}
 }
 </style>
 
-<!-- OpenClaw Live Data (Generated: 2026-04-12T21:30:08.672Z) -->
+<!-- OpenClaw Live Data (Generated: 2026-04-12T21:45:23.239Z) -->
 <script>
 window.OPENCLAW_LIVE_DATA = {
-  "timestamp": 1776029408672,
-  "lastUpdated": "2026-04-12T21:30:08.672Z",
+  "timestamp": 1776030323239,
+  "lastUpdated": "2026-04-12T21:45:23.239Z",
   "agents": {
     "main": {
       "id": "main",
@@ -437,6 +439,7 @@ window.addEventListener('DOMContentLoaded', function() {
     <button class="nt" data-tab="tasks">◈ Tasks</button>
     <button class="nt" data-tab="costs">◎ Costs</button>
     <button class="nt" data-tab="intel">◉ Intel</button>
+    <button class="nt" data-tab="graph">◇ Graph</button>
   </nav>
   <div class="hright">
     <input type="text" class="gi" id="gwUrl" placeholder="ws://127.0.0.1:18789" value="ws://127.0.0.1:18789">
@@ -505,6 +508,32 @@ window.addEventListener('DOMContentLoaded', function() {
       <div class="ic">
         <div class="ich"><span class="ict">⬡ Agent Activity Feed</span></div>
         <div class="icb"><div id="feed-list"><div class="es"><div class="esi">⬡</div><div class="est">Live when gateway connected</div></div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="tp" id="tab-graph">
+    <div class="sh"><span class="sht">Business Intelligence Knowledge Graph</span></div>
+    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;height:calc(100vh - 180px);min-height:600px;position:relative;">
+      <iframe 
+        src="https://cobalt-epoch-6m7r.here.now/" 
+        style="width:100%;height:100%;border:none;display:block;"
+        title="Macemark Knowledge Graph"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+    <div style="margin-top:1rem;padding:1rem;background:var(--bg-panel);border:1px solid var(--border);border-radius:var(--r);font-family:var(--mono);font-size:10px;color:var(--text-secondary);">
+      <div style="margin-bottom:0.5rem;color:var(--ice-dim);font-weight:700;letter-spacing:0.1em;">GRAPH CONTROLS</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem;">
+        <div><span style="color:var(--accent);">◈</span> Concepts Only — Hide all except concept nodes</div>
+        <div><span style="color:var(--accent);">↺</span> Reset View — Return to default camera position</div>
+        <div><span style="color:var(--accent);">◎</span> Focus Selected — Zoom to selected node</div>
+        <div><span style="color:var(--accent);">Click node</span> → View dossier panel with metadata</div>
+        <div><span style="color:var(--accent);">Scroll</span> → Zoom in/out</div>
+        <div><span style="color:var(--accent);">Drag</span> → Rotate graph</div>
+      </div>
+      <div style="margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border);color:var(--text-dim);font-size:9px;">
+        <strong>Business Intelligence:</strong> Larger concept nodes = discussed in more meetings (higher strategic importance). Click ◈ to see your company's "idea landscape" at a glance.
       </div>
     </div>
   </div>
