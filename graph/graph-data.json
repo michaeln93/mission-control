@@ -824,7 +824,7 @@
           "Send an email detailing major showstopper issues or gaps noticed in the current Odoo modules for review and feedback on integration feasibility and customization options (17:05)",
           "Prepare and send pricing and service proposal for prepaid hour packages supporting training, configuration, and upgrading needs (10:40)",
           "Review and respond to emailed showstopper issues with technical feasibility and possible customizations (17:05)",
-          "Provide advice and assistance for training Sess\u2019s in-house developer, helping streamline Odoo adoption and upgrades (10:45)"
+          "Provide advice and assistance for training Sess’s in-house developer, helping streamline Odoo adoption and upgrades (10:45)"
         ],
         "summary": "- **Maintenance Workflow Challenges:** 18-20 technicians manage 3,000 assets; consolidating workflows is critical before July 1st deadline"
       }
@@ -1858,8 +1858,8 @@
         ],
         "decisions": [
           "Finalize distributor agreement with PFE Medical in Melbourne meeting scheduled week of Jan 26 (01:30)",
-          "Meet with Luke to discuss Whiteley\u2019s contract renegotiation and regional sales strategy (01:30)",
-          "Discuss John\u2019s retirement and electrical license status to plan transition (03:30)",
+          "Meet with Luke to discuss Whiteley’s contract renegotiation and regional sales strategy (01:30)",
+          "Discuss John’s retirement and electrical license status to plan transition (03:30)",
           "Conduct face-to-face conversation with Simon about RA specialist role and long service leave planning (04:51)"
         ],
         "summary": "- **Team Stability:** Improved customer communication and reduced complaints, yet parts delays remain a critical issue"
@@ -2679,7 +2679,7 @@
         "decisions": [
           "Send follow-up email to Michael with demo availability options for next week (18:56)",
           "Explore Navan platform independently and test functionality (18:08)",
-          "Respond to Stefan\u2019s email regarding demo scheduling after evaluating platform (18:56)"
+          "Respond to Stefan’s email regarding demo scheduling after evaluating platform (18:56)"
         ],
         "summary": "- **Current Provider Issues:** Discontent with Corporate Traveler due to high costs and poor usability, especially for older users.\n\n- **Annual Travel Spend:** Estimated over $250,000, with an urge..."
       }
@@ -2920,7 +2920,7 @@
           "spray arm gasket wear"
         ],
         "decisions": [
-          "Forward Aiden\u2019s W702 board communication error details to Timmy for investigation (08:47)",
+          "Forward Aiden’s W702 board communication error details to Timmy for investigation (08:47)",
           "Schedule replacement of failed RAID HDD and consider upgrading to SSDs for improved reliability (16:06)",
           "Upload pass through router work instruction (version one) to the technical team forum under HPT service documentation shared files for team review (22:31)",
           "Communicate with Med Service regarding mainboard revision issues and the spray arm gasket wear concerns to explore solutions (25:14)"
@@ -3294,7 +3294,7 @@
         "attendees": [],
         "topics": [
           "flight itinerary",
-          "D\u00fcsseldorf show",
+          "Düsseldorf show",
           "train travel",
           "Helsinki visit",
           "social networking",
@@ -3303,10 +3303,10 @@
         "decisions": [
           "Draft a quick email with updated flight and travel details for the coordinator (02:25)",
           "Send finalized travel dates and changes to the coordinator for flight adjustments (05:05)",
-          "Confirm and update own travel from D\u00fcsseldorf to Copenhagen including train details (02:56)",
+          "Confirm and update own travel from Düsseldorf to Copenhagen including train details (02:56)",
           "Organize follow-up meeting at the pub across the road on Friday (04:54)"
         ],
-        "summary": "- **Travel Itinerary Finalized:** Departing for D\u00fcsseldorf on March 16, attending the show on the 17th and 18th, returning March 19.\n\n- **Copenhagen to Helsinki Plans:** Staying overnight in Copenh..."
+        "summary": "- **Travel Itinerary Finalized:** Departing for Düsseldorf on March 16, attending the show on the 17th and 18th, returning March 19.\n\n- **Copenhagen to Helsinki Plans:** Staying overnight in Copenh..."
       }
     },
     {
@@ -3324,7 +3324,7 @@
     {
       "id": "project-514f1cf1",
       "type": "project",
-      "label": "D\u00fcsseldorf trip",
+      "label": "Düsseldorf trip",
       "properties": {
         "mentions": 1,
         "meetings": [
@@ -3332,7 +3332,7 @@
         ],
         "status": "Active",
         "milestones": [
-          "Initiated D\u00fcsseldorf trip",
+          "Initiated Düsseldorf trip",
           "Planning phase complete",
           "Implementation in progress"
         ]
@@ -3743,6 +3743,4663 @@
         "title": "Unknown",
         "date": "Unknown",
         "processing_time": 9.079817542
+      }
+    },
+    {
+      "id": "meeting-100",
+      "type": "meeting",
+      "label": "04-06 Pilot Program for Dual-Channel AI Data Ingestion Using Fireflies and Plored",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-06 Pilot Program for Dual-Channel AI Data Ingestion Using Fireflies and Plored",
+        "date": "2026-04-06",
+        "processing_time": 38.601342625,
+        "attendees": [],
+        "topics": [
+          "Dual-channel AI data ingestion pilot",
+          "Maxwell AI training",
+          "Fireflies and Plored integration\n3. **Key Decisions**:",
+          "Initiate a dual-channel data ingestion pipeline for the Maxwell AI assistant.",
+          "Maxwell",
+          "Fireflies",
+          "Plored",
+          "AI Data Ingestion",
+          "Pilot Program",
+          "Automation"
+        ],
+        "decisions": [
+          "* Initiate a dual-channel data ingestion pipeline for the Maxwell AI assistant.",
+          "Implement a manual email-based workaround for Plored data due to lack of a direct API.\n4. **Action Items**:",
+          "Implement manual extraction process by sending Plored meeting data to \"agent mail.\"\n5. **Keywords**: Plaud-AutoFlow, Maxwell, Fireflies, Plored, AI Data Ingestion, Pilot Program, Automation"
+        ],
+        "keywords": [
+          "Plaud-AutoFlow",
+          "Maxwell",
+          "Fireflies",
+          "Plored",
+          "AI Data Ingestion",
+          "Pilot Program",
+          "Automation"
+        ],
+        "summary": "Meeting on 2026-04-06 covering Dual-channel AI data ingestion pilot, Maxwell AI training, Fireflies and Plored integration\n3. **Key Decisions**:..."
+      }
+    },
+    {
+      "id": "meeting-101",
+      "type": "meeting",
+      "label": "04-08 Resolving Scheduling Conflict and Stakeholder Resistance for a Customer Delivery Event",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-08 Resolving Scheduling Conflict and Stakeholder Resistance for a Customer Delivery Event",
+        "date": "2026-04-08",
+        "processing_time": 32.978247666,
+        "attendees": [
+          "Captain Damage",
+          "Power Plant Installation",
+          "2:00 PM)\n5. **Keywords:** Scheduling conflict",
+          "Stakeholder resistance",
+          "Customer delivery",
+          "Logistics",
+          "Power plant",
+          "Operational misalignment"
+        ],
+        "topics": [
+          "Thursday Customer Delivery Event",
+          "Power Plant Installation",
+          "Scheduling and Logistics Resolution\n3. **Key Decisions:",
+          "Resolve logistics/overnight stay conflict with Captain Damage (Speaker)",
+          "Install power plant (Associate",
+          "2:00 PM)\n5. **Keywords:** Scheduling conflict",
+          "Stakeholder resistance",
+          "Customer delivery",
+          "Logistics",
+          "Power plant",
+          "Operational misalignment"
+        ],
+        "decisions": [
+          "* A final decision regarding the Thursday delivery event must be reached by the end of this afternoon.\n4. **Action Items:**",
+          "Resolve logistics/overnight stay conflict with Captain Damage (Speaker)",
+          "Install power plant (Associate, 2:00 PM)\n5. **Keywords:** Scheduling conflict, Stakeholder resistance, Customer delivery, Logistics, Power plant, Operational misalignment"
+        ],
+        "keywords": [
+          "Scheduling conflict",
+          "Stakeholder resistance",
+          "Customer delivery",
+          "Logistics",
+          "Power plant",
+          "Operational misalignment"
+        ],
+        "summary": "Meeting on 2026-04-08 covering Thursday Customer Delivery Event, Power Plant Installation, Scheduling and Logistics Resolution\n3. **Key Decisions:..."
+      }
+    },
+    {
+      "id": "meeting-102",
+      "type": "meeting",
+      "label": "04-08 Internal Operations and Project Review",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-08 Internal Operations and Project Review",
+        "date": "2026-04-08",
+        "processing_time": 25.292983083,
+        "attendees": [
+          "Richard",
+          "Software development roadblocks",
+          "AI automation",
+          "Operational logistics",
+          "Gold Coast",
+          "Chemistry products",
+          "AI automation",
+          "Pricing deal",
+          "Customer onboarding"
+        ],
+        "topics": [
+          "Partner relations management",
+          "Software development roadblocks",
+          "AI automation",
+          "Operational logistics",
+          "Quoting and financial reporting\n3. **Key Decisions:",
+          "Speaker 1: Invite Richard to the upcoming customer meeting.\n5. **Keywords:** Partner relations",
+          "Gold Coast",
+          "Chemistry products",
+          "AI automation",
+          "Pricing deal",
+          "Customer onboarding"
+        ],
+        "decisions": [
+          "* Ensure Richard is included in future customer onboarding and sales opportunities to address concerns regarding his chemistry products.",
+          "Align on a strategy to appease the partner following the Gold Coast pricing deal.\n4. **Action Items:**",
+          "Speaker 1: Invite Richard to the upcoming customer meeting.\n5. **Keywords:** Partner relations, Gold Coast, Chemistry products, AI automation, Pricing deal, Customer onboarding"
+        ],
+        "keywords": [
+          "Partner relations",
+          "Gold Coast",
+          "Chemistry products",
+          "AI automation",
+          "Pricing deal",
+          "Customer onboarding"
+        ],
+        "summary": "Meeting on 2026-04-08 covering Partner relations management, Software development roadblocks, AI automation..."
+      }
+    },
+    {
+      "id": "meeting-103",
+      "type": "meeting",
+      "label": "04-08 Asset-First Service Operations Prototype: From Asset Configuration to Contracts, Job Cadence, ",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-08 Asset-First Service Operations Prototype: From Asset Configuration to Contracts, Job Cadence, and Odoo Invoicing Handoff",
+        "date": "2026-04-08",
+        "processing_time": 24.607189167,
+        "attendees": [
+          "Odoo Integration",
+          "parts usage",
+          "Odoo",
+          "Prototype",
+          "Service Operations",
+          "Maintenance Schedule",
+          "Invoicing",
+          "Living Spec"
+        ],
+        "topics": [
+          "Asset-First Service Operations Prototype",
+          "Odoo Integration",
+          "Asset-to-Contract Workflow\n3. **Key Decisions**:",
+          "Adopt an \"asset-first\" operating model where assets drive maintenance schedules",
+          "parts usage",
+          "and contract assembly.",
+          "Claude: Build a high-fidelity sample/prototype of the asset-first flow.",
+          "Dewitt: Re-implement the validated prototype logic within Odoo.\n5. **Keywords**: Asset-first",
+          "Odoo",
+          "Prototype",
+          "Service Operations",
+          "Maintenance Schedule",
+          "Invoicing",
+          "Living Spec"
+        ],
+        "decisions": [
+          "* Use a high-fidelity prototype (built by Claude) as a \"living spec\" to bridge the communication gap between Service and Development.",
+          "Adopt an \"asset-first\" operating model where assets drive maintenance schedules, parts usage, and contract assembly.",
+          "Standardize the flow from job completion (service forms/parts) to automated Odoo inventory and invoicing.\n4. **Action Items**:",
+          "Claude: Build a high-fidelity sample/prototype of the asset-first flow.",
+          "Dewitt: Re-implement the validated prototype logic within Odoo.\n5. **Keywords**: Asset-first, Odoo, Prototype, Service Operations, Maintenance Schedule, Invoicing, Living Spec"
+        ],
+        "keywords": [
+          "Asset-first",
+          "Odoo",
+          "Prototype",
+          "Service Operations",
+          "Maintenance Schedule",
+          "Invoicing",
+          "Living Spec"
+        ],
+        "summary": "Meeting on 2026-04-08 covering Asset-First Service Operations Prototype, Odoo Integration, Asset-to-Contract Workflow\n3. **Key Decisions**:..."
+      }
+    },
+    {
+      "id": "meeting-104",
+      "type": "meeting",
+      "label": "04-07 AI-Driven Transcription and Workflow Automation for Operational Efficiency",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-07 AI-Driven Transcription and Workflow Automation for Operational Efficiency",
+        "date": "2026-04-08",
+        "processing_time": 28.60322025,
+        "attendees": [],
+        "topics": [
+          "Plaud-AutoFlow pilot",
+          "AI-driven transcription",
+          "workflow automation\n3. **Key Decisions**:",
+          "Launching a pilot program for AI-driven transcription and automation.",
+          "Implementing a $400 flat-fee model for unlimited usage to remove friction.\n4. **Action Items**:",
+          "workflow automation",
+          "operational efficiency",
+          "unstructured audio",
+          "actionable intelligence",
+          "automation"
+        ],
+        "decisions": [
+          "* Launching a pilot program for AI-driven transcription and automation.",
+          "Implementing a $400 flat-fee model for unlimited usage to remove friction.\n4. **Action Items**:",
+          "AI Assistant: Automatically generate quote requests for sales admins based on calls.\n5. **Keywords**: AI-driven transcription, workflow automation, operational efficiency, unstructured audio, actionable intelligence, automation"
+        ],
+        "keywords": [
+          "AI-driven transcription",
+          "workflow automation",
+          "operational efficiency",
+          "unstructured audio",
+          "actionable intelligence",
+          "automation"
+        ],
+        "summary": "Meeting on 2026-04-08 covering Plaud-AutoFlow pilot, AI-driven transcription, workflow automation\n3. **Key Decisions**:..."
+      }
+    },
+    {
+      "id": "meeting-105",
+      "type": "meeting",
+      "label": "04-08 Operational Planning for a New Major Contract and Business Updates",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-08 Operational Planning for a New Major Contract and Business Updates",
+        "date": "2026-04-08",
+        "processing_time": 29.456030333,
+        "attendees": [
+          "Asset and service tracking system",
+          "JCU and Townsville accounts",
+          "Asset tracking",
+          "Service delivery",
+          "Invoicing",
+          "AI tools",
+          "Scalability",
+          "Supply contract"
+        ],
+        "topics": [
+          "$120k new supply contract mobilization",
+          "Asset and service tracking system",
+          "JCU and Townsville accounts",
+          "Internal AI tools development\n3. **Key Decisions**:",
+          "Use a spreadsheet-based system for tracking assets and services as an initial phase.",
+          "Transition to custom software only after the spreadsheet system is established.",
+          "Secure signed contract and Purchase Order from client.",
+          "Develop spreadsheet-based system for tracking assets and service visits.",
+          "Develop internal AI tools for business monitoring.\n5. **Keywords**: Contract mobilization",
+          "Asset tracking",
+          "Service delivery",
+          "Invoicing",
+          "AI tools",
+          "Scalability",
+          "Supply contract"
+        ],
+        "decisions": [
+          "* Use a spreadsheet-based system for tracking assets and services as an initial phase.",
+          "Transition to custom software only after the spreadsheet system is established.",
+          "Implement cycle counts during three mandatory visits to support reporting and invoicing.\n4. **Action Items**:",
+          "Secure signed contract and Purchase Order from client.",
+          "Develop spreadsheet-based system for tracking assets and service visits.",
+          "Develop internal AI tools for business monitoring.\n5. **Keywords**: Contract mobilization, Asset tracking, Service delivery, Invoicing, AI tools, Scalability, Supply contract"
+        ],
+        "keywords": [
+          "Contract mobilization",
+          "Asset tracking",
+          "Service delivery",
+          "Invoicing",
+          "AI tools",
+          "Scalability",
+          "Supply contract"
+        ],
+        "summary": "Meeting on 2026-04-08 covering $120k new supply contract mobilization, Asset and service tracking system, JCU and Townsville accounts..."
+      }
+    },
+    {
+      "id": "meeting-106",
+      "type": "meeting",
+      "label": "04-08 Aligning Subscription-Asset Preventative Maintenance: Resolving Workflow Ownership, Interval B",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-08 Aligning Subscription-Asset Preventative Maintenance: Resolving Workflow Ownership, Interval Binding, and Environment Drift",
+        "date": "2026-04-08",
+        "processing_time": 32.877982792,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "Meeting on 2026-04-08 covering "
+      }
+    },
+    {
+      "id": "meeting-107",
+      "type": "meeting",
+      "label": "04-08 One-Week Trial of Twice-Daily Reporting to Restore Direction and Protect Go-Live Timeline",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-08 One-Week Trial of Twice-Daily Reporting to Restore Direction and Protect Go-Live Timeline",
+        "date": "2026-04-08",
+        "processing_time": 27.893779875,
+        "attendees": [
+          "Stu",
+          "Sponsor\n2. **Projects/Topics:** Plaud-AutoFlow",
+          "Twice-daily reporting trial",
+          "Development management",
+          "Reporting Cadence",
+          "Go-Live",
+          "Resource Allocation",
+          "Visibility",
+          "Project Management"
+        ],
+        "topics": [
+          "Plaud-AutoFlow",
+          "Twice-daily reporting trial",
+          "Development management",
+          "Go-live timeline protection\n3. **Key Decisions:",
+          "Implement a one-week trial of a twice-daily reporting cadence (morning and evening).",
+          "Reassign Stu to directly manage development (\"manhandle\") to provide ground-truth visibility.",
+          "Stu: Execute the new morning and evening reporting cadence.",
+          "Stu: Oversee development to resolve directional ambiguity.",
+          "Reporting Cadence",
+          "Go-Live",
+          "Resource Allocation",
+          "Visibility",
+          "Project Management"
+        ],
+        "decisions": [
+          "* Implement a one-week trial of a twice-daily reporting cadence (morning and evening).",
+          "Reassign Stu to directly manage development (\"manhandle\") to provide ground-truth visibility.",
+          "Prioritize project predictability and timeline protection over operational convenience.\n4. **Action Items:**",
+          "Stu: Execute the new morning and evening reporting cadence.",
+          "Stu: Oversee development to resolve directional ambiguity.",
+          "Team: Evaluate the effectiveness of the reporting trial after one week.\n5. **Keywords:** Plaud-AutoFlow, Reporting Cadence, Go-Live, Resource Allocation, Visibility, Project Management"
+        ],
+        "keywords": [
+          "Plaud-AutoFlow",
+          "Reporting Cadence",
+          "Go-Live",
+          "Resource Allocation",
+          "Visibility",
+          "Project Management"
+        ],
+        "summary": "Meeting on 2026-04-08 covering Plaud-AutoFlow, Twice-daily reporting trial, Development management..."
+      }
+    },
+    {
+      "id": "meeting-108",
+      "type": "meeting",
+      "label": "04-08 Strategic Pivot in Reoccurring Jobs Feature Development to De-Risk Project",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-08 Strategic Pivot in Reoccurring Jobs Feature Development to De-Risk Project",
+        "date": "2026-04-08",
+        "processing_time": 23.35448225,
+        "attendees": [],
+        "topics": [
+          "Reoccurring jobs feature development",
+          "Subscriptions feature integration\n3. **Key Decisions:",
+          "Abandoned the attempt to integrate reoccurring jobs into the existing \"subscriptions\" feature.",
+          "Adopted a two-phase development approach to de-risk the project.",
+          "Team: Build the \"asset\" component as a standalone module.",
+          "Team: Validate the standalone asset component.",
+          "Strategic pivot",
+          "Asset component",
+          "Subscriptions",
+          "De-risking",
+          "Software development"
+        ],
+        "decisions": [
+          "* Abandoned the attempt to integrate reoccurring jobs into the existing \"subscriptions\" feature.",
+          "Adopted a two-phase development approach to de-risk the project.",
+          "Prioritized building a standalone \"asset\" component before addressing custom integration.\n4. **Action Items:**",
+          "Team: Build the \"asset\" component as a standalone module.",
+          "Team: Validate the standalone asset component.",
+          "Team: Develop a custom integration for reoccurring jobs (Phase 2).\n5. **Keywords:** Reoccurring jobs, Strategic pivot, Asset component, Subscriptions, De-risking, Software development"
+        ],
+        "keywords": [
+          "Reoccurring jobs",
+          "Strategic pivot",
+          "Asset component",
+          "Subscriptions",
+          "De-risking",
+          "Software development"
+        ],
+        "summary": "Meeting on 2026-04-08 covering Reoccurring jobs feature development, Subscriptions feature integration\n3. **Key Decisions:, Abandoned the attempt to integrate reoccurring jobs into the existing \"subscriptions\" feature...."
+      }
+    },
+    {
+      "id": "meeting-109",
+      "type": "meeting",
+      "label": "04-07 Audit Preparation and Strategic Planning",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-07 Audit Preparation and Strategic Planning",
+        "date": "2026-04-08",
+        "processing_time": 25.64965775,
+        "attendees": [
+          "Speaker 1",
+          "Speaker 2",
+          "ERP system transition (ODU)",
+          "ERP",
+          "ODU",
+          "Contract",
+          "Documentation",
+          "Strategic Planning"
+        ],
+        "topics": [
+          "Audit preparation",
+          "ERP system transition (ODU)",
+          "10-year contract execution\n3. **Key Decisions**:",
+          "Commencement of the new 10-year \"royal contract\" immediately upon execution.",
+          "Charlotte: Complete final reviews of registers and documentation.",
+          "Team: Finalize all audit readiness preparations.\n5. **Keywords**: Audit",
+          "Contract",
+          "Documentation",
+          "Strategic Planning"
+        ],
+        "decisions": [
+          "* Commencement of the new 10-year \"royal contract\" immediately upon execution.",
+          "Prioritization of final documentation reviews and register checks for the upcoming audit.\n4. **Action Items**:",
+          "Charlotte: Complete final reviews of registers and documentation.",
+          "Team: Finalize all audit readiness preparations.\n5. **Keywords**: Audit, ERP, ODU, Contract, Documentation, Strategic Planning"
+        ],
+        "keywords": [
+          "Audit",
+          "ERP",
+          "ODU",
+          "Contract",
+          "Documentation",
+          "Strategic Planning"
+        ],
+        "summary": "Meeting on 2026-04-08 covering Audit preparation, ERP system transition (ODU), 10-year contract execution\n3. **Key Decisions**:..."
+      }
+    },
+    {
+      "id": "meeting-110",
+      "type": "meeting",
+      "label": "04-07 Website Kick-Off Meeting for MaceMark Rebrand",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-07 Website Kick-Off Meeting for MaceMark Rebrand",
+        "date": "2026-04-08",
+        "processing_time": 25.916090709,
+        "attendees": [
+          "Michael",
+          "Speaker 1",
+          "Bree",
+          "Phased website launch",
+          "Rebrand",
+          "Website Launch",
+          "Endoscopy",
+          "Jenka Conference",
+          "Phased Rollout"
+        ],
+        "topics": [
+          "MaceMark website rebrand",
+          "Phased website launch",
+          "Endoscopy (Endo) business pillar\n3. **Key Decisions:",
+          "Implement a two-part rollout: initial launch on May 7th and full website launch by late May.",
+          "Agency: Provide a staging site for content population.",
+          "Agency: Provide training via video calls.",
+          "MaceMark Team: Populate site content using the staging site.\n5. **Keywords:** MaceMark",
+          "Rebrand",
+          "Website Launch",
+          "Endoscopy",
+          "Jenka Conference",
+          "Phased Rollout"
+        ],
+        "decisions": [
+          "* Implement a two-part rollout: initial launch on May 7th and full website launch by late May.",
+          "Prioritize \"Endo\" pillar content for the first phase to ensure Google indexing before the May 15th Jenka conference.",
+          "Use video call training sessions to teach the MaceMark team how to manage site content and products.\n4. **Action Items:**",
+          "Agency: Provide a staging site for content population.",
+          "Agency: Provide training via video calls.",
+          "MaceMark Team: Populate site content using the staging site.\n5. **Keywords:** MaceMark, Rebrand, Website Launch, Endoscopy, Jenka Conference, Phased Rollout"
+        ],
+        "keywords": [
+          "MaceMark",
+          "Rebrand",
+          "Website Launch",
+          "Endoscopy",
+          "Jenka Conference",
+          "Phased Rollout"
+        ],
+        "summary": "Meeting on 2026-04-08 covering MaceMark website rebrand, Phased website launch, Endoscopy (Endo) business pillar\n3. **Key Decisions:..."
+      }
+    },
+    {
+      "id": "meeting-111",
+      "type": "meeting",
+      "label": "04-08 Rapid-Deploy Locked Visit Logging for Contract Compliance, Margin Tracking, and Machine Anomal",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-08 Rapid-Deploy Locked Visit Logging for Contract Compliance, Margin Tracking, and Machine Anomaly Detection",
+        "date": "2026-04-08",
+        "processing_time": 25.160635334,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "Meeting on 2026-04-08 covering "
+      }
+    },
+    {
+      "id": "meeting-112",
+      "type": "meeting",
+      "label": "04-09 Tiered Incentive Redesign and Dashboard Alignment to Unlock Post–Tier 2 Throughput",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-09 Tiered Incentive Redesign and Dashboard Alignment to Unlock Post–Tier 2 Throughput",
+        "date": "2026-04-09",
+        "processing_time": 19.91749775,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "Meeting on 2026-04-09 covering "
+      }
+    },
+    {
+      "id": "meeting-113",
+      "type": "meeting",
+      "label": "04-09 Review of Service Department Targets and Incentive Structures",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-09 Review of Service Department Targets and Incentive Structures",
+        "date": "2026-04-09",
+        "processing_time": 24.736540542,
+        "attendees": [],
+        "topics": [
+          "* Service department target revision",
+          "Incentive structure redesign",
+          "Financial performance analysis\n3. **Key Decisions:",
+          "Replace outdated",
+          "arbitrary financial targets with new",
+          "data-driven models.",
+          "Redesign the incentive system to drive continuous performance.",
+          "Link service department profitability to scalable business growth (e.g.",
+          "funding new sales positions).\n4. **Action Items:",
+          "None explicitly mentioned in the provided text.\n5. **Keywords:** Service Department",
+          "Financial Targets",
+          "Incentive Structures",
+          "Business Growth",
+          "Profitability",
+          "Data-driven",
+          "Performance Management"
+        ],
+        "decisions": [
+          "* Replace outdated, arbitrary financial targets with new, data-driven models.",
+          "Redesign the incentive system to drive continuous performance.",
+          "Link service department profitability to scalable business growth (e.g., funding new sales positions).\n4. **Action Items:**",
+          "None explicitly mentioned in the provided text.\n5. **Keywords:** Service Department, Financial Targets, Incentive Structures, Business Growth, Profitability, Data-driven, Performance Management"
+        ],
+        "keywords": [
+          "Service Department",
+          "Financial Targets",
+          "Incentive Structures",
+          "Business Growth",
+          "Profitability",
+          "Data-driven",
+          "Performance Management"
+        ],
+        "summary": "Meeting on 2026-04-09 covering * Service department target revision, Incentive structure redesign, Financial performance analysis\n3. **Key Decisions:..."
+      }
+    },
+    {
+      "id": "meeting-114",
+      "type": "meeting",
+      "label": "04-10 Clean-Build Strategy for Asset and Contract Modules: Staging Hygiene, Repo Control, and SimPro",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-10 Clean-Build Strategy for Asset and Contract Modules: Staging Hygiene, Repo Control, and SimPro-Parity V1 Scope",
+        "date": "2026-04-13",
+        "processing_time": 40.318452208,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "Meeting on 2026-04-13 covering "
+      }
+    },
+    {
+      "id": "meeting-115",
+      "type": "meeting",
+      "label": "04-10 Audit Readiness Amid Regulatory Shift: Evidence Consolidation and ‘Fit and Proper’ Risk",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-10 Audit Readiness Amid Regulatory Shift: Evidence Consolidation and ‘Fit and Proper’ Risk",
+        "date": "2026-04-13",
+        "processing_time": 32.785853,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "Meeting on 2026-04-13 covering "
+      }
+    },
+    {
+      "id": "meeting-116",
+      "type": "meeting",
+      "label": "04-10 Marketing and Operations Strategy Session",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-10 Marketing and Operations Strategy Session",
+        "date": "2026-04-13",
+        "processing_time": 25.63727875,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "Meeting on 2026-04-13 covering "
+      }
+    },
+    {
+      "id": "meeting-117",
+      "type": "meeting",
+      "label": "04-10 QMS Audit and Document Review Meeting",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-10 QMS Audit and Document Review Meeting",
+        "date": "2026-04-13",
+        "processing_time": 23.00914525,
+        "attendees": [
+          "Speaker 1",
+          "Director\n2. **Projects/Topics**: QMS Audit",
+          "Equipment Calibration",
+          "Document Control",
+          "Audit",
+          "Calibration",
+          "Document Control",
+          "Record Retention",
+          "Compliance",
+          "Process Documentation"
+        ],
+        "topics": [
+          "QMS Audit",
+          "Equipment Calibration",
+          "Document Control",
+          "Record Retention Policies\n3. **Key Decisions**:",
+          "All technicians' digital thermometers have been recalibrated to address previous audit findings.",
+          "Finalize and formally release the draft calibration procedure (Team/Speaker 1)\n5. **Keywords**: QMS",
+          "Audit",
+          "Calibration",
+          "Document Control",
+          "Record Retention",
+          "Compliance",
+          "Process Documentation"
+        ],
+        "decisions": [
+          "* All technicians' digital thermometers have been recalibrated to address previous audit findings.",
+          "A new record retention register has been implemented to replace the previous document control register.\n4. **Action Items**:",
+          "Finalize and formally release the draft calibration procedure (Team/Speaker 1)\n5. **Keywords**: QMS, Audit, Calibration, Document Control, Record Retention, Compliance, Process Documentation"
+        ],
+        "keywords": [
+          "QMS",
+          "Audit",
+          "Calibration",
+          "Document Control",
+          "Record Retention",
+          "Compliance",
+          "Process Documentation"
+        ],
+        "summary": "Meeting on 2026-04-13 covering QMS Audit, Equipment Calibration, Document Control..."
+      }
+    },
+    {
+      "id": "meeting-118",
+      "type": "meeting",
+      "label": "04-10 AI-Driven Financial Model Pinpoints Chemical Sales as Key Profit Lever, Reshaping Business Str",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-10 AI-Driven Financial Model Pinpoints Chemical Sales as Key Profit Lever, Reshaping Business Strategy",
+        "date": "2026-04-13",
+        "processing_time": 23.490592583,
+        "attendees": [],
+        "topics": [
+          "AI-driven financial modeling",
+          "Chemical sales strategy",
+          "Profit optimization",
+          "Operational lever analysis\n3. **Key Decisions:",
+          "Pivot strategic focus from capital sales/service revenue to high-margin chemical consumables.",
+          "Implement aggressive incentive structures for chemical sales and validations.",
+          "Adopt AI-driven scenario planning for real-time strategic decision-making.\n4. **Action Items:",
+          "chemical consumables",
+          "profit amplification",
+          "business strategy",
+          "operational levers",
+          "margin optimization"
+        ],
+        "decisions": [
+          "* Pivot strategic focus from capital sales/service revenue to high-margin chemical consumables.",
+          "Implement aggressive incentive structures for chemical sales and validations.",
+          "Adopt AI-driven scenario planning for real-time strategic decision-making.\n4. **Action Items:**",
+          "Align all teams and incentive structures to maximize chemical sales and service revenue.\n5. **Keywords:** AI modeling, chemical consumables, profit amplification, business strategy, operational levers, margin optimization"
+        ],
+        "keywords": [
+          "AI modeling",
+          "chemical consumables",
+          "profit amplification",
+          "business strategy",
+          "operational levers",
+          "margin optimization"
+        ],
+        "summary": "Meeting on 2026-04-13 covering AI-driven financial modeling, Chemical sales strategy, Profit optimization..."
+      }
+    },
+    {
+      "id": "meeting-119",
+      "type": "meeting",
+      "label": "04-10 Resolving GitHub Access Deadlock for Odoo.sh Integration",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-10 Resolving GitHub Access Deadlock for Odoo.sh Integration",
+        "date": "2026-04-13",
+        "processing_time": 36.487103084,
+        "attendees": [
+          "Speaker 2",
+          "Dimension 3",
+          "Odoo.sh",
+          "Access Control",
+          "Integration",
+          "Deadlock",
+          "Permissions",
+          "Technical Sovereignty"
+        ],
+        "topics": [
+          "Odoo.sh Integration",
+          "GitHub Access Management\n3. **Key Decisions:",
+          "Identified that Odoo.sh admin permissions are failing to propagate to the linked GitHub repository.",
+          "Resolve GitHub repository-level collaborator access for the developer.\n5. **Keywords:** GitHub",
+          "Odoo.sh",
+          "Access Control",
+          "Integration",
+          "Deadlock",
+          "Permissions",
+          "Technical Sovereignty"
+        ],
+        "decisions": [
+          "* Identified that Odoo.sh admin permissions are failing to propagate to the linked GitHub repository.",
+          "Recognized the need to address systemic issues regarding fragmented ownership and unclear access protocols.\n4. **Action Items:**",
+          "Resolve GitHub repository-level collaborator access for the developer.\n5. **Keywords:** GitHub, Odoo.sh, Access Control, Integration, Deadlock, Permissions, Technical Sovereignty"
+        ],
+        "keywords": [
+          "GitHub",
+          "Odoo.sh",
+          "Access Control",
+          "Integration",
+          "Deadlock",
+          "Permissions",
+          "Technical Sovereignty"
+        ],
+        "summary": "Meeting on 2026-04-13 covering Odoo.sh Integration, GitHub Access Management\n3. **Key Decisions:, Identified that Odoo.sh admin permissions are failing to propagate to the linked GitHub repository...."
+      }
+    },
+    {
+      "id": "meeting-120",
+      "type": "meeting",
+      "label": "04-13 Diagnostic Consultation on Sales Team Restructuring and Growth Strategy",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-13 Diagnostic Consultation on Sales Team Restructuring and Growth Strategy",
+        "date": "2026-04-13",
+        "processing_time": 37.564705166,
+        "attendees": [],
+        "topics": [
+          "AI Integration and Systems-Thinking",
+          "Sales Team Restructuring and Growth Strategy",
+          "Claude",
+          "Automation",
+          "Systems-Thinking",
+          "Meeting Recording",
+          "Workflow",
+          "Data Privacy"
+        ],
+        "decisions": [
+          "[None explicitly stated in the provided text]\n4. **Action Items:** [None explicitly stated in the provided text]\n5. **Keywords:** AI, Claude, Automation, Systems-Thinking, Meeting Recording, Workflow, Data Privacy"
+        ],
+        "keywords": [
+          "AI",
+          "Claude",
+          "Automation",
+          "Systems-Thinking",
+          "Meeting Recording",
+          "Workflow",
+          "Data Privacy"
+        ],
+        "summary": "Meeting on 2026-04-13 covering AI Integration and Systems-Thinking, Sales Team Restructuring and Growth Strategy, Claude..."
+      }
+    },
+    {
+      "id": "meeting-121",
+      "type": "meeting",
+      "label": "04-13 Overcoming Sales Stagnation Through a Disciplined, Structured Process",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-13 Overcoming Sales Stagnation Through a Disciplined, Structured Process",
+        "date": "2026-04-13",
+        "processing_time": 24.278232125,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "Meeting on 2026-04-13 covering "
+      }
+    },
+    {
+      "id": "meeting-122",
+      "type": "meeting",
+      "label": "04-13 Strategizing Sales Growth Through Dynamic Incentives and Service-Led Sales",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-13 Strategizing Sales Growth Through Dynamic Incentives and Service-Led Sales",
+        "date": "2026-04-13",
+        "processing_time": 26.320463666,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "Meeting on 2026-04-13 covering "
+      }
+    },
+    {
+      "id": "meeting-123",
+      "type": "meeting",
+      "label": "04-13 Strategic Sales Process and Team Motivation Analysis",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-13 Strategic Sales Process and Team Motivation Analysis",
+        "date": "2026-04-13",
+        "processing_time": 25.190097583,
+        "attendees": [
+          "Fleet acquisition strategy",
+          "inspection",
+          "cost calculator",
+          "Fleet Management",
+          "Proactive Sales",
+          "Data-driven",
+          "Automation",
+          "Justification-led Sales"
+        ],
+        "topics": [
+          "Justification-led sales model",
+          "Fleet acquisition strategy",
+          "Sales automation tool implementation\n3. **Key Decisions**:",
+          "Adopt a proactive",
+          "Deploy the integrated four-component app (audit",
+          "inspection",
+          "cost calculator",
+          "and proposal).",
+          "Fleet Management",
+          "Proactive Sales",
+          "Data-driven",
+          "Automation",
+          "Justification-led Sales"
+        ],
+        "decisions": [
+          "* Adopt a proactive, data-backed sales approach to provide rational validation to clients before emotional triggers occur.",
+          "Shift from a reactive sales posture to an information-driven model that controls decision timing.\n4. **Action Items**:",
+          "Deploy the integrated four-component app (audit, inspection, cost calculator, and proposal).",
+          "Utilize the tool to secure necessary client data to influence sales outcomes.\n5. **Keywords**: Sales Strategy, Fleet Management, Proactive Sales, Data-driven, Automation, Justification-led Sales"
+        ],
+        "keywords": [
+          "Sales Strategy",
+          "Fleet Management",
+          "Proactive Sales",
+          "Data-driven",
+          "Automation",
+          "Justification-led Sales"
+        ],
+        "summary": "Meeting on 2026-04-13 covering Justification-led sales model, Fleet acquisition strategy, Sales automation tool implementation\n3. **Key Decisions**:..."
+      }
+    },
+    {
+      "id": "meeting-124",
+      "type": "meeting",
+      "label": "04-13 Fractional Sales Management Proposal and Implementation Strategy",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-13 Fractional Sales Management Proposal and Implementation Strategy",
+        "date": "2026-04-13",
+        "processing_time": 25.225099458,
+        "attendees": [
+          "Andrew",
+          "Implementation Strategy",
+          "mutual respect",
+          "Implementation Strategy",
+          "Diagnostic Phase",
+          "Professional Alignment",
+          "Consulting"
+        ],
+        "topics": [
+          "Fractional Sales Management Proposal",
+          "Implementation Strategy",
+          "Two-Phase Engagement Model\n3. **Key Decisions:",
+          "Agreement on foundational relationship principles (transparency",
+          "mutual respect",
+          "and \"5% conversations\").",
+          "Adoption of a structured two-phase engagement model.",
+          "Approval of Phase 1 Diagnostic (4-day on-site",
+          "000 investment).\n4. **Action Items:",
+          "Consultant: Execute Phase 1 Diagnostic.",
+          "Implementation Strategy",
+          "Diagnostic Phase",
+          "Professional Alignment",
+          "Consulting"
+        ],
+        "decisions": [
+          "* Agreement on foundational relationship principles (transparency, mutual respect, and \"5% conversations\").",
+          "Adoption of a structured two-phase engagement model.",
+          "Approval of Phase 1 Diagnostic (4-day on-site, $7,000 investment).\n4. **Action Items:**",
+          "Consultant: Execute Phase 1 Diagnostic.",
+          "Consultant: Conduct meetings with Andrew and Felicity to build trust and assess fit.\n5. **Keywords:** Fractional Sales Management, Implementation Strategy, Diagnostic Phase, Professional Alignment, Consulting"
+        ],
+        "keywords": [
+          "Fractional Sales Management",
+          "Implementation Strategy",
+          "Diagnostic Phase",
+          "Professional Alignment",
+          "Consulting"
+        ],
+        "summary": "Meeting on 2026-04-13 covering Fractional Sales Management Proposal, Implementation Strategy, Two-Phase Engagement Model\n3. **Key Decisions:..."
+      }
+    },
+    {
+      "id": "person-43617074",
+      "type": "person",
+      "label": "Captain Damage",
+      "properties": {
+        "name": "Captain Damage",
+        "meetings": [
+          "meeting-101"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-506f7765",
+      "type": "person",
+      "label": "Power Plant Installation",
+      "properties": {
+        "name": "Power Plant Installation",
+        "meetings": [
+          "meeting-101"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-323a3030",
+      "type": "person",
+      "label": "2:00 PM)\n5. **Keywords:** Scheduling conflict",
+      "properties": {
+        "name": "2:00 PM)\n5. **Keywords:** Scheduling conflict",
+        "meetings": [
+          "meeting-101"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-5374616b",
+      "type": "person",
+      "label": "Stakeholder resistance",
+      "properties": {
+        "name": "Stakeholder resistance",
+        "meetings": [
+          "meeting-101"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-43757374",
+      "type": "person",
+      "label": "Customer delivery",
+      "properties": {
+        "name": "Customer delivery",
+        "meetings": [
+          "meeting-101"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4c6f6769",
+      "type": "person",
+      "label": "Logistics",
+      "properties": {
+        "name": "Logistics",
+        "meetings": [
+          "meeting-101"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-506f7765",
+      "type": "person",
+      "label": "Power plant",
+      "properties": {
+        "name": "Power plant",
+        "meetings": [
+          "meeting-101"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4f706572",
+      "type": "person",
+      "label": "Operational misalignment",
+      "properties": {
+        "name": "Operational misalignment",
+        "meetings": [
+          "meeting-101"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-52696368",
+      "type": "person",
+      "label": "Richard",
+      "properties": {
+        "name": "Richard",
+        "meetings": [
+          "meeting-102"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-536f6674",
+      "type": "person",
+      "label": "Software development roadblocks",
+      "properties": {
+        "name": "Software development roadblocks",
+        "meetings": [
+          "meeting-102"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-41492061",
+      "type": "person",
+      "label": "AI automation",
+      "properties": {
+        "name": "AI automation",
+        "meetings": [
+          "meeting-102",
+          "meeting-102"
+        ],
+        "meetingCount": 2
+      }
+    },
+    {
+      "id": "person-4f706572",
+      "type": "person",
+      "label": "Operational logistics",
+      "properties": {
+        "name": "Operational logistics",
+        "meetings": [
+          "meeting-102"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-476f6c64",
+      "type": "person",
+      "label": "Gold Coast",
+      "properties": {
+        "name": "Gold Coast",
+        "meetings": [
+          "meeting-102"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4368656d",
+      "type": "person",
+      "label": "Chemistry products",
+      "properties": {
+        "name": "Chemistry products",
+        "meetings": [
+          "meeting-102"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-50726963",
+      "type": "person",
+      "label": "Pricing deal",
+      "properties": {
+        "name": "Pricing deal",
+        "meetings": [
+          "meeting-102"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-43757374",
+      "type": "person",
+      "label": "Customer onboarding",
+      "properties": {
+        "name": "Customer onboarding",
+        "meetings": [
+          "meeting-102"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4f646f6f",
+      "type": "person",
+      "label": "Odoo Integration",
+      "properties": {
+        "name": "Odoo Integration",
+        "meetings": [
+          "meeting-103"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-70617274",
+      "type": "person",
+      "label": "parts usage",
+      "properties": {
+        "name": "parts usage",
+        "meetings": [
+          "meeting-103"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4f646f6f",
+      "type": "person",
+      "label": "Odoo",
+      "properties": {
+        "name": "Odoo",
+        "meetings": [
+          "meeting-103"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-50726f74",
+      "type": "person",
+      "label": "Prototype",
+      "properties": {
+        "name": "Prototype",
+        "meetings": [
+          "meeting-103"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-53657276",
+      "type": "person",
+      "label": "Service Operations",
+      "properties": {
+        "name": "Service Operations",
+        "meetings": [
+          "meeting-103"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4d61696e",
+      "type": "person",
+      "label": "Maintenance Schedule",
+      "properties": {
+        "name": "Maintenance Schedule",
+        "meetings": [
+          "meeting-103"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-496e766f",
+      "type": "person",
+      "label": "Invoicing",
+      "properties": {
+        "name": "Invoicing",
+        "meetings": [
+          "meeting-103",
+          "meeting-105"
+        ],
+        "meetingCount": 2
+      }
+    },
+    {
+      "id": "person-4c697669",
+      "type": "person",
+      "label": "Living Spec",
+      "properties": {
+        "name": "Living Spec",
+        "meetings": [
+          "meeting-103"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-41737365",
+      "type": "person",
+      "label": "Asset and service tracking system",
+      "properties": {
+        "name": "Asset and service tracking system",
+        "meetings": [
+          "meeting-105"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4a435520",
+      "type": "person",
+      "label": "JCU and Townsville accounts",
+      "properties": {
+        "name": "JCU and Townsville accounts",
+        "meetings": [
+          "meeting-105"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-41737365",
+      "type": "person",
+      "label": "Asset tracking",
+      "properties": {
+        "name": "Asset tracking",
+        "meetings": [
+          "meeting-105"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-53657276",
+      "type": "person",
+      "label": "Service delivery",
+      "properties": {
+        "name": "Service delivery",
+        "meetings": [
+          "meeting-105"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-41492074",
+      "type": "person",
+      "label": "AI tools",
+      "properties": {
+        "name": "AI tools",
+        "meetings": [
+          "meeting-105"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-5363616c",
+      "type": "person",
+      "label": "Scalability",
+      "properties": {
+        "name": "Scalability",
+        "meetings": [
+          "meeting-105"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-53757070",
+      "type": "person",
+      "label": "Supply contract",
+      "properties": {
+        "name": "Supply contract",
+        "meetings": [
+          "meeting-105"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-537475",
+      "type": "person",
+      "label": "Stu",
+      "properties": {
+        "name": "Stu",
+        "meetings": [
+          "meeting-107"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-53706f6e",
+      "type": "person",
+      "label": "Sponsor\n2. **Projects/Topics:** Plaud-AutoFlow",
+      "properties": {
+        "name": "Sponsor\n2. **Projects/Topics:** Plaud-AutoFlow",
+        "meetings": [
+          "meeting-107"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-54776963",
+      "type": "person",
+      "label": "Twice-daily reporting trial",
+      "properties": {
+        "name": "Twice-daily reporting trial",
+        "meetings": [
+          "meeting-107"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-44657665",
+      "type": "person",
+      "label": "Development management",
+      "properties": {
+        "name": "Development management",
+        "meetings": [
+          "meeting-107"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-5265706f",
+      "type": "person",
+      "label": "Reporting Cadence",
+      "properties": {
+        "name": "Reporting Cadence",
+        "meetings": [
+          "meeting-107"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-476f2d4c",
+      "type": "person",
+      "label": "Go-Live",
+      "properties": {
+        "name": "Go-Live",
+        "meetings": [
+          "meeting-107"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-5265736f",
+      "type": "person",
+      "label": "Resource Allocation",
+      "properties": {
+        "name": "Resource Allocation",
+        "meetings": [
+          "meeting-107"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-56697369",
+      "type": "person",
+      "label": "Visibility",
+      "properties": {
+        "name": "Visibility",
+        "meetings": [
+          "meeting-107"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-50726f6a",
+      "type": "person",
+      "label": "Project Management",
+      "properties": {
+        "name": "Project Management",
+        "meetings": [
+          "meeting-107"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-53706561",
+      "type": "person",
+      "label": "Speaker 1",
+      "properties": {
+        "name": "Speaker 1",
+        "meetings": [
+          "meeting-109",
+          "meeting-110",
+          "meeting-117"
+        ],
+        "meetingCount": 3
+      }
+    },
+    {
+      "id": "person-53706561",
+      "type": "person",
+      "label": "Speaker 2",
+      "properties": {
+        "name": "Speaker 2",
+        "meetings": [
+          "meeting-109",
+          "meeting-119"
+        ],
+        "meetingCount": 2
+      }
+    },
+    {
+      "id": "person-45525020",
+      "type": "person",
+      "label": "ERP system transition (ODU)",
+      "properties": {
+        "name": "ERP system transition (ODU)",
+        "meetings": [
+          "meeting-109"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-455250",
+      "type": "person",
+      "label": "ERP",
+      "properties": {
+        "name": "ERP",
+        "meetings": [
+          "meeting-109"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4f4455",
+      "type": "person",
+      "label": "ODU",
+      "properties": {
+        "name": "ODU",
+        "meetings": [
+          "meeting-109"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-436f6e74",
+      "type": "person",
+      "label": "Contract",
+      "properties": {
+        "name": "Contract",
+        "meetings": [
+          "meeting-109"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-446f6375",
+      "type": "person",
+      "label": "Documentation",
+      "properties": {
+        "name": "Documentation",
+        "meetings": [
+          "meeting-109"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-53747261",
+      "type": "person",
+      "label": "Strategic Planning",
+      "properties": {
+        "name": "Strategic Planning",
+        "meetings": [
+          "meeting-109"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4d696368",
+      "type": "person",
+      "label": "Michael",
+      "properties": {
+        "name": "Michael",
+        "meetings": [
+          "meeting-110"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-42726565",
+      "type": "person",
+      "label": "Bree",
+      "properties": {
+        "name": "Bree",
+        "meetings": [
+          "meeting-110"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-50686173",
+      "type": "person",
+      "label": "Phased website launch",
+      "properties": {
+        "name": "Phased website launch",
+        "meetings": [
+          "meeting-110"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-52656272",
+      "type": "person",
+      "label": "Rebrand",
+      "properties": {
+        "name": "Rebrand",
+        "meetings": [
+          "meeting-110"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-57656273",
+      "type": "person",
+      "label": "Website Launch",
+      "properties": {
+        "name": "Website Launch",
+        "meetings": [
+          "meeting-110"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-456e646f",
+      "type": "person",
+      "label": "Endoscopy",
+      "properties": {
+        "name": "Endoscopy",
+        "meetings": [
+          "meeting-110"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4a656e6b",
+      "type": "person",
+      "label": "Jenka Conference",
+      "properties": {
+        "name": "Jenka Conference",
+        "meetings": [
+          "meeting-110"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-50686173",
+      "type": "person",
+      "label": "Phased Rollout",
+      "properties": {
+        "name": "Phased Rollout",
+        "meetings": [
+          "meeting-110"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-44697265",
+      "type": "person",
+      "label": "Director\n2. **Projects/Topics**: QMS Audit",
+      "properties": {
+        "name": "Director\n2. **Projects/Topics**: QMS Audit",
+        "meetings": [
+          "meeting-117"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-45717569",
+      "type": "person",
+      "label": "Equipment Calibration",
+      "properties": {
+        "name": "Equipment Calibration",
+        "meetings": [
+          "meeting-117"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-446f6375",
+      "type": "person",
+      "label": "Document Control",
+      "properties": {
+        "name": "Document Control",
+        "meetings": [
+          "meeting-117",
+          "meeting-117"
+        ],
+        "meetingCount": 2
+      }
+    },
+    {
+      "id": "person-41756469",
+      "type": "person",
+      "label": "Audit",
+      "properties": {
+        "name": "Audit",
+        "meetings": [
+          "meeting-117"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-43616c69",
+      "type": "person",
+      "label": "Calibration",
+      "properties": {
+        "name": "Calibration",
+        "meetings": [
+          "meeting-117"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-5265636f",
+      "type": "person",
+      "label": "Record Retention",
+      "properties": {
+        "name": "Record Retention",
+        "meetings": [
+          "meeting-117"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-436f6d70",
+      "type": "person",
+      "label": "Compliance",
+      "properties": {
+        "name": "Compliance",
+        "meetings": [
+          "meeting-117"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-50726f63",
+      "type": "person",
+      "label": "Process Documentation",
+      "properties": {
+        "name": "Process Documentation",
+        "meetings": [
+          "meeting-117"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-44696d65",
+      "type": "person",
+      "label": "Dimension 3",
+      "properties": {
+        "name": "Dimension 3",
+        "meetings": [
+          "meeting-119"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4f646f6f",
+      "type": "person",
+      "label": "Odoo.sh",
+      "properties": {
+        "name": "Odoo.sh",
+        "meetings": [
+          "meeting-119"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-41636365",
+      "type": "person",
+      "label": "Access Control",
+      "properties": {
+        "name": "Access Control",
+        "meetings": [
+          "meeting-119"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-496e7465",
+      "type": "person",
+      "label": "Integration",
+      "properties": {
+        "name": "Integration",
+        "meetings": [
+          "meeting-119"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-44656164",
+      "type": "person",
+      "label": "Deadlock",
+      "properties": {
+        "name": "Deadlock",
+        "meetings": [
+          "meeting-119"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-5065726d",
+      "type": "person",
+      "label": "Permissions",
+      "properties": {
+        "name": "Permissions",
+        "meetings": [
+          "meeting-119"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-54656368",
+      "type": "person",
+      "label": "Technical Sovereignty",
+      "properties": {
+        "name": "Technical Sovereignty",
+        "meetings": [
+          "meeting-119"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-466c6565",
+      "type": "person",
+      "label": "Fleet acquisition strategy",
+      "properties": {
+        "name": "Fleet acquisition strategy",
+        "meetings": [
+          "meeting-123"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-696e7370",
+      "type": "person",
+      "label": "inspection",
+      "properties": {
+        "name": "inspection",
+        "meetings": [
+          "meeting-123"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-636f7374",
+      "type": "person",
+      "label": "cost calculator",
+      "properties": {
+        "name": "cost calculator",
+        "meetings": [
+          "meeting-123"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-466c6565",
+      "type": "person",
+      "label": "Fleet Management",
+      "properties": {
+        "name": "Fleet Management",
+        "meetings": [
+          "meeting-123"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-50726f61",
+      "type": "person",
+      "label": "Proactive Sales",
+      "properties": {
+        "name": "Proactive Sales",
+        "meetings": [
+          "meeting-123"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-44617461",
+      "type": "person",
+      "label": "Data-driven",
+      "properties": {
+        "name": "Data-driven",
+        "meetings": [
+          "meeting-123"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4175746f",
+      "type": "person",
+      "label": "Automation",
+      "properties": {
+        "name": "Automation",
+        "meetings": [
+          "meeting-123"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-4a757374",
+      "type": "person",
+      "label": "Justification-led Sales",
+      "properties": {
+        "name": "Justification-led Sales",
+        "meetings": [
+          "meeting-123"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-416e6472",
+      "type": "person",
+      "label": "Andrew",
+      "properties": {
+        "name": "Andrew",
+        "meetings": [
+          "meeting-124"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-496d706c",
+      "type": "person",
+      "label": "Implementation Strategy",
+      "properties": {
+        "name": "Implementation Strategy",
+        "meetings": [
+          "meeting-124",
+          "meeting-124"
+        ],
+        "meetingCount": 2
+      }
+    },
+    {
+      "id": "person-6d757475",
+      "type": "person",
+      "label": "mutual respect",
+      "properties": {
+        "name": "mutual respect",
+        "meetings": [
+          "meeting-124"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-44696167",
+      "type": "person",
+      "label": "Diagnostic Phase",
+      "properties": {
+        "name": "Diagnostic Phase",
+        "meetings": [
+          "meeting-124"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-50726f66",
+      "type": "person",
+      "label": "Professional Alignment",
+      "properties": {
+        "name": "Professional Alignment",
+        "meetings": [
+          "meeting-124"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-436f6e73",
+      "type": "person",
+      "label": "Consulting",
+      "properties": {
+        "name": "Consulting",
+        "meetings": [
+          "meeting-124"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "concept-6475616c",
+      "type": "concept",
+      "label": "Dual-channel AI data ingestion pilot",
+      "properties": {
+        "name": "Dual-channel AI data ingestion pilot",
+        "mentions": 1,
+        "meetings": [
+          "meeting-100"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6d617877",
+      "type": "concept",
+      "label": "Maxwell AI training",
+      "properties": {
+        "name": "Maxwell AI training",
+        "mentions": 1,
+        "meetings": [
+          "meeting-100"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-66697265",
+      "type": "concept",
+      "label": "Fireflies and Plored integration\n3. **Key Decisions**:",
+      "properties": {
+        "name": "Fireflies and Plored integration\n3. **Key Decisions**:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-100"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696e6974",
+      "type": "concept",
+      "label": "Initiate a dual-channel data ingestion pipeline for the Maxwell AI assistant.",
+      "properties": {
+        "name": "Initiate a dual-channel data ingestion pipeline for the Maxwell AI assistant.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-100"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6d617877",
+      "type": "concept",
+      "label": "Maxwell",
+      "properties": {
+        "name": "Maxwell",
+        "mentions": 1,
+        "meetings": [
+          "meeting-100"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-66697265",
+      "type": "concept",
+      "label": "Fireflies",
+      "properties": {
+        "name": "Fireflies",
+        "mentions": 1,
+        "meetings": [
+          "meeting-100"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-706c6f72",
+      "type": "concept",
+      "label": "Plored",
+      "properties": {
+        "name": "Plored",
+        "mentions": 1,
+        "meetings": [
+          "meeting-100"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61692064",
+      "type": "concept",
+      "label": "AI Data Ingestion",
+      "properties": {
+        "name": "AI Data Ingestion",
+        "mentions": 1,
+        "meetings": [
+          "meeting-100"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70696c6f",
+      "type": "concept",
+      "label": "Pilot Program",
+      "properties": {
+        "name": "Pilot Program",
+        "mentions": 1,
+        "meetings": [
+          "meeting-100"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6175746f",
+      "type": "concept",
+      "label": "Automation",
+      "properties": {
+        "name": "Automation",
+        "mentions": 3,
+        "meetings": [
+          "meeting-100",
+          "meeting-120",
+          "meeting-123"
+        ],
+        "trend": "rising",
+        "context": "Concept discussed in 3 meetings during April 6-13"
+      }
+    },
+    {
+      "id": "concept-74687572",
+      "type": "concept",
+      "label": "Thursday Customer Delivery Event",
+      "properties": {
+        "name": "Thursday Customer Delivery Event",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-706f7765",
+      "type": "concept",
+      "label": "Power Plant Installation",
+      "properties": {
+        "name": "Power Plant Installation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73636865",
+      "type": "concept",
+      "label": "Scheduling and Logistics Resolution\n3. **Key Decisions:",
+      "properties": {
+        "name": "Scheduling and Logistics Resolution\n3. **Key Decisions:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7265736f",
+      "type": "concept",
+      "label": "Resolve logistics/overnight stay conflict with Captain Damage (Speaker)",
+      "properties": {
+        "name": "Resolve logistics/overnight stay conflict with Captain Damage (Speaker)",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696e7374",
+      "type": "concept",
+      "label": "Install power plant (Associate",
+      "properties": {
+        "name": "Install power plant (Associate",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-323a3030",
+      "type": "concept",
+      "label": "2:00 PM)\n5. **Keywords:** Scheduling conflict",
+      "properties": {
+        "name": "2:00 PM)\n5. **Keywords:** Scheduling conflict",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7374616b",
+      "type": "concept",
+      "label": "Stakeholder resistance",
+      "properties": {
+        "name": "Stakeholder resistance",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-63757374",
+      "type": "concept",
+      "label": "Customer delivery",
+      "properties": {
+        "name": "Customer delivery",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6c6f6769",
+      "type": "concept",
+      "label": "Logistics",
+      "properties": {
+        "name": "Logistics",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-706f7765",
+      "type": "concept",
+      "label": "Power plant",
+      "properties": {
+        "name": "Power plant",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6f706572",
+      "type": "concept",
+      "label": "Operational misalignment",
+      "properties": {
+        "name": "Operational misalignment",
+        "mentions": 1,
+        "meetings": [
+          "meeting-101"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70617274",
+      "type": "concept",
+      "label": "Partner relations management",
+      "properties": {
+        "name": "Partner relations management",
+        "mentions": 1,
+        "meetings": [
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-736f6674",
+      "type": "concept",
+      "label": "Software development roadblocks",
+      "properties": {
+        "name": "Software development roadblocks",
+        "mentions": 1,
+        "meetings": [
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61692061",
+      "type": "concept",
+      "label": "AI automation",
+      "properties": {
+        "name": "AI automation",
+        "mentions": 2,
+        "meetings": [
+          "meeting-102",
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 2 meetings during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6f706572",
+      "type": "concept",
+      "label": "Operational logistics",
+      "properties": {
+        "name": "Operational logistics",
+        "mentions": 1,
+        "meetings": [
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-71756f74",
+      "type": "concept",
+      "label": "Quoting and financial reporting\n3. **Key Decisions:",
+      "properties": {
+        "name": "Quoting and financial reporting\n3. **Key Decisions:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73706561",
+      "type": "concept",
+      "label": "Speaker 1: Invite Richard to the upcoming customer meeting.\n5. **Keywords:** Partner relations",
+      "properties": {
+        "name": "Speaker 1: Invite Richard to the upcoming customer meeting.\n5. **Keywords:** Partner relations",
+        "mentions": 1,
+        "meetings": [
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-676f6c64",
+      "type": "concept",
+      "label": "Gold Coast",
+      "properties": {
+        "name": "Gold Coast",
+        "mentions": 1,
+        "meetings": [
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6368656d",
+      "type": "concept",
+      "label": "Chemistry products",
+      "properties": {
+        "name": "Chemistry products",
+        "mentions": 1,
+        "meetings": [
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70726963",
+      "type": "concept",
+      "label": "Pricing deal",
+      "properties": {
+        "name": "Pricing deal",
+        "mentions": 1,
+        "meetings": [
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-63757374",
+      "type": "concept",
+      "label": "Customer onboarding",
+      "properties": {
+        "name": "Customer onboarding",
+        "mentions": 1,
+        "meetings": [
+          "meeting-102"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61737365",
+      "type": "concept",
+      "label": "Asset-First Service Operations Prototype",
+      "properties": {
+        "name": "Asset-First Service Operations Prototype",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6f646f6f",
+      "type": "concept",
+      "label": "Odoo Integration",
+      "properties": {
+        "name": "Odoo Integration",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61737365",
+      "type": "concept",
+      "label": "Asset-to-Contract Workflow\n3. **Key Decisions**:",
+      "properties": {
+        "name": "Asset-to-Contract Workflow\n3. **Key Decisions**:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61646f70",
+      "type": "concept",
+      "label": "Adopt an \"asset-first\" operating model where assets drive maintenance schedules",
+      "properties": {
+        "name": "Adopt an \"asset-first\" operating model where assets drive maintenance schedules",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70617274",
+      "type": "concept",
+      "label": "parts usage",
+      "properties": {
+        "name": "parts usage",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-616e6420",
+      "type": "concept",
+      "label": "and contract assembly.",
+      "properties": {
+        "name": "and contract assembly.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-636c6175",
+      "type": "concept",
+      "label": "Claude: Build a high-fidelity sample/prototype of the asset-first flow.",
+      "properties": {
+        "name": "Claude: Build a high-fidelity sample/prototype of the asset-first flow.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64657769",
+      "type": "concept",
+      "label": "Dewitt: Re-implement the validated prototype logic within Odoo.\n5. **Keywords**: Asset-first",
+      "properties": {
+        "name": "Dewitt: Re-implement the validated prototype logic within Odoo.\n5. **Keywords**: Asset-first",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6f646f6f",
+      "type": "concept",
+      "label": "Odoo",
+      "properties": {
+        "name": "Odoo",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70726f74",
+      "type": "concept",
+      "label": "Prototype",
+      "properties": {
+        "name": "Prototype",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73657276",
+      "type": "concept",
+      "label": "Service Operations",
+      "properties": {
+        "name": "Service Operations",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6d61696e",
+      "type": "concept",
+      "label": "Maintenance Schedule",
+      "properties": {
+        "name": "Maintenance Schedule",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696e766f",
+      "type": "concept",
+      "label": "Invoicing",
+      "properties": {
+        "name": "Invoicing",
+        "mentions": 2,
+        "meetings": [
+          "meeting-103",
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 2 meetings during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6c697669",
+      "type": "concept",
+      "label": "Living Spec",
+      "properties": {
+        "name": "Living Spec",
+        "mentions": 1,
+        "meetings": [
+          "meeting-103"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-706c6175",
+      "type": "concept",
+      "label": "Plaud-AutoFlow pilot",
+      "properties": {
+        "name": "Plaud-AutoFlow pilot",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61692d64",
+      "type": "concept",
+      "label": "AI-driven transcription",
+      "properties": {
+        "name": "AI-driven transcription",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-776f726b",
+      "type": "concept",
+      "label": "workflow automation\n3. **Key Decisions**:",
+      "properties": {
+        "name": "workflow automation\n3. **Key Decisions**:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6c61756e",
+      "type": "concept",
+      "label": "Launching a pilot program for AI-driven transcription and automation.",
+      "properties": {
+        "name": "Launching a pilot program for AI-driven transcription and automation.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696d706c",
+      "type": "concept",
+      "label": "Implementing a $400 flat-fee model for unlimited usage to remove friction.\n4. **Action Items**:",
+      "properties": {
+        "name": "Implementing a $400 flat-fee model for unlimited usage to remove friction.\n4. **Action Items**:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-776f726b",
+      "type": "concept",
+      "label": "workflow automation",
+      "properties": {
+        "name": "workflow automation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6f706572",
+      "type": "concept",
+      "label": "operational efficiency",
+      "properties": {
+        "name": "operational efficiency",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-756e7374",
+      "type": "concept",
+      "label": "unstructured audio",
+      "properties": {
+        "name": "unstructured audio",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61637469",
+      "type": "concept",
+      "label": "actionable intelligence",
+      "properties": {
+        "name": "actionable intelligence",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6175746f",
+      "type": "concept",
+      "label": "automation",
+      "properties": {
+        "name": "automation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-104"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-24313230",
+      "type": "concept",
+      "label": "$120k new supply contract mobilization",
+      "properties": {
+        "name": "$120k new supply contract mobilization",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61737365",
+      "type": "concept",
+      "label": "Asset and service tracking system",
+      "properties": {
+        "name": "Asset and service tracking system",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6a637520",
+      "type": "concept",
+      "label": "JCU and Townsville accounts",
+      "properties": {
+        "name": "JCU and Townsville accounts",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696e7465",
+      "type": "concept",
+      "label": "Internal AI tools development\n3. **Key Decisions**:",
+      "properties": {
+        "name": "Internal AI tools development\n3. **Key Decisions**:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-75736520",
+      "type": "concept",
+      "label": "Use a spreadsheet-based system for tracking assets and services as an initial phase.",
+      "properties": {
+        "name": "Use a spreadsheet-based system for tracking assets and services as an initial phase.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7472616e",
+      "type": "concept",
+      "label": "Transition to custom software only after the spreadsheet system is established.",
+      "properties": {
+        "name": "Transition to custom software only after the spreadsheet system is established.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73656375",
+      "type": "concept",
+      "label": "Secure signed contract and Purchase Order from client.",
+      "properties": {
+        "name": "Secure signed contract and Purchase Order from client.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64657665",
+      "type": "concept",
+      "label": "Develop spreadsheet-based system for tracking assets and service visits.",
+      "properties": {
+        "name": "Develop spreadsheet-based system for tracking assets and service visits.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64657665",
+      "type": "concept",
+      "label": "Develop internal AI tools for business monitoring.\n5. **Keywords**: Contract mobilization",
+      "properties": {
+        "name": "Develop internal AI tools for business monitoring.\n5. **Keywords**: Contract mobilization",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61737365",
+      "type": "concept",
+      "label": "Asset tracking",
+      "properties": {
+        "name": "Asset tracking",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73657276",
+      "type": "concept",
+      "label": "Service delivery",
+      "properties": {
+        "name": "Service delivery",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61692074",
+      "type": "concept",
+      "label": "AI tools",
+      "properties": {
+        "name": "AI tools",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7363616c",
+      "type": "concept",
+      "label": "Scalability",
+      "properties": {
+        "name": "Scalability",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73757070",
+      "type": "concept",
+      "label": "Supply contract",
+      "properties": {
+        "name": "Supply contract",
+        "mentions": 1,
+        "meetings": [
+          "meeting-105"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-706c6175",
+      "type": "concept",
+      "label": "Plaud-AutoFlow",
+      "properties": {
+        "name": "Plaud-AutoFlow",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-74776963",
+      "type": "concept",
+      "label": "Twice-daily reporting trial",
+      "properties": {
+        "name": "Twice-daily reporting trial",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64657665",
+      "type": "concept",
+      "label": "Development management",
+      "properties": {
+        "name": "Development management",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-676f2d6c",
+      "type": "concept",
+      "label": "Go-live timeline protection\n3. **Key Decisions:",
+      "properties": {
+        "name": "Go-live timeline protection\n3. **Key Decisions:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696d706c",
+      "type": "concept",
+      "label": "Implement a one-week trial of a twice-daily reporting cadence (morning and evening).",
+      "properties": {
+        "name": "Implement a one-week trial of a twice-daily reporting cadence (morning and evening).",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-72656173",
+      "type": "concept",
+      "label": "Reassign Stu to directly manage development (\"manhandle\") to provide ground-truth visibility.",
+      "properties": {
+        "name": "Reassign Stu to directly manage development (\"manhandle\") to provide ground-truth visibility.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7374753a",
+      "type": "concept",
+      "label": "Stu: Execute the new morning and evening reporting cadence.",
+      "properties": {
+        "name": "Stu: Execute the new morning and evening reporting cadence.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7374753a",
+      "type": "concept",
+      "label": "Stu: Oversee development to resolve directional ambiguity.",
+      "properties": {
+        "name": "Stu: Oversee development to resolve directional ambiguity.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7265706f",
+      "type": "concept",
+      "label": "Reporting Cadence",
+      "properties": {
+        "name": "Reporting Cadence",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-676f2d6c",
+      "type": "concept",
+      "label": "Go-Live",
+      "properties": {
+        "name": "Go-Live",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7265736f",
+      "type": "concept",
+      "label": "Resource Allocation",
+      "properties": {
+        "name": "Resource Allocation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-76697369",
+      "type": "concept",
+      "label": "Visibility",
+      "properties": {
+        "name": "Visibility",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70726f6a",
+      "type": "concept",
+      "label": "Project Management",
+      "properties": {
+        "name": "Project Management",
+        "mentions": 1,
+        "meetings": [
+          "meeting-107"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-72656f63",
+      "type": "concept",
+      "label": "Reoccurring jobs feature development",
+      "properties": {
+        "name": "Reoccurring jobs feature development",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73756273",
+      "type": "concept",
+      "label": "Subscriptions feature integration\n3. **Key Decisions:",
+      "properties": {
+        "name": "Subscriptions feature integration\n3. **Key Decisions:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6162616e",
+      "type": "concept",
+      "label": "Abandoned the attempt to integrate reoccurring jobs into the existing \"subscriptions\" feature.",
+      "properties": {
+        "name": "Abandoned the attempt to integrate reoccurring jobs into the existing \"subscriptions\" feature.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61646f70",
+      "type": "concept",
+      "label": "Adopted a two-phase development approach to de-risk the project.",
+      "properties": {
+        "name": "Adopted a two-phase development approach to de-risk the project.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7465616d",
+      "type": "concept",
+      "label": "Team: Build the \"asset\" component as a standalone module.",
+      "properties": {
+        "name": "Team: Build the \"asset\" component as a standalone module.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7465616d",
+      "type": "concept",
+      "label": "Team: Validate the standalone asset component.",
+      "properties": {
+        "name": "Team: Validate the standalone asset component.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73747261",
+      "type": "concept",
+      "label": "Strategic pivot",
+      "properties": {
+        "name": "Strategic pivot",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61737365",
+      "type": "concept",
+      "label": "Asset component",
+      "properties": {
+        "name": "Asset component",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73756273",
+      "type": "concept",
+      "label": "Subscriptions",
+      "properties": {
+        "name": "Subscriptions",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64652d72",
+      "type": "concept",
+      "label": "De-risking",
+      "properties": {
+        "name": "De-risking",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-736f6674",
+      "type": "concept",
+      "label": "Software development",
+      "properties": {
+        "name": "Software development",
+        "mentions": 1,
+        "meetings": [
+          "meeting-108"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61756469",
+      "type": "concept",
+      "label": "Audit preparation",
+      "properties": {
+        "name": "Audit preparation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-109"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-65727020",
+      "type": "concept",
+      "label": "ERP system transition (ODU)",
+      "properties": {
+        "name": "ERP system transition (ODU)",
+        "mentions": 1,
+        "meetings": [
+          "meeting-109"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-31302d79",
+      "type": "concept",
+      "label": "10-year contract execution\n3. **Key Decisions**:",
+      "properties": {
+        "name": "10-year contract execution\n3. **Key Decisions**:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-109"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-636f6d6d",
+      "type": "concept",
+      "label": "Commencement of the new 10-year \"royal contract\" immediately upon execution.",
+      "properties": {
+        "name": "Commencement of the new 10-year \"royal contract\" immediately upon execution.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-109"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-63686172",
+      "type": "concept",
+      "label": "Charlotte: Complete final reviews of registers and documentation.",
+      "properties": {
+        "name": "Charlotte: Complete final reviews of registers and documentation.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-109"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7465616d",
+      "type": "concept",
+      "label": "Team: Finalize all audit readiness preparations.\n5. **Keywords**: Audit",
+      "properties": {
+        "name": "Team: Finalize all audit readiness preparations.\n5. **Keywords**: Audit",
+        "mentions": 1,
+        "meetings": [
+          "meeting-109"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-636f6e74",
+      "type": "concept",
+      "label": "Contract",
+      "properties": {
+        "name": "Contract",
+        "mentions": 1,
+        "meetings": [
+          "meeting-109"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-646f6375",
+      "type": "concept",
+      "label": "Documentation",
+      "properties": {
+        "name": "Documentation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-109"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73747261",
+      "type": "concept",
+      "label": "Strategic Planning",
+      "properties": {
+        "name": "Strategic Planning",
+        "mentions": 1,
+        "meetings": [
+          "meeting-109"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6d616365",
+      "type": "concept",
+      "label": "MaceMark website rebrand",
+      "properties": {
+        "name": "MaceMark website rebrand",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70686173",
+      "type": "concept",
+      "label": "Phased website launch",
+      "properties": {
+        "name": "Phased website launch",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-656e646f",
+      "type": "concept",
+      "label": "Endoscopy (Endo) business pillar\n3. **Key Decisions:",
+      "properties": {
+        "name": "Endoscopy (Endo) business pillar\n3. **Key Decisions:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696d706c",
+      "type": "concept",
+      "label": "Implement a two-part rollout: initial launch on May 7th and full website launch by late May.",
+      "properties": {
+        "name": "Implement a two-part rollout: initial launch on May 7th and full website launch by late May.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6167656e",
+      "type": "concept",
+      "label": "Agency: Provide a staging site for content population.",
+      "properties": {
+        "name": "Agency: Provide a staging site for content population.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6167656e",
+      "type": "concept",
+      "label": "Agency: Provide training via video calls.",
+      "properties": {
+        "name": "Agency: Provide training via video calls.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6d616365",
+      "type": "concept",
+      "label": "MaceMark Team: Populate site content using the staging site.\n5. **Keywords:** MaceMark",
+      "properties": {
+        "name": "MaceMark Team: Populate site content using the staging site.\n5. **Keywords:** MaceMark",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-72656272",
+      "type": "concept",
+      "label": "Rebrand",
+      "properties": {
+        "name": "Rebrand",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-77656273",
+      "type": "concept",
+      "label": "Website Launch",
+      "properties": {
+        "name": "Website Launch",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-656e646f",
+      "type": "concept",
+      "label": "Endoscopy",
+      "properties": {
+        "name": "Endoscopy",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6a656e6b",
+      "type": "concept",
+      "label": "Jenka Conference",
+      "properties": {
+        "name": "Jenka Conference",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70686173",
+      "type": "concept",
+      "label": "Phased Rollout",
+      "properties": {
+        "name": "Phased Rollout",
+        "mentions": 1,
+        "meetings": [
+          "meeting-110"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-2a207365",
+      "type": "concept",
+      "label": "* Service department target revision",
+      "properties": {
+        "name": "* Service department target revision",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696e6365",
+      "type": "concept",
+      "label": "Incentive structure redesign",
+      "properties": {
+        "name": "Incentive structure redesign",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-66696e61",
+      "type": "concept",
+      "label": "Financial performance analysis\n3. **Key Decisions:",
+      "properties": {
+        "name": "Financial performance analysis\n3. **Key Decisions:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7265706c",
+      "type": "concept",
+      "label": "Replace outdated",
+      "properties": {
+        "name": "Replace outdated",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61726269",
+      "type": "concept",
+      "label": "arbitrary financial targets with new",
+      "properties": {
+        "name": "arbitrary financial targets with new",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64617461",
+      "type": "concept",
+      "label": "data-driven models.",
+      "properties": {
+        "name": "data-driven models.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-72656465",
+      "type": "concept",
+      "label": "Redesign the incentive system to drive continuous performance.",
+      "properties": {
+        "name": "Redesign the incentive system to drive continuous performance.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6c696e6b",
+      "type": "concept",
+      "label": "Link service department profitability to scalable business growth (e.g.",
+      "properties": {
+        "name": "Link service department profitability to scalable business growth (e.g.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-66756e64",
+      "type": "concept",
+      "label": "funding new sales positions).\n4. **Action Items:",
+      "properties": {
+        "name": "funding new sales positions).\n4. **Action Items:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6e6f6e65",
+      "type": "concept",
+      "label": "None explicitly mentioned in the provided text.\n5. **Keywords:** Service Department",
+      "properties": {
+        "name": "None explicitly mentioned in the provided text.\n5. **Keywords:** Service Department",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-66696e61",
+      "type": "concept",
+      "label": "Financial Targets",
+      "properties": {
+        "name": "Financial Targets",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696e6365",
+      "type": "concept",
+      "label": "Incentive Structures",
+      "properties": {
+        "name": "Incentive Structures",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-62757369",
+      "type": "concept",
+      "label": "Business Growth",
+      "properties": {
+        "name": "Business Growth",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70726f66",
+      "type": "concept",
+      "label": "Profitability",
+      "properties": {
+        "name": "Profitability",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64617461",
+      "type": "concept",
+      "label": "Data-driven",
+      "properties": {
+        "name": "Data-driven",
+        "mentions": 2,
+        "meetings": [
+          "meeting-113",
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 2 meetings during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70657266",
+      "type": "concept",
+      "label": "Performance Management",
+      "properties": {
+        "name": "Performance Management",
+        "mentions": 1,
+        "meetings": [
+          "meeting-113"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-716d7320",
+      "type": "concept",
+      "label": "QMS Audit",
+      "properties": {
+        "name": "QMS Audit",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-65717569",
+      "type": "concept",
+      "label": "Equipment Calibration",
+      "properties": {
+        "name": "Equipment Calibration",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-646f6375",
+      "type": "concept",
+      "label": "Document Control",
+      "properties": {
+        "name": "Document Control",
+        "mentions": 2,
+        "meetings": [
+          "meeting-117",
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 2 meetings during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7265636f",
+      "type": "concept",
+      "label": "Record Retention Policies\n3. **Key Decisions**:",
+      "properties": {
+        "name": "Record Retention Policies\n3. **Key Decisions**:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-616c6c20",
+      "type": "concept",
+      "label": "All technicians' digital thermometers have been recalibrated to address previous audit findings.",
+      "properties": {
+        "name": "All technicians' digital thermometers have been recalibrated to address previous audit findings.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-66696e61",
+      "type": "concept",
+      "label": "Finalize and formally release the draft calibration procedure (Team/Speaker 1)\n5. **Keywords**: QMS",
+      "properties": {
+        "name": "Finalize and formally release the draft calibration procedure (Team/Speaker 1)\n5. **Keywords**: QMS",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61756469",
+      "type": "concept",
+      "label": "Audit",
+      "properties": {
+        "name": "Audit",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-63616c69",
+      "type": "concept",
+      "label": "Calibration",
+      "properties": {
+        "name": "Calibration",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7265636f",
+      "type": "concept",
+      "label": "Record Retention",
+      "properties": {
+        "name": "Record Retention",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-636f6d70",
+      "type": "concept",
+      "label": "Compliance",
+      "properties": {
+        "name": "Compliance",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70726f63",
+      "type": "concept",
+      "label": "Process Documentation",
+      "properties": {
+        "name": "Process Documentation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-117"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61692d64",
+      "type": "concept",
+      "label": "AI-driven financial modeling",
+      "properties": {
+        "name": "AI-driven financial modeling",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6368656d",
+      "type": "concept",
+      "label": "Chemical sales strategy",
+      "properties": {
+        "name": "Chemical sales strategy",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70726f66",
+      "type": "concept",
+      "label": "Profit optimization",
+      "properties": {
+        "name": "Profit optimization",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6f706572",
+      "type": "concept",
+      "label": "Operational lever analysis\n3. **Key Decisions:",
+      "properties": {
+        "name": "Operational lever analysis\n3. **Key Decisions:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7069766f",
+      "type": "concept",
+      "label": "Pivot strategic focus from capital sales/service revenue to high-margin chemical consumables.",
+      "properties": {
+        "name": "Pivot strategic focus from capital sales/service revenue to high-margin chemical consumables.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696d706c",
+      "type": "concept",
+      "label": "Implement aggressive incentive structures for chemical sales and validations.",
+      "properties": {
+        "name": "Implement aggressive incentive structures for chemical sales and validations.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61646f70",
+      "type": "concept",
+      "label": "Adopt AI-driven scenario planning for real-time strategic decision-making.\n4. **Action Items:",
+      "properties": {
+        "name": "Adopt AI-driven scenario planning for real-time strategic decision-making.\n4. **Action Items:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6368656d",
+      "type": "concept",
+      "label": "chemical consumables",
+      "properties": {
+        "name": "chemical consumables",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70726f66",
+      "type": "concept",
+      "label": "profit amplification",
+      "properties": {
+        "name": "profit amplification",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-62757369",
+      "type": "concept",
+      "label": "business strategy",
+      "properties": {
+        "name": "business strategy",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6f706572",
+      "type": "concept",
+      "label": "operational levers",
+      "properties": {
+        "name": "operational levers",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6d617267",
+      "type": "concept",
+      "label": "margin optimization",
+      "properties": {
+        "name": "margin optimization",
+        "mentions": 1,
+        "meetings": [
+          "meeting-118"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6f646f6f",
+      "type": "concept",
+      "label": "Odoo.sh Integration",
+      "properties": {
+        "name": "Odoo.sh Integration",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-67697468",
+      "type": "concept",
+      "label": "GitHub Access Management\n3. **Key Decisions:",
+      "properties": {
+        "name": "GitHub Access Management\n3. **Key Decisions:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6964656e",
+      "type": "concept",
+      "label": "Identified that Odoo.sh admin permissions are failing to propagate to the linked GitHub repository.",
+      "properties": {
+        "name": "Identified that Odoo.sh admin permissions are failing to propagate to the linked GitHub repository.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7265736f",
+      "type": "concept",
+      "label": "Resolve GitHub repository-level collaborator access for the developer.\n5. **Keywords:** GitHub",
+      "properties": {
+        "name": "Resolve GitHub repository-level collaborator access for the developer.\n5. **Keywords:** GitHub",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6f646f6f",
+      "type": "concept",
+      "label": "Odoo.sh",
+      "properties": {
+        "name": "Odoo.sh",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61636365",
+      "type": "concept",
+      "label": "Access Control",
+      "properties": {
+        "name": "Access Control",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696e7465",
+      "type": "concept",
+      "label": "Integration",
+      "properties": {
+        "name": "Integration",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64656164",
+      "type": "concept",
+      "label": "Deadlock",
+      "properties": {
+        "name": "Deadlock",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-7065726d",
+      "type": "concept",
+      "label": "Permissions",
+      "properties": {
+        "name": "Permissions",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-74656368",
+      "type": "concept",
+      "label": "Technical Sovereignty",
+      "properties": {
+        "name": "Technical Sovereignty",
+        "mentions": 1,
+        "meetings": [
+          "meeting-119"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61692069",
+      "type": "concept",
+      "label": "AI Integration and Systems-Thinking",
+      "properties": {
+        "name": "AI Integration and Systems-Thinking",
+        "mentions": 1,
+        "meetings": [
+          "meeting-120"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73616c65",
+      "type": "concept",
+      "label": "Sales Team Restructuring and Growth Strategy",
+      "properties": {
+        "name": "Sales Team Restructuring and Growth Strategy",
+        "mentions": 1,
+        "meetings": [
+          "meeting-120"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-636c6175",
+      "type": "concept",
+      "label": "Claude",
+      "properties": {
+        "name": "Claude",
+        "mentions": 1,
+        "meetings": [
+          "meeting-120"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73797374",
+      "type": "concept",
+      "label": "Systems-Thinking",
+      "properties": {
+        "name": "Systems-Thinking",
+        "mentions": 1,
+        "meetings": [
+          "meeting-120"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6d656574",
+      "type": "concept",
+      "label": "Meeting Recording",
+      "properties": {
+        "name": "Meeting Recording",
+        "mentions": 1,
+        "meetings": [
+          "meeting-120"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-776f726b",
+      "type": "concept",
+      "label": "Workflow",
+      "properties": {
+        "name": "Workflow",
+        "mentions": 1,
+        "meetings": [
+          "meeting-120"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64617461",
+      "type": "concept",
+      "label": "Data Privacy",
+      "properties": {
+        "name": "Data Privacy",
+        "mentions": 1,
+        "meetings": [
+          "meeting-120"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6a757374",
+      "type": "concept",
+      "label": "Justification-led sales model",
+      "properties": {
+        "name": "Justification-led sales model",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-666c6565",
+      "type": "concept",
+      "label": "Fleet acquisition strategy",
+      "properties": {
+        "name": "Fleet acquisition strategy",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-73616c65",
+      "type": "concept",
+      "label": "Sales automation tool implementation\n3. **Key Decisions**:",
+      "properties": {
+        "name": "Sales automation tool implementation\n3. **Key Decisions**:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61646f70",
+      "type": "concept",
+      "label": "Adopt a proactive",
+      "properties": {
+        "name": "Adopt a proactive",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6465706c",
+      "type": "concept",
+      "label": "Deploy the integrated four-component app (audit",
+      "properties": {
+        "name": "Deploy the integrated four-component app (audit",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696e7370",
+      "type": "concept",
+      "label": "inspection",
+      "properties": {
+        "name": "inspection",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-636f7374",
+      "type": "concept",
+      "label": "cost calculator",
+      "properties": {
+        "name": "cost calculator",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-616e6420",
+      "type": "concept",
+      "label": "and proposal).",
+      "properties": {
+        "name": "and proposal).",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-666c6565",
+      "type": "concept",
+      "label": "Fleet Management",
+      "properties": {
+        "name": "Fleet Management",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70726f61",
+      "type": "concept",
+      "label": "Proactive Sales",
+      "properties": {
+        "name": "Proactive Sales",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6a757374",
+      "type": "concept",
+      "label": "Justification-led Sales",
+      "properties": {
+        "name": "Justification-led Sales",
+        "mentions": 1,
+        "meetings": [
+          "meeting-123"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-66726163",
+      "type": "concept",
+      "label": "Fractional Sales Management Proposal",
+      "properties": {
+        "name": "Fractional Sales Management Proposal",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-696d706c",
+      "type": "concept",
+      "label": "Implementation Strategy",
+      "properties": {
+        "name": "Implementation Strategy",
+        "mentions": 2,
+        "meetings": [
+          "meeting-124",
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 2 meetings during April 6-13"
+      }
+    },
+    {
+      "id": "concept-74776f2d",
+      "type": "concept",
+      "label": "Two-Phase Engagement Model\n3. **Key Decisions:",
+      "properties": {
+        "name": "Two-Phase Engagement Model\n3. **Key Decisions:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61677265",
+      "type": "concept",
+      "label": "Agreement on foundational relationship principles (transparency",
+      "properties": {
+        "name": "Agreement on foundational relationship principles (transparency",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-6d757475",
+      "type": "concept",
+      "label": "mutual respect",
+      "properties": {
+        "name": "mutual respect",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-616e6420",
+      "type": "concept",
+      "label": "and \"5% conversations\").",
+      "properties": {
+        "name": "and \"5% conversations\").",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61646f70",
+      "type": "concept",
+      "label": "Adoption of a structured two-phase engagement model.",
+      "properties": {
+        "name": "Adoption of a structured two-phase engagement model.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-61707072",
+      "type": "concept",
+      "label": "Approval of Phase 1 Diagnostic (4-day on-site",
+      "properties": {
+        "name": "Approval of Phase 1 Diagnostic (4-day on-site",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-30303020",
+      "type": "concept",
+      "label": "000 investment).\n4. **Action Items:",
+      "properties": {
+        "name": "000 investment).\n4. **Action Items:",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-636f6e73",
+      "type": "concept",
+      "label": "Consultant: Execute Phase 1 Diagnostic.",
+      "properties": {
+        "name": "Consultant: Execute Phase 1 Diagnostic.",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-64696167",
+      "type": "concept",
+      "label": "Diagnostic Phase",
+      "properties": {
+        "name": "Diagnostic Phase",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-70726f66",
+      "type": "concept",
+      "label": "Professional Alignment",
+      "properties": {
+        "name": "Professional Alignment",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
+      }
+    },
+    {
+      "id": "concept-636f6e73",
+      "type": "concept",
+      "label": "Consulting",
+      "properties": {
+        "name": "Consulting",
+        "mentions": 1,
+        "meetings": [
+          "meeting-124"
+        ],
+        "trend": "stable",
+        "context": "Concept discussed in 1 meeting during April 6-13"
       }
     }
   ],
@@ -5012,17 +9669,1779 @@
       "target": "concept-3c2e1969",
       "type": "MENTIONS",
       "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-6475616c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-6d617877",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-66697265",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-696e6974",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-6d617877",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-66697265",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-706c6f72",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-61692064",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-70696c6f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-100",
+      "target": "concept-6175746f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-74687572",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-706f7765",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-73636865",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-7265736f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-696e7374",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-323a3030",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-7374616b",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-63757374",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-6c6f6769",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-706f7765",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "concept-6f706572",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "person-43617074",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "person-506f7765",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "person-323a3030",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "person-5374616b",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "person-43757374",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "person-4c6f6769",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "person-506f7765",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-101",
+      "target": "person-4f706572",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-70617274",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-736f6674",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-61692061",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-6f706572",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-71756f74",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-73706561",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-676f6c64",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-6368656d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-61692061",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-70726963",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "concept-63757374",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "person-52696368",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "person-536f6674",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "person-41492061",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "person-4f706572",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "person-476f6c64",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "person-4368656d",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "person-41492061",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "person-50726963",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-102",
+      "target": "person-43757374",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-61737365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-6f646f6f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-61737365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-61646f70",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-70617274",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-616e6420",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-636c6175",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-64657769",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-6f646f6f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-70726f74",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-73657276",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-6d61696e",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-696e766f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "concept-6c697669",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "person-4f646f6f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "person-70617274",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "person-4f646f6f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "person-50726f74",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "person-53657276",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "person-4d61696e",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "person-496e766f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-103",
+      "target": "person-4c697669",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-706c6175",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-61692d64",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-776f726b",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-6c61756e",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-696d706c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-776f726b",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-6f706572",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-756e7374",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-61637469",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-104",
+      "target": "concept-6175746f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-24313230",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-61737365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-6a637520",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-696e7465",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-75736520",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-7472616e",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-73656375",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-64657665",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-64657665",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-61737365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-73657276",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-696e766f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-61692074",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-7363616c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "concept-73757070",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "person-41737365",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "person-4a435520",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "person-41737365",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "person-53657276",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "person-496e766f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "person-41492074",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "person-5363616c",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-105",
+      "target": "person-53757070",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-706c6175",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-74776963",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-64657665",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-676f2d6c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-696d706c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-72656173",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-7374753a",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-7374753a",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-7265706f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-676f2d6c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-7265736f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-76697369",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "concept-70726f6a",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "person-537475",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "person-53706f6e",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "person-54776963",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "person-44657665",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "person-5265706f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "person-476f2d4c",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "person-5265736f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "person-56697369",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-107",
+      "target": "person-50726f6a",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-72656f63",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-73756273",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-6162616e",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-61646f70",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-7465616d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-7465616d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-73747261",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-61737365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-73756273",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-64652d72",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-108",
+      "target": "concept-736f6674",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "concept-61756469",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "concept-65727020",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "concept-31302d79",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "concept-636f6d6d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "concept-63686172",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "concept-7465616d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "concept-636f6e74",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "concept-646f6375",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "concept-73747261",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "person-53706561",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "person-53706561",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "person-45525020",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "person-455250",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "person-4f4455",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "person-436f6e74",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "person-446f6375",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-109",
+      "target": "person-53747261",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-6d616365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-70686173",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-656e646f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-696d706c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-6167656e",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-6167656e",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-6d616365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-72656272",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-77656273",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-656e646f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-6a656e6b",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "concept-70686173",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "person-4d696368",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "person-53706561",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "person-42726565",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "person-50686173",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "person-52656272",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "person-57656273",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "person-456e646f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "person-4a656e6b",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-110",
+      "target": "person-50686173",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-2a207365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-696e6365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-66696e61",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-7265706c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-61726269",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-64617461",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-72656465",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-6c696e6b",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-66756e64",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-6e6f6e65",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-66696e61",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-696e6365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-62757369",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-70726f66",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-64617461",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-113",
+      "target": "concept-70657266",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-716d7320",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-65717569",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-646f6375",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-7265636f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-616c6c20",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-66696e61",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-61756469",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-63616c69",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-646f6375",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-7265636f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-636f6d70",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "concept-70726f63",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-53706561",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-44697265",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-45717569",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-446f6375",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-41756469",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-43616c69",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-446f6375",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-5265636f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-436f6d70",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-117",
+      "target": "person-50726f63",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-61692d64",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-6368656d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-70726f66",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-6f706572",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-7069766f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-696d706c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-61646f70",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-6368656d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-70726f66",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-62757369",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-6f706572",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-118",
+      "target": "concept-6d617267",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-6f646f6f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-67697468",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-6964656e",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-7265736f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-6f646f6f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-61636365",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-696e7465",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-64656164",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-7065726d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "concept-74656368",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "person-53706561",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "person-44696d65",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "person-4f646f6f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "person-41636365",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "person-496e7465",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "person-44656164",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "person-5065726d",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-119",
+      "target": "person-54656368",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-120",
+      "target": "concept-61692069",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-120",
+      "target": "concept-73616c65",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-120",
+      "target": "concept-636c6175",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-120",
+      "target": "concept-6175746f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-120",
+      "target": "concept-73797374",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-120",
+      "target": "concept-6d656574",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-120",
+      "target": "concept-776f726b",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-120",
+      "target": "concept-64617461",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-6a757374",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-666c6565",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-73616c65",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-61646f70",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-6465706c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-696e7370",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-636f7374",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-616e6420",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-666c6565",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-70726f61",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-64617461",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-6175746f",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "concept-6a757374",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "person-466c6565",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "person-696e7370",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "person-636f7374",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "person-466c6565",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "person-50726f61",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "person-44617461",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "person-4175746f",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-123",
+      "target": "person-4a757374",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-66726163",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-696d706c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-74776f2d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-61677265",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-6d757475",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-616e6420",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-61646f70",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-61707072",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-30303020",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-636f6e73",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-696d706c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-64696167",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-70726f66",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "concept-636f6e73",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "person-416e6472",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "person-496d706c",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "person-6d757475",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "person-496d706c",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "person-44696167",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "person-50726f66",
+      "type": "attended_by",
+      "weight": 1
+    },
+    {
+      "source": "meeting-124",
+      "target": "person-436f6e73",
+      "type": "attended_by",
+      "weight": 1
     }
   ],
   "metadata": {
-    "generated": "2026-04-11T20:57:00Z",
-    "source": "gemma-ollama-extractions",
-    "node_count": 222,
-    "edge_count": 211,
-    "meeting_count": 30,
-    "date_range": {
-      "earliest": "2026-01-13",
-      "latest": "Unknown"
+    "generated": "2026-04-13T23:28:19.087Z",
+    "source": "merged-april-data",
+    "dateRange": "2026-01-13 to 2026-04-13",
+    "totalMeetings": 55,
+    "totalNodes": 526,
+    "totalEdges": 504,
+    "breakdown": {
+      "meetings": 55,
+      "people": 90,
+      "projects": 73,
+      "concepts": 308,
+      "decisions": 0
     }
   }
 }
