@@ -445,7 +445,7 @@ function buildShell() {
 
 // ── LOAD GRAPH
 function loadGraph() {
-  fetch('/graph-data.json')
+  fetch('graph-data.json')
     .then(r => r.json())
     .then(data => {
       // Transform edges → links for compatibility
