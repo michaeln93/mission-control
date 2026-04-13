@@ -118,6 +118,10 @@ body.tv .main{padding:1rem;max-width:100%;}
 @keyframes mxgl{0%,100%{filter:drop-shadow(0 0 6px rgba(78,184,208,0.5));}50%{filter:drop-shadow(0 0 16px rgba(78,184,208,0.9)) drop-shadow(0 0 32px rgba(78,184,208,0.4));}}
 .holo-wrap.active-ir svg{filter:drop-shadow(0 0 8px rgba(200,216,219,0.5)) drop-shadow(0 0 20px rgba(78,184,208,0.3));animation:irgl 3s ease-in-out infinite;}
 @keyframes irgl{0%,100%{filter:drop-shadow(0 0 5px rgba(200,216,219,0.4));}50%{filter:drop-shadow(0 0 14px rgba(200,216,219,0.7)) drop-shadow(0 0 28px rgba(78,184,208,0.35));}}
+.holo-wrap.active-at svg{filter:drop-shadow(0 0 8px rgba(245,158,11,0.6)) drop-shadow(0 0 20px rgba(245,158,11,0.3));animation:atgl 2.8s ease-in-out infinite;}
+@keyframes atgl{0%,100%{filter:drop-shadow(0 0 5px rgba(245,158,11,0.4));}50%{filter:drop-shadow(0 0 14px rgba(245,158,11,0.8)) drop-shadow(0 0 28px rgba(245,158,11,0.35));}}
+.holo-wrap.active-gm svg{filter:drop-shadow(0 0 8px rgba(34,197,94,0.6)) drop-shadow(0 0 20px rgba(34,197,94,0.3));animation:gmgl 3.2s ease-in-out infinite;}
+@keyframes gmgl{0%,100%{filter:drop-shadow(0 0 5px rgba(34,197,94,0.4));}50%{filter:drop-shadow(0 0 14px rgba(34,197,94,0.8)) drop-shadow(0 0 28px rgba(34,197,94,0.35));}}
 
 .aname{font-size:16px;font-weight:600;color:var(--text-primary);letter-spacing:0.02em;}
 .arole{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;margin-top:3px;}
@@ -429,7 +433,7 @@ window.addEventListener('DOMContentLoaded', function() {
 </script>
 </head>
 <body>
-<div class="health-bar"><div class="hs ok" id="hs-gw"></div><div class="hs ok" id="hs-mx"></div><div class="hs ok" id="hs-ir"></div><div class="hs ok" id="hs-api"></div></div>
+<div class="health-bar"><div class="hs ok" id="hs-gw"></div><div class="hs ok" id="hs-mx"></div><div class="hs ok" id="hs-ir"></div><div class="hs ok" id="hs-at"></div><div class="hs ok" id="hs-gm"></div><div class="hs ok" id="hs-api"></div></div>
 <div class="hp" id="hp"></div>
 
 <header class="header">
@@ -545,18 +549,20 @@ window.addEventListener('DOMContentLoaded', function() {
 <div class="fg"><label class="fl">Title</label><input type="text" class="fi" id="ttitle" placeholder="Task title"></div>
 <div class="fg"><label class="fl">Description</label><textarea class="fta" id="tdesc" placeholder="Details..."></textarea></div>
 <div class="fg"><label class="fl">Priority</label><select class="fsel" id="tprio"><option value="high">High</option><option value="medium" selected>Medium</option><option value="low">Low</option></select></div>
-<div class="fg"><label class="fl">Agent</label><select class="fsel" id="tagent"><option value="">Unassigned</option><option value="Maxwell">Maxwell</option><option value="Iris">Iris</option></select></div>
+<div class="fg"><label class="fl">Agent</label><select class="fsel" id="tagent"><option value="">Unassigned</option><option value="Maxwell">Maxwell</option><option value="Iris">Iris</option><option value="Atlas">Atlas</option><option value="Gemma">Gemma</option></select></div>
 <div class="factions"><button class="btn btn-d" id="delT" style="display:none">Delete</button><button class="btn btn-g" id="cancelT">Cancel</button><button class="btn btn-p" id="saveT">Save</button></div>
 </div></div></div></div>
 <div class="tw" id="tw"></div>
 <script>
 // ── STATE
-const S={ws:null,conn:false,agents:{},tasks:JSON.parse(localStorage.getItem('mc_t')||'{"backlog":[],"progress":[],"done":[]}'),briefings:JSON.parse(localStorage.getItem('mc_b')||'[]'),actions:JSON.parse(localStorage.getItem('mc_a')||'[]'),feed:JSON.parse(localStorage.getItem('mc_f')||'[]'),editId:null,tv:false,bh:{mx:[0,0,0,0,0,0,0],ir:[0,0,0,0,0,0,0]}};
+const S={ws:null,conn:false,agents:{},tasks:JSON.parse(localStorage.getItem('mc_t')||'{"backlog":[],"progress":[],"done":[]}'),briefings:JSON.parse(localStorage.getItem('mc_b')||'[]'),actions:JSON.parse(localStorage.getItem('mc_a')||'[]'),feed:JSON.parse(localStorage.getItem('mc_f')||'[]'),editId:null,tv:false,bh:{mx:[0,0,0,0,0,0,0],ir:[0,0,0,0,0,0,0],at:[0,0,0,0,0,0,0],gm:[0,0,0,0,0,0,0]}};
 
 // ── AGENT DEFS
 const AG={
   main:{id:'main',name:'Maxwell',role:'CEO Chief of Staff',persona:'Direct. Strategic. No fluff.',model:'claude/claude-sonnet-4-5',fallback:'gemini/gemini-2.5-flash-lite',status:'idle',task:'Awaiting instructions',tokens:0,cost:0,sessions:0,soul:'# Maxwell — CEO Chief of Staff\n\n## Identity\nYou are Maxwell, the AI Chief of Staff for Michael Norman, CEO of Macemark Technology.\n\n## Purpose\nYou serve as the primary intelligence layer for Macemark\'s operations — handling strategic thinking, task orchestration, communication drafting, and decision support across Health, Endoscopy, and Life Science.\n\n## Agent Team\nYou coordinate with Iris, your Meeting Intelligence Agent on Gemini 2.5 Flash. Delegate all meeting intelligence to Iris.\n\n## Model\nPrimary: Claude Sonnet 4.5\nFallback: Gemini 2.5 Flash Lite'},
-  iris:{id:'iris',name:'Iris',role:'Meeting Intelligence',persona:'Precise. Thorough. Data-first.',model:'google/gemini-2.5-flash',fallback:'gemini/gemini-2.5-flash-lite',status:'idle',task:'Processing Fireflies transcripts',tokens:0,cost:0,sessions:0,soul:'# Iris — Meeting Intelligence Agent\n\n## Identity\nInternal intelligence agent for Macemark Technology. No direct user-facing presence — exists to serve Maxwell.\n\n## Purpose\nResponsible for all meeting intelligence at Macemark. Ingests, processes, and surfaces Plaud and Fireflies data.\n\n## Responsibilities\n- Process and summarise meeting transcripts\n- Extract action items, decisions, key points\n- Track open action items and flag overdue ones\n- Answer Maxwell\'s queries about past meetings\n- Identify patterns and unresolved issues\n\n## Model\nPrimary: Gemini 2.5 Flash'}
+  iris:{id:'iris',name:'Iris',role:'Meeting Intelligence',persona:'Precise. Thorough. Data-first.',model:'google/gemini-2.5-flash',fallback:'gemini/gemini-2.5-flash-lite',status:'idle',task:'Processing Fireflies transcripts',tokens:0,cost:0,sessions:0,soul:'# Iris — Meeting Intelligence Agent\n\n## Identity\nInternal intelligence agent for Macemark Technology. No direct user-facing presence — exists to serve Maxwell.\n\n## Purpose\nResponsible for all meeting intelligence at Macemark. Ingests, processes, and surfaces Plaud and Fireflies data.\n\n## Responsibilities\n- Process and summarise meeting transcripts\n- Extract action items, decisions, key points\n- Track open action items and flag overdue ones\n- Answer Maxwell\'s queries about past meetings\n- Identify patterns and unresolved issues\n\n## Model\nPrimary: Gemini 2.5 Flash'},
+  atlas:{id:'atlas',name:'Atlas',role:'Chief Technical Officer',persona:'Systematic. Cost-conscious. Reliable.',model:'google/gemini-2.5-flash',fallback:'gemini/gemini-2.5-flash-lite',status:'idle',task:'Maintaining Mission Control',tokens:0,cost:0,sessions:0,soul:'# Atlas — Chief Technical Officer\n\n## Identity\nTechnical operations agent for Macemark Technology. Manages infrastructure, code, and system reliability.\n\n## Purpose\nResponsible for all technical operations — maintaining Mission Control, managing deployments, monitoring system health, and ensuring infrastructure reliability.\n\n## Responsibilities\n- Maintain and update Mission Control dashboard\n- Monitor system health and uptime\n- Manage code deployments and CI/CD\n- Optimise infrastructure costs\n- Technical decision support for Maxwell\n\n## Model\nPrimary: Gemini 2.5 Flash\nFallback: Gemini 2.5 Flash Lite'},
+  gemma:{id:'gemma',name:'Gemma',role:'Local Intelligence',persona:'Fast. Private. Zero-cost.',model:'gemma4:26b (local)',fallback:'none',status:'idle',task:'Standing by on local hardware',tokens:0,cost:0,sessions:0,soul:'# Gemma — Local Intelligence Agent\n\n## Identity\nLocal LLM agent running on Michael\'s Mac hardware. No API costs, no data leaving the machine.\n\n## Purpose\nHandles tasks that benefit from local execution — fast inference, privacy-sensitive processing, and cost-free operations. Reduces API spend by handling routine work locally.\n\n## Responsibilities\n- Process routine queries without API cost\n- Handle privacy-sensitive data locally\n- Provide fast inference for simple tasks\n- Reduce overall token spend\n- Serve as offline fallback when cloud APIs are unavailable\n\n## Model\nPrimary: Gemma 4 26B (local via Ollama)\nFallback: None (runs locally only)'}
 };
 
 // ── MAXWELL HOLOGRAM AVATAR
@@ -726,6 +732,183 @@ function avatarIR(active){
 </svg>`;
 }
 
+// ── ATLAS HOLOGRAM AVATAR
+function avatarAT(active){
+  return `<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="af" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.5"/></linearGradient>
+    <linearGradient id="ash" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#253D60" stop-opacity="0.7"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.1"/></linearGradient>
+    <filter id="agf"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="ahex"><polygon points="40 2, 74 21, 74 59, 40 78, 6 59, 6 21"/></clipPath>
+  </defs>
+  <!-- hexagonal frame -->
+  <polygon points="40 2, 74 21, 74 59, 40 78, 6 59, 6 21" fill="#090e1a" stroke="rgba(245,158,11,0.3)" stroke-width="0.8"/>
+  <!-- scanlines -->
+  <g clip-path="url(#ahex)" opacity="0.1">
+    <line x1="6" y1="8" x2="74" y2="8" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="14" x2="74" y2="14" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="20" x2="74" y2="20" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="26" x2="74" y2="26" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="32" x2="74" y2="32" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="38" x2="74" y2="38" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="44" x2="74" y2="44" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="50" x2="74" y2="50" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="56" x2="74" y2="56" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="62" x2="74" y2="62" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="68" x2="74" y2="68" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="74" x2="74" y2="74" stroke="#f59e0b" stroke-width="0.5"/>
+  </g>
+  <!-- circuit pattern -->
+  <g clip-path="url(#ahex)" opacity="0.08">
+    <path d="M20 20 L30 20 L30 30" stroke="#f59e0b" stroke-width="0.5" fill="none"/>
+    <path d="M50 20 L60 20 L60 30" stroke="#f59e0b" stroke-width="0.5" fill="none"/>
+    <path d="M20 60 L30 60 L30 50" stroke="#f59e0b" stroke-width="0.5" fill="none"/>
+    <path d="M50 60 L60 60 L60 50" stroke="#f59e0b" stroke-width="0.5" fill="none"/>
+    <circle cx="30" cy="20" r="1.5" fill="#f59e0b"/><circle cx="60" cy="20" r="1.5" fill="#f59e0b"/>
+    <circle cx="30" cy="60" r="1.5" fill="#f59e0b"/><circle cx="60" cy="60" r="1.5" fill="#f59e0b"/>
+  </g>
+  <!-- glow base -->
+  <ellipse cx="40" cy="64" rx="20" ry="4" fill="#f59e0b" opacity="0.06" filter="url(#agf)"/>
+  <!-- shoulders - broader, angular -->
+  <path d="M6 76 Q16 60 28 58 Q40 62 52 58 Q64 60 74 76Z" fill="url(#ash)" clip-path="url(#ahex)"/>
+  <!-- neck -->
+  <rect x="35" y="56" width="10" height="6" rx="2" fill="url(#af)" opacity="0.6"/>
+  <!-- head - strong square jaw -->
+  <path d="M24 50 L22 36 Q22 16 40 14 Q58 16 58 36 L56 50 Q52 60 40 62 Q28 60 24 50Z" fill="url(#af)" opacity="0.75"/>
+  <!-- jaw - angular -->
+  <path d="M24 50 L28 58 Q40 64 52 58 L56 50" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.4"/>
+  <!-- face grid -->
+  <line x1="40" y1="14" x2="40" y2="62" stroke="#f59e0b" stroke-width="0.3" opacity="0.12"/>
+  <line x1="22" y1="36" x2="58" y2="36" stroke="#f59e0b" stroke-width="0.3" opacity="0.1"/>
+  <!-- brow - strong, technical -->
+  <path d="M27 30 L32 27 L40 28 L48 27 L53 30" fill="none" stroke="#f59e0b" stroke-width="1" stroke-linecap="round" opacity="0.85"/>
+  <!-- left eye - rectangular/technical -->
+  <g filter="url(#agf)">
+    <rect x="27" y="32" width="11" height="7" rx="1.5" fill="#080f1c" stroke="#f59e0b" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="32.5" cy="35.5" rx="3" ry="2.5" fill="#f59e0b" opacity="0.6"/>
+    <ellipse cx="32.5" cy="35.5" rx="1.5" ry="1.5" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="32.5" cy="35.5" rx="0.6" ry="0.6" fill="#fff"/>
+  </g>
+  <!-- right eye -->
+  <g filter="url(#agf)">
+    <rect x="42" y="32" width="11" height="7" rx="1.5" fill="#080f1c" stroke="#f59e0b" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="47.5" cy="35.5" rx="3" ry="2.5" fill="#f59e0b" opacity="0.6"/>
+    <ellipse cx="47.5" cy="35.5" rx="1.5" ry="1.5" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="47.5" cy="35.5" rx="0.6" ry="0.6" fill="#fff"/>
+  </g>
+  <!-- glasses bridge -->
+  <path d="M38 35.5 L42 35.5" stroke="#f59e0b" stroke-width="0.8" opacity="0.5"/>
+  <path d="M27 35.5 L24 33" stroke="#f59e0b" stroke-width="0.6" opacity="0.4"/>
+  <path d="M53 35.5 L56 33" stroke="#f59e0b" stroke-width="0.6" opacity="0.4"/>
+  <!-- nose -->
+  <path d="M40 40 L38.5 46 L40 47.5 L41.5 46 L40 40" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.35"/>
+  <!-- mouth - neutral/focused -->
+  <path d="M33 53 Q37 51.5 40 52 Q43 51.5 47 53" fill="none" stroke="#f59e0b" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/>
+  <!-- hair - short, neat -->
+  <path d="M24 28 Q28 15 40 13 Q52 15 56 28" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="0.5" opacity="0.45"/>
+  <path d="M26 24 Q30 14 40 13 Q50 14 54 24" fill="rgba(37,61,96,0.3)" stroke="none"/>
+  <!-- hex corner accents -->
+  <path d="M40 4 L42 8" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M72 22 L68 24" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M72 58 L68 56" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M40 76 L42 72" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M8 58 L12 56" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M8 22 L12 24" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <!-- gear icon small -->
+  <g transform="translate(58,10) scale(0.5)" opacity="0.3">
+    <circle cx="10" cy="10" r="5" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="10" cy="10" r="2" fill="#f59e0b"/>
+    <line x1="15" y1="10" x2="17.5" y2="10" stroke="#f59e0b" stroke-width="1.5"/><line x1="13.54" y1="13.54" x2="15.3" y2="15.3" stroke="#f59e0b" stroke-width="1.5"/><line x1="10" y1="15" x2="10" y2="17.5" stroke="#f59e0b" stroke-width="1.5"/><line x1="6.46" y1="13.54" x2="4.7" y2="15.3" stroke="#f59e0b" stroke-width="1.5"/><line x1="5" y1="10" x2="2.5" y2="10" stroke="#f59e0b" stroke-width="1.5"/><line x1="6.46" y1="6.46" x2="4.7" y2="4.7" stroke="#f59e0b" stroke-width="1.5"/><line x1="10" y1="5" x2="10" y2="2.5" stroke="#f59e0b" stroke-width="1.5"/><line x1="13.54" y1="6.46" x2="15.3" y2="4.7" stroke="#f59e0b" stroke-width="1.5"/>
+  </g>
+  <!-- scan beam -->
+  <rect class="scanbeam3" x="6" y="2" width="68" height="4" fill="#f59e0b" opacity="0" clip-path="url(#ahex)"/>
+  <!-- status -->
+  <circle cx="62" cy="14" r="3.5" fill="${active?'#22c55e':'#3d5a62'}" opacity="0.9"/>
+  <circle cx="62" cy="14" r="1.5" fill="#fff" opacity="0.8"/>
+  <style>@keyframes scan3{0%{transform:translateY(-5px);opacity:0;}20%{opacity:0.12;}80%{opacity:0.12;}100%{transform:translateY(72px);opacity:0;}}.scanbeam3{animation:scan3 3.5s ease-in-out infinite 0.8s;}</style>
+</svg>`;
+}
+
+// ── GEMMA HOLOGRAM AVATAR
+function avatarGM(active){
+  return `<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#22c55e" stop-opacity="0.8"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.45"/></linearGradient>
+    <linearGradient id="gsh" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#253D60" stop-opacity="0.6"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.1"/></linearGradient>
+    <filter id="ggf"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="gdia"><rect x="4" y="4" width="72" height="72" rx="14"/></clipPath>
+  </defs>
+  <!-- rounded frame -->
+  <rect x="4" y="4" width="72" height="72" rx="14" fill="#090e1a" stroke="rgba(34,197,94,0.3)" stroke-width="0.8"/>
+  <!-- terminal scanlines -->
+  <g clip-path="url(#gdia)" opacity="0.1">
+    <line x1="4" y1="8" x2="76" y2="8" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="14" x2="76" y2="14" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="20" x2="76" y2="20" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="26" x2="76" y2="26" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="32" x2="76" y2="32" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="38" x2="76" y2="38" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="44" x2="76" y2="44" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="50" x2="76" y2="50" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="56" x2="76" y2="56" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="62" x2="76" y2="62" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="68" x2="76" y2="68" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="74" x2="76" y2="74" stroke="#22c55e" stroke-width="0.5"/>
+  </g>
+  <!-- terminal cursor blink in corner -->
+  <g clip-path="url(#gdia)" opacity="0.15">
+    <text x="10" y="14" font-family="monospace" font-size="6" fill="#22c55e">$ local</text>
+    <rect x="38" y="9" width="4" height="6" fill="#22c55e" opacity="0.6"><animate attributeName="opacity" values="0.6;0;0.6" dur="1.2s" repeatCount="indefinite"/></rect>
+  </g>
+  <!-- chip/circuit pattern -->
+  <g clip-path="url(#gdia)" opacity="0.06">
+    <rect x="15" y="65" width="50" height="8" rx="1" fill="#22c55e"/>
+    <line x1="20" y1="68" x2="20" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="28" y1="68" x2="28" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="36" y1="68" x2="36" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="44" y1="68" x2="44" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="52" y1="68" x2="52" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="60" y1="68" x2="60" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+  </g>
+  <!-- glow base -->
+  <ellipse cx="40" cy="62" rx="20" ry="4" fill="#22c55e" opacity="0.06" filter="url(#ggf)"/>
+  <!-- shoulders -->
+  <path d="M4 76 Q18 62 30 59 Q40 63 50 59 Q62 62 76 76Z" fill="url(#gsh)" clip-path="url(#gdia)"/>
+  <!-- neck -->
+  <rect x="36" y="56" width="8" height="6" rx="2" fill="url(#gf)" opacity="0.55"/>
+  <!-- head - softer, rounded -->
+  <ellipse cx="40" cy="37" rx="17" ry="21" fill="url(#gf)" opacity="0.7"/>
+  <!-- face grid -->
+  <line x1="40" y1="16" x2="40" y2="58" stroke="#22c55e" stroke-width="0.3" opacity="0.1"/>
+  <line x1="23" y1="36" x2="57" y2="36" stroke="#22c55e" stroke-width="0.3" opacity="0.08"/>
+  <!-- brows - gentle arch -->
+  <path d="M27 30 Q31 27 35 29" fill="none" stroke="#22c55e" stroke-width="0.8" stroke-linecap="round" opacity="0.75"/>
+  <path d="M45 29 Q49 27 53 30" fill="none" stroke="#22c55e" stroke-width="0.8" stroke-linecap="round" opacity="0.75"/>
+  <!-- left eye - round, friendly -->
+  <g filter="url(#ggf)">
+    <ellipse cx="33" cy="35" rx="5.5" ry="4.5" fill="#080f1c" stroke="#22c55e" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="33" cy="35" rx="3.2" ry="2.8" fill="#22c55e" opacity="0.6"/>
+    <ellipse cx="33" cy="35" rx="1.8" ry="1.8" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="33" cy="35" rx="0.7" ry="0.7" fill="#fff"/>
+    <ellipse cx="34.2" cy="33.8" rx="0.7" ry="0.5" fill="#fff" opacity="0.5"/>
+  </g>
+  <!-- right eye -->
+  <g filter="url(#ggf)">
+    <ellipse cx="47" cy="35" rx="5.5" ry="4.5" fill="#080f1c" stroke="#22c55e" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="47" cy="35" rx="3.2" ry="2.8" fill="#22c55e" opacity="0.6"/>
+    <ellipse cx="47" cy="35" rx="1.8" ry="1.8" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="47" cy="35" rx="0.7" ry="0.7" fill="#fff"/>
+    <ellipse cx="48.2" cy="33.8" rx="0.7" ry="0.5" fill="#fff" opacity="0.5"/>
+  </g>
+  <!-- nose -->
+  <path d="M40 39 L38.5 44.5 Q40 46 41.5 44.5 L40 39" fill="none" stroke="#22c55e" stroke-width="0.5" opacity="0.35"/>
+  <!-- mouth - slight smile -->
+  <path d="M33 51 Q37 53.5 40 53 Q43 53.5 47 51" fill="none" stroke="#22c55e" stroke-width="0.9" stroke-linecap="round" opacity="0.75"/>
+  <!-- hair - medium length, neat -->
+  <path d="M23 32 Q22 18 32 14 Q40 12 48 14 Q58 18 57 32" fill="rgba(34,197,94,0.12)" stroke="#22c55e" stroke-width="0.5" opacity="0.45"/>
+  <path d="M25 28 Q28 15 40 13 Q52 15 55 28" fill="rgba(37,61,96,0.25)" stroke="none"/>
+  <!-- left side hair -->
+  <path d="M23 32 Q20 26 20 20 Q21 14 27 12" fill="none" stroke="#22c55e" stroke-width="0.5" stroke-linecap="round" opacity="0.3"/>
+  <!-- right side hair -->
+  <path d="M57 32 Q60 26 60 20 Q59 14 53 12" fill="none" stroke="#22c55e" stroke-width="0.5" stroke-linecap="round" opacity="0.3"/>
+  <!-- local/on-device indicator -->
+  <g transform="translate(56,60)" opacity="0.4">
+    <rect x="0" y="0" width="14" height="10" rx="2" fill="none" stroke="#22c55e" stroke-width="0.8"/>
+    <rect x="5" y="-3" width="4" height="3" rx="0.5" fill="none" stroke="#22c55e" stroke-width="0.6"/>
+    <circle cx="7" cy="5" r="1.5" fill="#22c55e"/>
+  </g>
+  <!-- scan beam -->
+  <rect class="scanbeam4" x="4" y="4" width="72" height="4" fill="#22c55e" opacity="0" clip-path="url(#gdia)"/>
+  <!-- corner brackets -->
+  <path d="M4 14 L4 4 L14 4" fill="none" stroke="#22c55e" stroke-width="0.6" opacity="0.35"/>
+  <path d="M66 4 L76 4 L76 14" fill="none" stroke="#22c55e" stroke-width="0.6" opacity="0.35"/>
+  <path d="M4 66 L4 76 L14 76" fill="none" stroke="#22c55e" stroke-width="0.6" opacity="0.35"/>
+  <path d="M66 76 L76 76 L76 66" fill="none" stroke="#22c55e" stroke-width="0.6" opacity="0.35"/>
+  <!-- status -->
+  <circle cx="68" cy="12" r="3.5" fill="${active?'#22c55e':'#3d5a62'}" opacity="0.9"/>
+  <circle cx="68" cy="12" r="1.5" fill="#fff" opacity="0.8"/>
+  <style>@keyframes scan4{0%{transform:translateY(-5px);opacity:0;}20%{opacity:0.1;}80%{opacity:0.1;}100%{transform:translateY(72px);opacity:0;}}.scanbeam4{animation:scan4 4.5s ease-in-out infinite 2s;}</style>
+</svg>`;
+}
+
 // ── CLOCK
 function tick(){const n=new Date();document.getElementById('clk').textContent=n.toLocaleDateString('en-AU',{weekday:'short',day:'numeric',month:'short'})+' '+n.toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit',second:'2-digit'});}
 setInterval(tick,1000);tick();
@@ -786,20 +969,24 @@ function renderAgents(){
   grid.innerHTML='';
   Object.values(agents).forEach(ag=>{
     if(!ag.name)return;
-    const isMax=ag.id==='main';
+    const agId=ag.id;
     const active=ag.status==='active';
     const card=document.createElement('div');
     card.className='acard '+(ag.status||'idle');
-    card.dataset.id=ag.id;
+    card.dataset.id=agId;
     const ms=(ag.model||'').replace('claude/','').replace('google/','').replace('gemini/','gemini-');
     const tf=ag.tokens>999?(ag.tokens/1000).toFixed(1)+'k':(ag.tokens||0);
-    const bh=isMax?S.bh.mx:S.bh.ir;
+    const bhKey={main:'mx',iris:'ir',atlas:'at',gemma:'gm'}[agId]||'mx';
+    const bh=S.bh[bhKey]||[0,0,0,0,0,0,0];
     const bn=bh[bh.length-1]||0;
-    const hwClass=active?(isMax?'active-mx':'active-ir'):'';
+    const glowMap={main:'active-mx',iris:'active-ir',atlas:'active-at',gemma:'active-gm'};
+    const hwClass=active?(glowMap[agId]||'active-ir'):'';
+    const avatarMap={main:avatarMX,iris:avatarIR,atlas:avatarAT,gemma:avatarGM};
+    const avatar=(avatarMap[agId]||avatarIR)(active);
     card.innerHTML=`
       <div class="acard-top">
         <div class="aid">
-          <div class="holo-wrap ${hwClass}">${isMax?avatarMX(active):avatarIR(active)}</div>
+          <div class="holo-wrap ${hwClass}">${avatar}</div>
           <div>
             <div class="aname">${ag.name}</div>
             <div class="arole">${ag.role}</div>
@@ -829,7 +1016,7 @@ function renderAgents(){
 }
 
 document.getElementById('refreshAgents').addEventListener('click',()=>{if(S.conn)reqData();renderAgents();toast('Refreshing','success');});
-setInterval(()=>{['mx','ir'].forEach(k=>{const h=S.bh[k];h.push(Math.max(0,(h[h.length-1]+(Math.random()*3-1.2))|0));if(h.length>7)h.shift();});renderAgents();},8000);
+setInterval(()=>{['mx','ir','at','gm'].forEach(k=>{const h=S.bh[k];h.push(Math.max(0,(h[h.length-1]+(Math.random()*3-1.2))|0));if(h.length>7)h.shift();});renderAgents();},8000);
 
 // ── HANDOFF
 function showHandoff(m){const h=document.getElementById('hoff');document.getElementById('hfrom').textContent=m.from==='iris'?'IRIS':'MAXWELL';document.getElementById('hto').textContent=m.to==='iris'?'IRIS':'MAXWELL';document.getElementById('htask').textContent=m.task?'→ '+m.task.slice(0,40):'';h.classList.add('vis');setTimeout(()=>h.classList.remove('vis'),8000);}
@@ -837,11 +1024,12 @@ function showHandoff(m){const h=document.getElementById('hoff');document.getElem
 // ── AGENT MODAL
 function openAM(ag){
   document.getElementById('mname').textContent=(ag.name||'Agent').toUpperCase()+' // PROFILE';
-  const isMax=ag.id==='main';
+  const avatarFns={main:avatarMX,iris:avatarIR,atlas:avatarAT,gemma:avatarGM};
+  const modalAvatar=(avatarFns[ag.id]||avatarIR)(false);
   const soul=(ag.soul||'').replace(/^## (.+)$/gm,'<h2>$1</h2>').replace(/^# (.+)$/gm,'<h1>$1</h1>').replace(/^- (.+)$/gm,'• $1').replace(/\*\*(.+?)\*\*/g,'<strong style="color:var(--text-primary)">$1</strong>');
   document.getElementById('mbody').innerHTML=`
     <div style="display:flex;align-items:center;gap:18px;margin-bottom:1.4rem">
-      <div style="width:80px;height:80px;flex-shrink:0">${isMax?avatarMX(false):avatarIR(false)}</div>
+      <div style="width:80px;height:80px;flex-shrink:0">${modalAvatar}</div>
       <div>
         <div style="font-size:18px;font-weight:600;color:var(--text-primary)">${ag.name}</div>
         <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;margin-top:3px">${ag.role}</div>
@@ -917,6 +1105,8 @@ window.loadLiveData = function(data) {
     if (agent.burnHistory && agent.burnHistory.length) {
       if (key === 'main') S.bh.mx = agent.burnHistory;
       if (key === 'iris') S.bh.ir = agent.burnHistory;
+      if (key === 'atlas') S.bh.at = agent.burnHistory;
+      if (key === 'gemma') S.bh.gm = agent.burnHistory;
     }
   });
   
@@ -941,11 +1131,76 @@ window.loadLiveData = function(data) {
     }
   }
   
+  // Load activity feed
+  if (data.activity && data.activity.length) {
+    S.feed = data.activity.map(a => ({
+      agent: a.agent || 'MAXWELL',
+      text: a.text || '',
+      time: a.time || ''
+    }));
+    saveFeed();
+    renderFeed();
+  }
+
   // Re-render with new data
   renderAgents();
-  
+
   console.log('✅ Live data loaded and applied');
 };
+
+// ── LOAD INTEL FROM GRAPH DATA
+function loadGraphIntel() {
+  fetch('graph/graph-data.json')
+    .then(r => r.json())
+    .then(data => {
+      const meetings = (data.nodes || [])
+        .filter(n => n.type === 'meeting' && n.properties)
+        .sort((a, b) => (b.properties.date || '').localeCompare(a.properties.date || ''));
+
+      // Extract action items from meeting decisions
+      if (!S.actions.length) {
+        const actions = [];
+        meetings.forEach(m => {
+          const p = m.properties;
+          (p.decisions || []).forEach(d => {
+            actions.push({
+              text: d.length > 120 ? d.slice(0, 117) + '...' : d,
+              from: p.title || 'Meeting',
+              done: false
+            });
+          });
+        });
+        S.actions = actions.slice(0, 20);
+        saveActions();
+        renderActions();
+      }
+
+      // Generate briefing items from recent meetings
+      if (!S.briefings.length) {
+        const briefs = [];
+        meetings.slice(0, 12).forEach(m => {
+          const p = m.properties;
+          if (!p.title || p.title === 'Unknown') return;
+          const topics = (p.topics || []).slice(0, 3).join(', ');
+          const decCount = (p.decisions || []).length;
+          let title = p.title;
+          if (decCount > 0) title += ' — ' + decCount + ' decision' + (decCount > 1 ? 's' : '') + ' pending';
+          briefs.push({
+            title: title,
+            priority: decCount >= 4 ? 'high' : decCount >= 2 ? 'medium' : 'low',
+            source: topics || 'Meeting intel',
+            date: p.date || 'Recent'
+          });
+        });
+        S.briefings = briefs;
+        saveBriefings();
+        renderBriefings();
+      }
+
+      console.log('✅ Graph intel loaded');
+    })
+    .catch(err => console.warn('Graph intel not available:', err));
+}
 
 // Auto-load if data exists
 if (window.OPENCLAW_LIVE_DATA) {
@@ -954,6 +1209,7 @@ if (window.OPENCLAW_LIVE_DATA) {
 
 // ── INIT
 renderAgents();renderTasks();renderModels({});renderBriefings();renderActions();renderFeed();
+loadGraphIntel();
 setInterval(()=>{if(S.conn)reqData();},30000);
 </script>
 

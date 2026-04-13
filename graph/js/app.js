@@ -1,6 +1,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// MACEMARK INTELLIGENCE GRAPH — Redesigned by Claude
+// MACEMARK INTELLIGENCE GRAPH — v2.1
 // Visual language: Deep space ops centre. Cold precision. Quiet authority.
+// Build: 2026-04-13
 // ─────────────────────────────────────────────────────────────────────────────
 
 const PALETTE = {
@@ -445,7 +446,7 @@ function buildShell() {
 
 // ── LOAD GRAPH
 function loadGraph() {
-  fetch('/graph-data.json')
+  fetch('graph-data.json')
     .then(r => r.json())
     .then(data => {
       // Transform edges → links for compatibility
