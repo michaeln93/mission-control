@@ -1131,11 +1131,76 @@ window.loadLiveData = function(data) {
     }
   }
   
+  // Load activity feed
+  if (data.activity && data.activity.length) {
+    S.feed = data.activity.map(a => ({
+      agent: a.agent || 'MAXWELL',
+      text: a.text || '',
+      time: a.time || ''
+    }));
+    saveFeed();
+    renderFeed();
+  }
+
   // Re-render with new data
   renderAgents();
-  
+
   console.log('✅ Live data loaded and applied');
 };
+
+// ── LOAD INTEL FROM GRAPH DATA
+function loadGraphIntel() {
+  fetch('graph/graph-data.json')
+    .then(r => r.json())
+    .then(data => {
+      const meetings = (data.nodes || [])
+        .filter(n => n.type === 'meeting' && n.properties)
+        .sort((a, b) => (b.properties.date || '').localeCompare(a.properties.date || ''));
+
+      // Extract action items from meeting decisions
+      if (!S.actions.length) {
+        const actions = [];
+        meetings.forEach(m => {
+          const p = m.properties;
+          (p.decisions || []).forEach(d => {
+            actions.push({
+              text: d.length > 120 ? d.slice(0, 117) + '...' : d,
+              from: p.title || 'Meeting',
+              done: false
+            });
+          });
+        });
+        S.actions = actions.slice(0, 20);
+        saveActions();
+        renderActions();
+      }
+
+      // Generate briefing items from recent meetings
+      if (!S.briefings.length) {
+        const briefs = [];
+        meetings.slice(0, 12).forEach(m => {
+          const p = m.properties;
+          if (!p.title || p.title === 'Unknown') return;
+          const topics = (p.topics || []).slice(0, 3).join(', ');
+          const decCount = (p.decisions || []).length;
+          let title = p.title;
+          if (decCount > 0) title += ' — ' + decCount + ' decision' + (decCount > 1 ? 's' : '') + ' pending';
+          briefs.push({
+            title: title,
+            priority: decCount >= 4 ? 'high' : decCount >= 2 ? 'medium' : 'low',
+            source: topics || 'Meeting intel',
+            date: p.date || 'Recent'
+          });
+        });
+        S.briefings = briefs;
+        saveBriefings();
+        renderBriefings();
+      }
+
+      console.log('✅ Graph intel loaded');
+    })
+    .catch(err => console.warn('Graph intel not available:', err));
+}
 
 // Auto-load if data exists
 if (window.OPENCLAW_LIVE_DATA) {
@@ -1144,6 +1209,7 @@ if (window.OPENCLAW_LIVE_DATA) {
 
 // ── INIT
 renderAgents();renderTasks();renderModels({});renderBriefings();renderActions();renderFeed();
+loadGraphIntel();
 setInterval(()=>{if(S.conn)reqData();},30000);
 </script>
 
