@@ -5479,9 +5479,10 @@
       "type": "concept",
       "label": "sales process",
       "properties": {
-        "mentions": 1,
+        "mentions": 2,
         "meetings": [
-          "meeting-apr022"
+          "meeting-apr022",
+          "meeting-apr209"
         ],
         "context": "sales process is a key topic discussed across 1 meetings in Macemark's April operations.",
         "trend": "stable",
@@ -5638,6 +5639,843 @@
         "context": "Incentive Evolution is a key topic discussed across 1 meetings in Macemark's April operations.",
         "trend": "stable",
         "relatedPeople": []
+      }
+    },
+    {
+      "id": "meeting-apr200",
+      "type": "meeting",
+      "label": "04-16 QWAST Account: Leadership Averts Pricing Conflict by Absorbing Freight Surcharge Through Cost ",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-16 QWAST Account: Leadership Averts Pricing Conflict by Absorbing Freight Surcharge Through Cost Reallocation",
+        "date": "2026-04-18",
+        "processing_time": 33.515729333,
+        "attendees": [
+          "Felicity",
+          "Bill Boyd-Law"
+        ],
+        "topics": [
+          "QWAST Account",
+          "Freight/Logistics Pricing",
+          "Cost Management"
+        ],
+        "decisions": [
+          "To forego negotiating the increased freight charge with the client to maintain goodwill.",
+          "The leadership team will absorb the carrier's levy increase by reallocating internal funds.",
+          "The existing margin ($17",
+          "actual cost) is sufficient to cover the overage."
+        ],
+        "keywords": [
+          "QWAST",
+          "Freight Surcharge",
+          "Cost Reallocation",
+          "Pricing Conflict",
+          "Carrier Levy",
+          "Margin"
+        ],
+        "summary": "2026-04-18 — QWAST Account, Freight/Logistics Pricing, Cost Management"
+      }
+    },
+    {
+      "id": "meeting-apr201",
+      "type": "meeting",
+      "label": "04-17 Strategic Project and Event Coordination",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-17 Strategic Project and Event Coordination",
+        "date": "2026-04-18",
+        "processing_time": 31.173275208,
+        "attendees": [],
+        "topics": [],
+        "decisions": [
+          "The email domain will migrate from \"SEO\" to \"MaceMark",
+          "\" with a go-live date set for the 30th.",
+          "The Odoo database will adopt a \"clean slate\" strategy.",
+          "Plans for conference booth assets and equipment have been finalized."
+        ],
+        "keywords": [
+          "**"
+        ],
+        "summary": "2026-04-18 — "
+      }
+    },
+    {
+      "id": "meeting-apr202",
+      "type": "meeting",
+      "label": "04-15 Redirecting Supply Care Explainer to Compliance to Unblock Sales and Protect Field Ops Capacit",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-15 Redirecting Supply Care Explainer to Compliance to Unblock Sales and Protect Field Ops Capacity",
+        "date": "2026-04-18",
+        "processing_time": 31.703995292,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-04-18 — "
+      }
+    },
+    {
+      "id": "meeting-apr203",
+      "type": "meeting",
+      "label": "04-15 Strategic Quoting: Securing Long-Term Profit with Aggressive Hardware Discounts in a Hospital ",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-15 Strategic Quoting: Securing Long-Term Profit with Aggressive Hardware Discounts in a Hospital Deal",
+        "date": "2026-04-18",
+        "processing_time": 28.467100792,
+        "attendees": [
+          "Jesse, Tom"
+        ],
+        "topics": [
+          "Plaud-AutoFlow",
+          "Hospital Sanitary Supply Quote",
+          "Bulk Pan Sanitizer Deal"
+        ],
+        "decisions": [
+          "To proceed with an aggressive quote utilizing a razor-thin 5% margin on \"Duck 1\" units",
+          "volume discount.",
+          "To structure the quote by showing the full list price before stating the discount",
+          "ensuring the client appears to achieve a significant \"win.\"",
+          "The primary strategy is to sacrifice upfront hardware margin to secure the long-term",
+          "profitable chemistry and service agreement."
+        ],
+        "keywords": [
+          "Plaud-AutoFlow",
+          "Hospital",
+          "Pan Sanitizers",
+          "Volume Discount",
+          "Margin",
+          "Hardware",
+          "Quote",
+          "Strategic Pricing"
+        ],
+        "summary": "2026-04-18 — Plaud-AutoFlow, Hospital Sanitary Supply Quote, Bulk Pan Sanitizer Deal"
+      }
+    },
+    {
+      "id": "meeting-apr204",
+      "type": "meeting",
+      "label": "04-14 AI-Driven Business Intelligence and Process Automation Initiative",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-14 AI-Driven Business Intelligence and Process Automation Initiative",
+        "date": "2026-04-18",
+        "processing_time": 33.003172166,
+        "attendees": [],
+        "topics": [
+          "(brief list)",
+          "AI-Driven Business Intelligence",
+          "Process Automation Initiative",
+          "Custom AI Agent Development (Maxwell)",
+          "AI-Accelerated ERP System Development",
+          "Sales and Technical Service Intelligence"
+        ],
+        "decisions": [
+          "(max 3 bullet points)",
+          "Explore the implementation of custom AI agents to overhaul business operations.",
+          "Develop a sophisticated",
+          "Utilize local processing (Mac Mini) for data ingestion to eliminate processing costs while running complex analysis."
+        ],
+        "keywords": [
+          "(comma separated)**"
+        ],
+        "summary": "2026-04-18 — (brief list), AI-Driven Business Intelligence, Process Automation Initiative..."
+      }
+    },
+    {
+      "id": "meeting-apr205",
+      "type": "meeting",
+      "label": "2026-04-14_000315_Plaud_AutoFlow_04_13_Diagnostic_Consultation_on_Sa.json",
+      "properties": {
+        "title": "2026-04-14_000315_Plaud_AutoFlow_04_13_Diagnostic_Consultation_on_Sa.json",
+        "date": "2026-04-14",
+        "processing_time": 39.657078166,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [
+          "N/A"
+        ],
+        "summary": "2026-04-14 — "
+      }
+    },
+    {
+      "id": "meeting-apr206",
+      "type": "meeting",
+      "label": "2026-04-14_000323_Plaud_AutoFlow_04_13_Strategic_Sales_Process_and_T.json",
+      "properties": {
+        "title": "2026-04-14_000323_Plaud_AutoFlow_04_13_Strategic_Sales_Process_and_T.json",
+        "date": "2026-04-14",
+        "processing_time": 13.842195458,
+        "attendees": [],
+        "topics": [],
+        "decisions": [
+          "No key decisions were available in the transcript."
+        ],
+        "keywords": [
+          "N/A"
+        ],
+        "summary": "2026-04-14 — "
+      }
+    },
+    {
+      "id": "meeting-apr207",
+      "type": "meeting",
+      "label": "2026-04-14_000326_Plaud_AutoFlow_04_13_Fractional_Sales_Management_P.json",
+      "properties": {
+        "title": "2026-04-14_000326_Plaud_AutoFlow_04_13_Fractional_Sales_Management_P.json",
+        "date": "2026-04-14",
+        "processing_time": 18.711923708,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [
+          "N/A"
+        ],
+        "summary": "2026-04-14 — "
+      }
+    },
+    {
+      "id": "meeting-apr208",
+      "type": "meeting",
+      "label": "2026-04-14_000507_Plaud_AutoFlow_04_13_Diagnostic_Consultation_on_Sa.json",
+      "properties": {
+        "title": "2026-04-14_000507_Plaud_AutoFlow_04_13_Diagnostic_Consultation_on_Sa.json",
+        "date": "2026-04-14",
+        "processing_time": 20.07668075,
+        "attendees": [],
+        "topics": [
+          "Plaud, AutoFlow",
+          "Diagnostic Consultation"
+        ],
+        "decisions": [],
+        "keywords": [
+          "Plaud",
+          "AutoFlow",
+          "Diagnostic",
+          "Consultation"
+        ],
+        "summary": "2026-04-14 — Plaud, AutoFlow, Diagnostic Consultation"
+      }
+    },
+    {
+      "id": "meeting-apr209",
+      "type": "meeting",
+      "label": "2026-04-14_000515_Plaud_AutoFlow_04_13_Strategic_Sales_Process_and_T.json",
+      "properties": {
+        "title": "2026-04-14_000515_Plaud_AutoFlow_04_13_Strategic_Sales_Process_and_T.json",
+        "date": "2026-04-14",
+        "processing_time": 22.76013125,
+        "attendees": [],
+        "topics": [
+          "Strategic Sales Process, AutoFlow"
+        ],
+        "decisions": [],
+        "keywords": [
+          "Strategic",
+          "Sales Process",
+          "AutoFlow"
+        ],
+        "summary": "2026-04-14 — Strategic Sales Process, AutoFlow"
+      }
+    },
+    {
+      "id": "meeting-apr210",
+      "type": "meeting",
+      "label": "2026-04-14_000517_Plaud_AutoFlow_04_13_Fractional_Sales_Management_P.json",
+      "properties": {
+        "title": "2026-04-14_000517_Plaud_AutoFlow_04_13_Fractional_Sales_Management_P.json",
+        "date": "2026-04-14",
+        "processing_time": 15.163352958,
+        "attendees": [
+          "Plaud AutoFlow"
+        ],
+        "topics": [
+          "Fractional Sales Management",
+          "Plaud AutoFlow",
+          "Key Decisions: None recorded",
+          "Action Items: None recorded",
+          "Keywords: Fractional Sales Management, Plaud, AutoFlow"
+        ],
+        "decisions": [
+          "Action Items: None recorded",
+          "Keywords: Fractional Sales Management, Plaud, AutoFlow"
+        ],
+        "keywords": [
+          "Fractional Sales Management",
+          "Plaud",
+          "AutoFlow"
+        ],
+        "summary": "2026-04-14 — Fractional Sales Management, Plaud AutoFlow, Key Decisions: None recorded..."
+      }
+    },
+    {
+      "id": "person-9a9750d9",
+      "type": "person",
+      "label": "Bill Boyd-Law",
+      "properties": {
+        "name": "Bill Boyd-Law",
+        "meetings": [
+          "meeting-apr200"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-a3427dbd",
+      "type": "person",
+      "label": "Jesse, Tom",
+      "properties": {
+        "name": "Jesse, Tom",
+        "meetings": [
+          "meeting-apr203"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "person-d3f9d4ce",
+      "type": "person",
+      "label": "Plaud AutoFlow",
+      "properties": {
+        "name": "Plaud AutoFlow",
+        "meetings": [
+          "meeting-apr210"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "concept-60bf0069",
+      "type": "concept",
+      "label": "QWAST Account",
+      "properties": {
+        "name": "QWAST Account",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr200"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-71f65266",
+      "type": "concept",
+      "label": "Freight/Logistics Pricing",
+      "properties": {
+        "name": "Freight/Logistics Pricing",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr200"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-9add557a",
+      "type": "concept",
+      "label": "Cost Management",
+      "properties": {
+        "name": "Cost Management",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr200"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-ccbb74c3",
+      "type": "concept",
+      "label": "QWAST",
+      "properties": {
+        "name": "QWAST",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr200"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-697d97ab",
+      "type": "concept",
+      "label": "Freight Surcharge",
+      "properties": {
+        "name": "Freight Surcharge",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr200"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-4a42d383",
+      "type": "concept",
+      "label": "Cost Reallocation",
+      "properties": {
+        "name": "Cost Reallocation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr200"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-5e58112a",
+      "type": "concept",
+      "label": "Pricing Conflict",
+      "properties": {
+        "name": "Pricing Conflict",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr200"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-4f865c21",
+      "type": "concept",
+      "label": "Carrier Levy",
+      "properties": {
+        "name": "Carrier Levy",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr200"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-514faf5a",
+      "type": "concept",
+      "label": "**",
+      "properties": {
+        "name": "**",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr201"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-1e39dffc",
+      "type": "concept",
+      "label": "Plaud-AutoFlow",
+      "properties": {
+        "name": "Plaud-AutoFlow",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr203"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-c61fc664",
+      "type": "concept",
+      "label": "Hospital Sanitary Supply Quote",
+      "properties": {
+        "name": "Hospital Sanitary Supply Quote",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr203"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-d4e639dc",
+      "type": "concept",
+      "label": "Bulk Pan Sanitizer Deal",
+      "properties": {
+        "name": "Bulk Pan Sanitizer Deal",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr203"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-8b42a1c9",
+      "type": "concept",
+      "label": "Hospital",
+      "properties": {
+        "name": "Hospital",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr203"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-8282e545",
+      "type": "concept",
+      "label": "Pan Sanitizers",
+      "properties": {
+        "name": "Pan Sanitizers",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr203"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-8c50adbb",
+      "type": "concept",
+      "label": "Volume Discount",
+      "properties": {
+        "name": "Volume Discount",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr203"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-d42f4851",
+      "type": "concept",
+      "label": "Margin",
+      "properties": {
+        "name": "Margin",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr203"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-3ca14c51",
+      "type": "concept",
+      "label": "Hardware",
+      "properties": {
+        "name": "Hardware",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr203"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-ec9f2272",
+      "type": "concept",
+      "label": "(brief list)",
+      "properties": {
+        "name": "(brief list)",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr204"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-a38b2ce7",
+      "type": "concept",
+      "label": "AI-Driven Business Intelligence",
+      "properties": {
+        "name": "AI-Driven Business Intelligence",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr204"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-033782e1",
+      "type": "concept",
+      "label": "Process Automation Initiative",
+      "properties": {
+        "name": "Process Automation Initiative",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr204"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-61763b6a",
+      "type": "concept",
+      "label": "Custom AI Agent Development (Maxwell)",
+      "properties": {
+        "name": "Custom AI Agent Development (Maxwell)",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr204"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-19441b5d",
+      "type": "concept",
+      "label": "AI-Accelerated ERP System Development",
+      "properties": {
+        "name": "AI-Accelerated ERP System Development",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr204"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-4fe03552",
+      "type": "concept",
+      "label": "Sales and Technical Service Intelligence",
+      "properties": {
+        "name": "Sales and Technical Service Intelligence",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr204"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-2a4c8af3",
+      "type": "concept",
+      "label": "(comma separated)**",
+      "properties": {
+        "name": "(comma separated)**",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr204"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-274b6819",
+      "type": "concept",
+      "label": "N/A",
+      "properties": {
+        "name": "N/A",
+        "mentions": 3,
+        "meetings": [
+          "meeting-apr205",
+          "meeting-apr206",
+          "meeting-apr207"
+        ],
+        "trend": "rising",
+        "context": "Discussed in 3 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-33dad0c1",
+      "type": "concept",
+      "label": "Plaud, AutoFlow",
+      "properties": {
+        "name": "Plaud, AutoFlow",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr208"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-8fe154a3",
+      "type": "concept",
+      "label": "Diagnostic Consultation",
+      "properties": {
+        "name": "Diagnostic Consultation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr208"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-ae33f8fe",
+      "type": "concept",
+      "label": "Plaud",
+      "properties": {
+        "name": "Plaud",
+        "mentions": 2,
+        "meetings": [
+          "meeting-apr208",
+          "meeting-apr210"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 2 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-545aaa79",
+      "type": "concept",
+      "label": "AutoFlow",
+      "properties": {
+        "name": "AutoFlow",
+        "mentions": 3,
+        "meetings": [
+          "meeting-apr208",
+          "meeting-apr209",
+          "meeting-apr210"
+        ],
+        "trend": "rising",
+        "context": "Discussed in 3 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-1b241505",
+      "type": "concept",
+      "label": "Diagnostic",
+      "properties": {
+        "name": "Diagnostic",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr208"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-39eb3a47",
+      "type": "concept",
+      "label": "Consultation",
+      "properties": {
+        "name": "Consultation",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr208"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-8f6190e2",
+      "type": "concept",
+      "label": "Strategic Sales Process, AutoFlow",
+      "properties": {
+        "name": "Strategic Sales Process, AutoFlow",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr209"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-1a57771a",
+      "type": "concept",
+      "label": "Strategic",
+      "properties": {
+        "name": "Strategic",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr209"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-9eefb546",
+      "type": "concept",
+      "label": "Fractional Sales Management",
+      "properties": {
+        "name": "Fractional Sales Management",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr210"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-d3f9d4ce",
+      "type": "concept",
+      "label": "Plaud AutoFlow",
+      "properties": {
+        "name": "Plaud AutoFlow",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr210"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-1b7abbdd",
+      "type": "concept",
+      "label": "Key Decisions: None recorded",
+      "properties": {
+        "name": "Key Decisions: None recorded",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr210"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-ef9c228b",
+      "type": "concept",
+      "label": "Action Items: None recorded",
+      "properties": {
+        "name": "Action Items: None recorded",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr210"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
+      }
+    },
+    {
+      "id": "concept-c3d40e46",
+      "type": "concept",
+      "label": "Keywords: Fractional Sales Management, Plaud, AutoFlow",
+      "properties": {
+        "name": "Keywords: Fractional Sales Management, Plaud, AutoFlow",
+        "mentions": 1,
+        "meetings": [
+          "meeting-apr210"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) during April 14-17"
       }
     }
   ],
@@ -7345,21 +8183,307 @@
       "target": "concept-1c8bf654",
       "type": "discusses",
       "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "person-8ec6dbb2",
+      "type": "attended",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "person-9a9750d9",
+      "type": "attended",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "concept-60bf0069",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "concept-71f65266",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "concept-9add557a",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "concept-ccbb74c3",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "concept-697d97ab",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "concept-4a42d383",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "concept-5e58112a",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr200",
+      "target": "concept-4f865c21",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr201",
+      "target": "concept-514faf5a",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr203",
+      "target": "person-a3427dbd",
+      "type": "attended",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr203",
+      "target": "concept-1e39dffc",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr203",
+      "target": "concept-c61fc664",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr203",
+      "target": "concept-d4e639dc",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr203",
+      "target": "concept-8b42a1c9",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr203",
+      "target": "concept-8282e545",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr203",
+      "target": "concept-8c50adbb",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr203",
+      "target": "concept-d42f4851",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr203",
+      "target": "concept-3ca14c51",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr204",
+      "target": "concept-ec9f2272",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr204",
+      "target": "concept-a38b2ce7",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr204",
+      "target": "concept-033782e1",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr204",
+      "target": "concept-61763b6a",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr204",
+      "target": "concept-19441b5d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr204",
+      "target": "concept-4fe03552",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr204",
+      "target": "concept-2a4c8af3",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr205",
+      "target": "concept-274b6819",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr206",
+      "target": "concept-274b6819",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr207",
+      "target": "concept-274b6819",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr208",
+      "target": "concept-33dad0c1",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr208",
+      "target": "concept-8fe154a3",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr208",
+      "target": "concept-ae33f8fe",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr208",
+      "target": "concept-545aaa79",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr208",
+      "target": "concept-1b241505",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr208",
+      "target": "concept-39eb3a47",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr209",
+      "target": "concept-8f6190e2",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr209",
+      "target": "concept-1a57771a",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr209",
+      "target": "concept-9cb1db12",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr209",
+      "target": "concept-545aaa79",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr210",
+      "target": "person-d3f9d4ce",
+      "type": "attended",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr210",
+      "target": "concept-9eefb546",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr210",
+      "target": "concept-d3f9d4ce",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr210",
+      "target": "concept-1b7abbdd",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr210",
+      "target": "concept-ef9c228b",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr210",
+      "target": "concept-c3d40e46",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr210",
+      "target": "concept-ae33f8fe",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-apr210",
+      "target": "concept-545aaa79",
+      "type": "discusses",
+      "weight": 1
     }
   ],
   "metadata": {
-    "generated": "2026-04-13T23:34:01.330Z",
-    "source": "merged-iris-enrichment",
-    "dateRange": "2026-01-13 to 2026-04-13",
-    "totalMeetings": 55,
-    "totalNodes": 336,
-    "totalEdges": 284,
-    "enrichmentVersion": "iris-deep",
+    "generated": "2026-04-18T01:43:00.246Z",
+    "source": "merged-april-14-17",
+    "dateRange": "2026-01-07 to 2026-04-17",
+    "totalNodes": 388,
+    "totalEdges": 332,
     "breakdown": {
-      "meetings": 55,
-      "people": 12,
+      "meetings": 66,
+      "people": 15,
       "projects": 101,
-      "concepts": 168,
+      "concepts": 206,
       "decisions": 0
     }
   }
