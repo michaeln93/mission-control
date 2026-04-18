@@ -1,11 +1,1262 @@
-<!-- Placeholder for Mission Control Live Data -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mission Control Live</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MACEMARK // MISSION CONTROL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#030508;--bg-deep:#060910;--bg-panel:#090e18;--bg-card:#0d1420;--bg-card-hover:#121b2a;
+  --navy:#253D60;--navy-mid:#1e3352;--navy-light:#2d4d78;
+  --ice:#C8D8DB;--ice-dim:#8aaab0;--ice-faint:rgba(200,216,219,0.07);
+  --accent:#4eb8d0;--accent-glow:rgba(78,184,208,0.12);--accent-dim:rgba(78,184,208,0.35);
+  --green:#22c55e;--green-dim:rgba(34,197,94,0.12);
+  --amber:#f59e0b;--amber-dim:rgba(245,158,11,0.12);
+  --red:#ef4444;--red-dim:rgba(239,68,68,0.12);
+  --border:rgba(200,216,219,0.06);--border-bright:rgba(200,216,219,0.12);
+  --text-primary:#e4eef0;--text-secondary:#7da0a8;--text-dim:#3d5a62;
+  --mono:'Space Mono',monospace;--sans:'DM Sans',sans-serif;
+  --r:6px;--rl:10px;--t:all 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:14px;}
+body{background:var(--bg-void);color:var(--text-primary);font-family:var(--sans);min-height:100vh;overflow-x:hidden;
+  background-image:radial-gradient(ellipse 100% 60% at 50% -10%,rgba(37,61,96,0.22) 0%,transparent 55%),
+  repeating-linear-gradient(0deg,transparent,transparent 47px,rgba(200,216,219,0.01) 47px,rgba(200,216,219,0.01) 48px),
+  repeating-linear-gradient(90deg,transparent,transparent 47px,rgba(200,216,219,0.01) 47px,rgba(200,216,219,0.01) 48px);}
+::-webkit-scrollbar{width:3px;height:3px;}::-webkit-scrollbar-track{background:transparent;}::-webkit-scrollbar-thumb{background:var(--navy-mid);border-radius:2px;}
+
+/* HEALTH BAR */
+.health-bar{height:2px;background:var(--bg-deep);display:flex;position:fixed;top:0;left:0;right:0;z-index:200;}
+.hs{height:100%;flex:1;transition:background 0.5s;}
+.hs.ok{background:var(--navy-mid);}
+.hs.live{background:var(--accent);box-shadow:0 0 6px var(--accent);}
+.hs.warn{background:var(--amber);}
+.hs.err{background:var(--red);}
+.hp{position:fixed;top:0;left:0;right:0;height:2px;z-index:201;pointer-events:none;
+  background:linear-gradient(90deg,transparent,var(--accent),transparent);background-size:200% 100%;opacity:0;}
+.hp.run{opacity:1;animation:hpulse 1.5s ease-in-out infinite;}
+@keyframes hpulse{0%{background-position:200% 0;}100%{background-position:-200% 0;}}
+
+/* HEADER */
+.header{position:sticky;top:2px;z-index:100;background:rgba(3,5,8,0.9);backdrop-filter:blur(24px) saturate(160%);
+  border-bottom:1px solid var(--border);padding:0 2rem;height:54px;display:flex;align-items:center;gap:2rem;}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.logo-m{width:30px;height:30px;background:var(--navy);border:1px solid var(--navy-light);border-radius:5px;
+  display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:9px;font-weight:700;color:var(--ice);letter-spacing:0.1em;}
+.logo-t{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.18em;color:var(--ice-dim);text-transform:uppercase;}
+.logo-t span{color:var(--accent);}
+.nav{display:flex;gap:2px;flex:1;justify-content:center;}
+.nt{padding:5px 13px;font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--text-dim);background:transparent;border:1px solid transparent;border-radius:var(--r);cursor:pointer;transition:var(--t);}
+.nt:hover{color:var(--ice-dim);border-color:var(--border);}
+.nt.active{color:var(--accent);background:var(--accent-glow);border-color:var(--accent-dim);}
+.hright{display:flex;align-items:center;gap:9px;flex-shrink:0;}
+.gi{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:5px 9px;
+  font-family:var(--mono);font-size:10px;color:var(--ice-dim);outline:none;transition:var(--t);}
+.gi:focus{border-color:var(--accent-dim);background:var(--bg-card-hover);}
+.gi::placeholder{color:var(--text-dim);}
+#gwUrl{width:170px;}#gwToken{width:125px;}
+.cbtn{padding:5px 11px;background:var(--navy);border:1px solid var(--navy-light);border-radius:var(--r);
+  font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;color:var(--ice);cursor:pointer;transition:var(--t);text-transform:uppercase;}
+.cbtn:hover{background:var(--navy-light);}
+.spill{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  padding:4px 8px;border-radius:20px;border:1px solid var(--border);background:var(--bg-card);}
+.sd{width:6px;height:6px;border-radius:50%;background:var(--text-dim);flex-shrink:0;}
+.sd.online{background:var(--green);box-shadow:0 0 7px var(--green);animation:sdp 2s ease-in-out infinite;}
+.sd.offline{background:var(--red);}
+.sd.connecting{background:var(--amber);animation:sdp 0.7s ease-in-out infinite;}
+@keyframes sdp{0%,100%{opacity:1;}50%{opacity:0.35;}}
+.tvbtn{padding:5px 10px;background:transparent;border:1px solid var(--border);border-radius:var(--r);
+  font-family:var(--mono);font-size:9px;color:var(--text-dim);cursor:pointer;transition:var(--t);letter-spacing:0.08em;text-transform:uppercase;}
+.tvbtn:hover{border-color:var(--border-bright);color:var(--ice-dim);}
+.clk{font-family:var(--mono);font-size:10px;color:var(--text-dim);letter-spacing:0.06em;}
+
+/* LAYOUT */
+.main{max-width:1900px;margin:0 auto;padding:1.5rem 2rem;}
+.tp{display:none;animation:fu 0.25s ease;}
+.tp.active{display:block;}
+@keyframes fu{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+body.tv .header{padding:0 1rem;height:42px;}
+body.tv .logo-t{display:none;}
+body.tv .hright .gi, body.tv .hright .cbtn, body.tv .hright .spill, body.tv .hright .clk{display:none;}
+body.tv .nav{gap:4px;}
+body.tv .nt{padding:4px 11px;font-size:8px;}
+body.tv .main{padding:1rem;max-width:100%;}
+
+/* SECTION HEADER */
+.sh{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;}
+.sht{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--text-dim);display:flex;align-items:center;gap:8px;}
+.sht::before{content:'';display:inline-block;width:2px;height:11px;background:var(--accent);border-radius:2px;}
+.shb{font-family:var(--mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);
+  background:transparent;border:1px solid var(--accent-dim);border-radius:var(--r);padding:4px 10px;cursor:pointer;transition:var(--t);}
+.shb:hover{background:var(--accent-glow);}
+
+/* AGENT CARDS */
+.agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:1rem;margin-bottom:1rem;}
+.acard{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;cursor:pointer;transition:var(--t);position:relative;}
+.acard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--navy-mid);transition:var(--t);}
+.acard.active::before{background:var(--accent);box-shadow:0 0 10px var(--accent);}
+.acard:hover{border-color:var(--border-bright);background:var(--bg-card-hover);transform:translateY(-1px);}
+
+.acard-top{padding:1rem 1.2rem 0.8rem;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;}
+.aid{display:flex;align-items:center;gap:14px;}
+
+/* HOLOGRAM AVATARS */
+.holo-wrap{width:64px;height:64px;flex-shrink:0;position:relative;}
+.holo-wrap svg{width:100%;height:100%;}
+
+/* Scan animation */
+@keyframes scan{0%{transform:translateY(-5px);opacity:0;}20%{opacity:1;}80%{opacity:1;}100%{transform:translateY(74px);opacity:0;}}
+.scanbeam{animation:scan 3s ease-in-out infinite;}
+
+/* Active glow */
+.holo-wrap.active-mx svg{filter:drop-shadow(0 0 8px rgba(78,184,208,0.7)) drop-shadow(0 0 20px rgba(78,184,208,0.3));animation:mxgl 2.5s ease-in-out infinite;}
+@keyframes mxgl{0%,100%{filter:drop-shadow(0 0 6px rgba(78,184,208,0.5));}50%{filter:drop-shadow(0 0 16px rgba(78,184,208,0.9)) drop-shadow(0 0 32px rgba(78,184,208,0.4));}}
+.holo-wrap.active-ir svg{filter:drop-shadow(0 0 8px rgba(200,216,219,0.5)) drop-shadow(0 0 20px rgba(78,184,208,0.3));animation:irgl 3s ease-in-out infinite;}
+@keyframes irgl{0%,100%{filter:drop-shadow(0 0 5px rgba(200,216,219,0.4));}50%{filter:drop-shadow(0 0 14px rgba(200,216,219,0.7)) drop-shadow(0 0 28px rgba(78,184,208,0.35));}}
+.holo-wrap.active-at svg{filter:drop-shadow(0 0 8px rgba(245,158,11,0.6)) drop-shadow(0 0 20px rgba(245,158,11,0.3));animation:atgl 2.8s ease-in-out infinite;}
+@keyframes atgl{0%,100%{filter:drop-shadow(0 0 5px rgba(245,158,11,0.4));}50%{filter:drop-shadow(0 0 14px rgba(245,158,11,0.8)) drop-shadow(0 0 28px rgba(245,158,11,0.35));}}
+.holo-wrap.active-gm svg{filter:drop-shadow(0 0 8px rgba(34,197,94,0.6)) drop-shadow(0 0 20px rgba(34,197,94,0.3));animation:gmgl 3.2s ease-in-out infinite;}
+@keyframes gmgl{0%,100%{filter:drop-shadow(0 0 5px rgba(34,197,94,0.4));}50%{filter:drop-shadow(0 0 14px rgba(34,197,94,0.8)) drop-shadow(0 0 28px rgba(34,197,94,0.35));}}
+
+.aname{font-size:16px;font-weight:600;color:var(--text-primary);letter-spacing:0.02em;}
+.arole{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;margin-top:3px;}
+.apersona{font-size:11px;color:var(--text-secondary);margin-top:4px;font-style:italic;opacity:0.75;}
+.abadge{display:flex;align-items:center;gap:4px;padding:3px 8px;border-radius:4px;font-family:var(--mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;flex-shrink:0;}
+.abadge.active{background:var(--green-dim);color:var(--green);border:1px solid rgba(34,197,94,0.25);}
+.abadge.idle{background:rgba(200,216,219,0.04);color:var(--text-dim);border:1px solid var(--border);}
+.abadge.thinking{background:var(--amber-dim);color:var(--amber);border:1px solid rgba(245,158,11,0.25);animation:thk 1s ease-in-out infinite;}
+@keyframes thk{0%,100%{opacity:1;}50%{opacity:0.5;}}
+
+.acard-body{padding:0 1.2rem 0.8rem;}
+.atag{display:inline-flex;align-items:center;gap:5px;background:var(--ice-faint);border:1px solid var(--border);border-radius:4px;padding:3px 8px;font-family:var(--mono);font-size:9px;color:var(--ice-dim);margin-bottom:10px;}
+.atag .md{width:4px;height:4px;border-radius:50%;background:var(--accent);}
+.atask-w{padding:8px 10px;background:rgba(0,0,0,0.25);border-radius:4px;border-left:2px solid var(--navy-mid);min-height:38px;}
+.atask{font-size:11px;color:var(--text-secondary);line-height:1.6;}
+.atask .cur{display:inline-block;width:6px;height:10px;background:var(--accent);margin-left:2px;animation:blk 1s step-end infinite;vertical-align:middle;}
+@keyframes blk{0%,100%{opacity:1;}50%{opacity:0;}}
+.aburn{display:flex;align-items:center;gap:5px;margin-top:7px;font-family:var(--mono);font-size:9px;color:var(--text-dim);}
+.bval{color:var(--amber);font-weight:700;}
+.bspark{display:flex;align-items:flex-end;gap:1px;height:14px;}
+.bbar{width:3px;background:var(--navy-mid);border-radius:1px;transition:height 0.5s;}
+.afoot{padding:7px 1.2rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:0.5rem;}
+.ast{display:flex;flex-direction:column;gap:2px;}
+.astl{font-family:var(--mono);font-size:8px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);}
+.astv{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--text-primary);}
+
+/* HANDOFF */
+.hoff-c{display:flex;align-items:center;justify-content:center;padding:0.4rem 0;margin-bottom:1rem;}
+.hoff{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;
+  padding:5px 16px;border:1px solid var(--border);border-radius:20px;background:var(--bg-card);opacity:0;transition:opacity 0.5s;}
+.hoff.vis{opacity:1;}
+.hline{width:60px;height:1px;background:linear-gradient(90deg,var(--navy),var(--accent));position:relative;overflow:hidden;}
+.hdot{position:absolute;top:-1px;width:4px;height:3px;border-radius:50%;background:var(--accent);box-shadow:0 0 6px var(--accent);animation:hd 1.5s ease-in-out infinite;}
+@keyframes hd{0%{left:0;opacity:0;}20%{opacity:1;}80%{opacity:1;}100%{left:calc(100% - 4px);opacity:0;}}
+
+/* MODAL */
+.mo{position:fixed;inset:0;background:rgba(3,5,8,0.9);backdrop-filter:blur(6px);z-index:200;display:none;align-items:center;justify-content:center;padding:2rem;}
+.mo.open{display:flex;}
+.modal{background:var(--bg-panel);border:1px solid var(--border-bright);border-radius:var(--rl);width:100%;max-width:680px;max-height:85vh;overflow-y:auto;animation:fu 0.2s ease;}
+.mhead{padding:1.1rem 1.4rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+.mtitle{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);}
+.mclose{width:26px;height:26px;background:transparent;border:1px solid var(--border);border-radius:4px;color:var(--text-dim);cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;transition:var(--t);}
+.mclose:hover{border-color:var(--border-bright);color:var(--text-primary);}
+.mbody{padding:1.4rem;}
+.soul{font-size:12px;line-height:1.8;color:var(--text-secondary);white-space:pre-wrap;}
+.soul h1,.soul h2{font-family:var(--mono);font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin:1.2rem 0 0.5rem;}
+
+/* KANBAN */
+.kanban{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;align-items:start;}
+@media(max-width:900px){.kanban{grid-template-columns:1fr;}}
+.kcol{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;}
+.kch{padding:9px 13px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);}
+.kct{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-secondary);display:flex;align-items:center;gap:7px;}
+.cdot{width:5px;height:5px;border-radius:50%;}
+.col-backlog .cdot{background:var(--text-dim);}.col-progress .cdot{background:var(--amber);}.col-done .cdot{background:var(--green);}
+.kn{font-family:var(--mono);font-size:9px;color:var(--text-dim);background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:3px;}
+.kb{padding:9px;min-height:160px;display:flex;flex-direction:column;gap:7px;}
+.tc{background:var(--bg-deep);border:1px solid var(--border);border-radius:var(--r);padding:9px 11px;cursor:pointer;transition:var(--t);}
+.tc:hover{border-color:var(--border-bright);background:var(--bg-card);}
+.tt{font-size:12px;font-weight:500;color:var(--text-primary);margin-bottom:3px;}
+.td{font-size:11px;color:var(--text-dim);line-height:1.4;margin-bottom:7px;}
+.tm{display:flex;align-items:center;justify-content:space-between;gap:7px;}
+.pr{font-family:var(--mono);font-size:8px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;}
+.pr-high{background:var(--red-dim);color:var(--red);border:1px solid rgba(239,68,68,0.25);}
+.pr-medium{background:var(--amber-dim);color:var(--amber);border:1px solid rgba(245,158,11,0.25);}
+.pr-low{background:var(--green-dim);color:var(--green);border:1px solid rgba(34,197,94,0.25);}
+.ta{font-family:var(--mono);font-size:9px;color:var(--accent);}
+.tdate{font-family:var(--mono);font-size:9px;color:var(--text-dim);}
+.addbtn{margin:7px 9px 9px;padding:7px;background:transparent;border:1px dashed var(--border);border-radius:var(--r);font-family:var(--mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);cursor:pointer;width:calc(100% - 18px);transition:var(--t);display:flex;align-items:center;justify-content:center;gap:5px;}
+.addbtn:hover{border-color:var(--accent-dim);color:var(--accent);background:var(--accent-glow);}
+
+/* FORMS */
+.tform{display:flex;flex-direction:column;gap:13px;}
+.fg{display:flex;flex-direction:column;gap:5px;}
+.fl{font-family:var(--mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);}
+.fi,.fta,.fsel{background:var(--bg-deep);border:1px solid var(--border);border-radius:var(--r);padding:7px 9px;font-family:var(--sans);font-size:13px;color:var(--text-primary);outline:none;transition:var(--t);width:100%;}
+.fi:focus,.fta:focus,.fsel:focus{border-color:var(--accent-dim);background:var(--bg-card);}
+.fta{min-height:70px;resize:vertical;}
+.fsel option{background:var(--bg-panel);}
+.factions{display:flex;gap:7px;justify-content:flex-end;margin-top:3px;}
+.btn{padding:6px 14px;border-radius:var(--r);font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:var(--t);border:1px solid;}
+.btn-p{background:var(--navy);border-color:var(--navy-light);color:var(--ice);}.btn-p:hover{background:var(--navy-light);}
+.btn-g{background:transparent;border-color:var(--border);color:var(--text-dim);}.btn-g:hover{border-color:var(--border-bright);color:var(--text-secondary);}
+.btn-d{background:var(--red-dim);border-color:rgba(239,68,68,0.35);color:var(--red);}.btn-d:hover{background:rgba(239,68,68,0.18);}
+
+/* COSTS */
+.ctop{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:1.5rem;}
+@media(max-width:900px){.ctop{grid-template-columns:repeat(2,1fr);}}
+.cc{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);padding:1rem 1.1rem;position:relative;overflow:hidden;}
+.cc::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.cc.today::after{background:var(--accent);}.cc.month::after{background:var(--navy-light);}.cc.proj::after{background:var(--amber);}.cc.saved::after{background:var(--green);}
+.ccl{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);margin-bottom:5px;}
+.ccv{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--text-primary);letter-spacing:-0.02em;}
+.ccs{font-size:11px;color:var(--text-dim);margin-top:3px;}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem;}
+@media(max-width:900px){.cgrid{grid-template-columns:1fr;}}
+#tab-graph iframe{min-height:500px;}
+@media(max-width:900px){#tab-graph iframe{height:70vh !important;min-height:400px;}#tab-graph .sh{flex-direction:column;align-items:flex-start;gap:0.5rem;}}
+.bkd{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;}
+.bkh{padding:10px 14px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-dim);}
+.mr{padding:9px 14px;display:flex;align-items:center;gap:11px;border-bottom:1px solid var(--border);}
+.mr:last-child{border-bottom:none;}
+.mn{font-family:var(--mono);font-size:10px;color:var(--text-secondary);width:170px;flex-shrink:0;}
+.mbw{flex:1;height:3px;background:rgba(0,0,0,0.4);border-radius:2px;overflow:hidden;}
+.mb{height:100%;border-radius:2px;background:var(--navy);transition:width 1s ease;}
+.mb.claude{background:var(--accent);}.mb.gemini{background:var(--green);}.mb.local{background:var(--text-dim);}
+.mc{font-family:var(--mono);font-size:10px;color:var(--text-primary);text-align:right;width:65px;flex-shrink:0;}
+.mt{font-family:var(--mono);font-size:9px;color:var(--text-dim);text-align:right;width:80px;flex-shrink:0;}
+.svp{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;}
+.svr{display:flex;align-items:center;justify-content:space-between;padding:8px 14px;border-bottom:1px solid var(--border);font-size:12px;}
+.svr:last-child{border-bottom:none;}
+.svl{color:var(--text-secondary);}
+.svv{font-family:var(--mono);font-size:11px;color:var(--text-primary);}
+.svv.pos{color:var(--green);}
+
+/* INTEL */
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem;}
+@media(max-width:1100px){.igrid{grid-template-columns:1fr;}}
+.ifull{grid-column:1/-1;}
+.ic{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;}
+.ich{padding:9px 13px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+.ict{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);}
+.icb{padding:13px;}
+.bi{padding:9px 0;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:9px;}
+.bi:last-child{border-bottom:none;padding-bottom:0;}
+.bp{width:5px;height:5px;border-radius:50%;margin-top:5px;flex-shrink:0;}
+.bp.high{background:var(--red);}.bp.medium{background:var(--amber);}.bp.low{background:var(--text-dim);}
+.btit{font-size:12px;font-weight:500;color:var(--text-primary);margin-bottom:3px;}
+.bmet{font-family:var(--mono);font-size:9px;color:var(--text-dim);display:flex;gap:9px;}
+.bsrc{color:var(--accent);}
+.ai{display:flex;align-items:flex-start;gap:9px;padding:7px 0;border-bottom:1px solid var(--border);}
+.ai:last-child{border-bottom:none;padding-bottom:0;}
+.ack{width:13px;height:13px;border:1px solid var(--border-bright);border-radius:3px;margin-top:2px;flex-shrink:0;cursor:pointer;appearance:none;background:transparent;transition:var(--t);position:relative;}
+.ack:checked{background:var(--accent);border-color:var(--accent);}
+.ack:checked::after{content:'✓';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:8px;color:var(--bg-void);font-weight:700;}
+.atxt{flex:1;font-size:12px;color:var(--text-secondary);line-height:1.5;}
+.atxt.done{text-decoration:line-through;color:var(--text-dim);}
+.afrm{font-family:var(--mono);font-size:9px;color:var(--text-dim);flex-shrink:0;}
+.fi2{padding:7px 0;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:9px;font-size:11px;}
+.fi2:last-child{border-bottom:none;padding-bottom:0;}
+.ft{font-family:var(--mono);font-size:9px;color:var(--text-dim);flex-shrink:0;width:58px;}
+.fa{font-family:var(--mono);font-size:9px;color:var(--accent);flex-shrink:0;width:58px;}
+.fx{color:var(--text-secondary);flex:1;line-height:1.5;}
+.addf{display:flex;gap:7px;margin-top:11px;}
+.addi{flex:1;background:var(--bg-deep);border:1px solid var(--border);border-radius:var(--r);padding:6px 9px;font-family:var(--sans);font-size:12px;color:var(--text-primary);outline:none;transition:var(--t);}
+.addi:focus{border-color:var(--accent-dim);background:var(--bg-card);}
+.addi::placeholder{color:var(--text-dim);}
+.es{padding:2.5rem 1rem;text-align:center;color:var(--text-dim);}
+.esi{font-size:22px;margin-bottom:8px;opacity:0.3;}
+.est{font-family:var(--mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;}
+.tw{position:fixed;bottom:1.2rem;right:1.2rem;z-index:300;display:flex;flex-direction:column;gap:7px;}
+.toast{background:var(--bg-panel);border:1px solid var(--border-bright);border-radius:var(--r);padding:9px 13px;font-size:12px;color:var(--text-secondary);animation:sR 0.25s ease;min-width:210px;display:flex;align-items:center;gap:7px;}
+.toast.success{border-color:rgba(34,197,94,0.35);}.toast.error{border-color:rgba(239,68,68,0.35);}
+@keyframes sR{from{opacity:0;transform:translateX(16px);}to{opacity:1;transform:translateX(0);}}
+/* MOBILE BOTTOM NAV */
+.mobile-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(3,5,8,0.95);backdrop-filter:blur(24px) saturate(160%);
+  border-top:1px solid var(--border);padding:8px;z-index:150;gap:4px;justify-content:space-around;}
+.mobile-nav button{flex:1;padding:10px 8px;font-family:var(--mono);font-size:8px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--text-dim);background:transparent;border:1px solid transparent;border-radius:var(--r);cursor:pointer;transition:var(--t);
+  display:flex;flex-direction:column;align-items:center;gap:4px;}
+.mobile-nav button .icon{font-size:16px;}
+.mobile-nav button:active{background:var(--accent-glow);}
+.mobile-nav button.active{color:var(--accent);border-color:var(--accent-dim);background:var(--accent-glow);}
+
+@media(max-width:768px){
+  .header{padding:0 1rem;gap:0.8rem;height:48px;}
+  .nav{display:none;}
+  .mobile-nav{display:flex;}
+  .main{padding:1rem;padding-bottom:70px;}
+  .agrid{grid-template-columns:1fr;}
+  .ctop{grid-template-columns:1fr 1fr;}
+  .hright{display:none;}
+  .logo-t{font-size:8px;}
+  body{padding-bottom:env(safe-area-inset-bottom);}
+}
+</style>
+
+<!-- OpenClaw Live Data (Generated: 2026-04-18T01:21:47.198Z) -->
+<script>
+window.OPENCLAW_LIVE_DATA = {
+  "timestamp": 1776475307194,
+  "lastUpdated": "2026-04-18T01:21:47.194Z",
+  "agents": {
+    "main": {
+      "id": "main",
+      "name": "Maxwell",
+      "role": "CEO Chief of Staff",
+      "persona": "Direct. Strategic. No fluff.",
+      "model": "claude/claude-sonnet-4-5",
+      "fallback": "gemini/gemini-2.5-flash-lite",
+      "status": "active",
+      "task": "Coordinating team and Michael",
+      "tokens": 0,
+      "cost": 0,
+      "sessions": 0,
+      "burnHistory": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "iris": {
+      "id": "iris",
+      "name": "Iris",
+      "role": "Meeting Intelligence",
+      "persona": "Precise. Thorough. Data-first.",
+      "model": "google/gemini-2.5-flash",
+      "fallback": "gemini/gemini-2.5-flash-lite",
+      "status": "idle",
+      "task": "Processing Fireflies transcripts",
+      "tokens": 0,
+      "cost": 0,
+      "sessions": 0,
+      "burnHistory": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "atlas": {
+      "id": "atlas",
+      "name": "Atlas",
+      "role": "Chief Technical Officer",
+      "persona": "Systematic. Cost-conscious. Reliable.",
+      "model": "google/gemini-2.5-flash",
+      "fallback": "gemini/gemini-2.5-flash-lite",
+      "status": "active",
+      "task": "Maintaining Mission Control & infrastructure",
+      "tokens": 0,
+      "cost": 0,
+      "sessions": 0,
+      "burnHistory": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "gemma": {
+      "id": "gemma",
+      "name": "Gemma",
+      "role": "Local Batch Processor",
+      "persona": "Fast. Free. Heavy lifting.",
+      "model": "gemma4:27b",
+      "fallback": "gemma3:12b",
+      "status": "idle",
+      "task": "Local transcript processing",
+      "tokens": 0,
+      "cost": 0,
+      "sessions": 0,
+      "burnHistory": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "costs": {
+    "today": 0,
+    "todayTokens": 0,
+    "month": 0,
+    "monthTokens": 0,
+    "projected": 0,
+    "saved": 0,
+    "models": {
+      "claude-sonnet-4-5": {
+        "tokens": 0,
+        "cost": 0
+      },
+      "gemini-2.5-flash": {
+        "tokens": 0,
+        "cost": 0
+      },
+      "gemma4:27b (local)": {
+        "tokens": 0,
+        "cost": 0
+      }
+    }
+  },
+  "activity": [
+    {
+      "time": "11:21",
+      "agent": "ATLAS",
+      "text": "Mission Control data refresh"
+    },
+    {
+      "time": "11:06",
+      "agent": "MAXWELL",
+      "text": "Monitoring operations"
+    },
+    {
+      "time": "10:21",
+      "agent": "IRIS",
+      "text": "Processing meeting transcripts"
+    },
+    {
+      "time": "09:21",
+      "agent": "GEMMA",
+      "text": "Local batch processing"
+    }
+  ]
+};
+console.log('📊 OpenClaw live data loaded at', new Date(window.OPENCLAW_LIVE_DATA.timestamp));
+
+// Auto-load data when page loads
+window.addEventListener('DOMContentLoaded', function() {
+  if (typeof loadLiveData === 'function') {
+    setTimeout(() => {
+      loadLiveData(window.OPENCLAW_LIVE_DATA);
+    }, 500);
+  }
+});
+</script>
 </head>
 <body>
-    <h1>Mission Control Live Data</h1>
-    <p>This is a placeholder page. The actual data injection script needs to be provided.</p>
+<div class="health-bar"><div class="hs ok" id="hs-gw"></div><div class="hs ok" id="hs-mx"></div><div class="hs ok" id="hs-ir"></div><div class="hs ok" id="hs-at"></div><div class="hs ok" id="hs-gm"></div><div class="hs ok" id="hs-api"></div></div>
+<div class="hp" id="hp"></div>
+
+<header class="header">
+  <div class="logo"><div class="logo-m">MC</div><span class="logo-t">MACEMARK <span>//</span> MISSION CONTROL</span></div>
+  <nav class="nav">
+    <button class="nt active" data-tab="agents">⬡ Agents</button>
+    <button class="nt" data-tab="tasks">◈ Tasks</button>
+    <button class="nt" data-tab="costs">◎ Costs</button>
+    <button class="nt" data-tab="intel">◉ Intel</button>
+    <button class="nt" data-tab="graph">◇ Graph</button>
+  </nav>
+  <div class="hright">
+    <input type="text" class="gi" id="gwUrl" placeholder="ws://127.0.0.1:18789" value="ws://127.0.0.1:18789">
+    <input type="password" class="gi" id="gwToken" placeholder="Gateway token">
+    <button class="cbtn" id="connectBtn">Connect</button>
+    <div class="spill"><div class="sd" id="sd"></div><span id="st" style="color:var(--text-dim)">OFFLINE</span></div>
+    <button class="tvbtn" id="tvBtn">⊞ TV</button>
+    <div class="clk" id="clk"></div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="tp active" id="tab-agents">
+    <div class="sh"><span class="sht">Agent Status</span><button class="shb" id="refreshAgents">↻ Refresh</button></div>
+    <div class="agrid" id="agrid"></div>
+    <div class="hoff-c"><div class="hoff" id="hoff"><span id="hfrom">MAXWELL</span><div class="hline"><div class="hdot"></div></div><span id="hto">IRIS</span><span id="htask" style="color:var(--text-secondary);margin-left:4px"></span></div></div>
+  </div>
+  <div class="tp" id="tab-tasks">
+    <div class="sh"><span class="sht">Task Board</span></div>
+    <div class="kanban">
+      <div class="kcol col-backlog"><div class="kch"><span class="kct"><span class="cdot"></span>Backlog</span><span class="kn" id="bc">0</span></div><div class="kb" id="col-backlog"></div><button class="addbtn" data-col="backlog">+ Add Task</button></div>
+      <div class="kcol col-progress"><div class="kch"><span class="kct"><span class="cdot"></span>In Progress</span><span class="kn" id="pc">0</span></div><div class="kb" id="col-progress"></div><button class="addbtn" data-col="progress">+ Add Task</button></div>
+      <div class="kcol col-done"><div class="kch"><span class="kct"><span class="cdot"></span>Done</span><span class="kn" id="dc">0</span></div><div class="kb" id="col-done"></div><button class="addbtn" data-col="done">+ Add Task</button></div>
+    </div>
+  </div>
+  <div class="tp" id="tab-costs">
+    <div class="sh"><span class="sht">Token & Cost Analytics</span><button class="shb" id="refreshCosts">↻ Refresh</button></div>
+    <div class="ctop">
+      <div class="cc today"><div class="ccl">Today's Cost</div><div class="ccv" id="c-today">$0.00</div><div class="ccs" id="c-today-t">0 tokens</div></div>
+      <div class="cc month"><div class="ccl">This Month</div><div class="ccv" id="c-month">$0.00</div><div class="ccs" id="c-month-t">0 tokens</div></div>
+      <div class="cc proj"><div class="ccl">Projected Monthly</div><div class="ccv" id="c-proj">$0.00</div><div class="ccs">Based on current rate</div></div>
+      <div class="cc saved"><div class="ccl">Saved vs Claude-only</div><div class="ccv" id="c-saved" style="color:var(--green)">$0.00</div><div class="ccs">Using Gemini fallback</div></div>
+    </div>
+    <div class="cgrid">
+      <div class="bkd"><div class="bkh">Cost by Model</div><div id="mrows"><div class="es"><div class="esi">◎</div><div class="est">Connect gateway to load</div></div></div></div>
+      <div class="svp"><div class="bkh">Local LLM Investment Analysis</div>
+        <div class="svr"><span class="svl">Current monthly API spend</span><span class="svv" id="sv-cur">$0.00</span></div>
+        <div class="svr"><span class="svl">Mac Mini M4 Pro (24GB)</span><span class="svv">~$2,200 AUD</span></div>
+        <div class="svr"><span class="svl">Est. local savings (70% offload)</span><span class="svv pos" id="sv-sav">$0.00/mo</span></div>
+        <div class="svr"><span class="svl">Payback period</span><span class="svv" id="sv-pb">—</span></div>
+        <div class="svr"><span class="svl">Recommendation</span><span class="svv" id="sv-rec" style="font-size:10px">Accumulating data...</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tp" id="tab-intel">
+    <div class="igrid">
+      <div class="ic ifull">
+        <div class="ich"><span class="ict">◉ Morning Briefing — Flagged by Maxwell</span><button class="shb" id="addBriefBtn">+ Add</button></div>
+        <div class="icb"><div id="brief-list"><div class="es"><div class="esi">◉</div><div class="est">Maxwell will surface items here</div></div></div>
+        <div class="addf" id="brief-form" style="display:none">
+          <input class="addi" id="brief-inp" placeholder="Briefing item...">
+          <select class="fi" id="brief-prio" style="width:90px;font-size:11px"><option value="high">High</option><option value="medium" selected>Medium</option><option value="low">Low</option></select>
+          <input class="addi" id="brief-src" placeholder="Source" style="width:120px">
+          <button class="btn btn-p" id="brief-save">Add</button>
+        </div></div>
+      </div>
+      <div class="ic">
+        <div class="ich"><span class="ict">◈ Action Items from Meetings</span><button class="shb" id="addActBtn">+ Add</button></div>
+        <div class="icb"><div id="act-list"><div class="es"><div class="esi">◈</div><div class="est">Iris will populate these</div></div></div>
+        <div class="addf" id="act-form" style="display:none">
+          <input class="addi" id="act-inp" placeholder="Action item...">
+          <input class="addi" id="act-from" placeholder="Meeting/source" style="width:130px">
+          <button class="btn btn-p" id="act-save">Add</button>
+        </div></div>
+      </div>
+      <div class="ic">
+        <div class="ich"><span class="ict">⬡ Agent Activity Feed</span></div>
+        <div class="icb"><div id="feed-list"><div class="es"><div class="esi">⬡</div><div class="est">Live when gateway connected</div></div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="tp" id="tab-graph">
+    <div class="sh"><span class="sht">Business Intelligence Knowledge Graph</span></div>
+    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;height:calc(100vh - 180px);min-height:600px;position:relative;">
+      <iframe 
+        src="./graph/" 
+        style="width:100%;height:100%;border:none;display:block;"
+        title="Macemark Knowledge Graph"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+    <div style="margin-top:1rem;padding:1rem;background:var(--bg-panel);border:1px solid var(--border);border-radius:var(--r);font-family:var(--mono);font-size:10px;color:var(--text-secondary);">
+      <div style="margin-bottom:0.5rem;color:var(--ice-dim);font-weight:700;letter-spacing:0.1em;">GRAPH CONTROLS</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem;">
+        <div><span style="color:var(--accent);">◈</span> Concepts Only — Hide all except concept nodes</div>
+        <div><span style="color:var(--accent);">↺</span> Reset View — Return to default camera position</div>
+        <div><span style="color:var(--accent);">◎</span> Focus Selected — Zoom to selected node</div>
+        <div><span style="color:var(--accent);">Click node</span> → View dossier panel with metadata</div>
+        <div><span style="color:var(--accent);">Scroll</span> → Zoom in/out</div>
+        <div><span style="color:var(--accent);">Drag</span> → Rotate graph</div>
+      </div>
+      <div style="margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border);color:var(--text-dim);font-size:9px;">
+        <strong>Business Intelligence:</strong> Larger concept nodes = discussed in more meetings (higher strategic importance). Click ◈ to see your company's "idea landscape" at a glance.
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="mo" id="agentModal"><div class="modal"><div class="mhead"><span class="mtitle" id="mname">AGENT PROFILE</span><button class="mclose" id="closeAM">✕</button></div><div class="mbody" id="mbody"></div></div></div>
+<div class="mo" id="taskModal"><div class="modal"><div class="mhead"><span class="mtitle" id="tmtitle">NEW TASK</span><button class="mclose" id="closeTM">✕</button></div>
+<div class="mbody"><div class="tform"><input type="hidden" id="tid"><input type="hidden" id="tcol">
+<div class="fg"><label class="fl">Title</label><input type="text" class="fi" id="ttitle" placeholder="Task title"></div>
+<div class="fg"><label class="fl">Description</label><textarea class="fta" id="tdesc" placeholder="Details..."></textarea></div>
+<div class="fg"><label class="fl">Priority</label><select class="fsel" id="tprio"><option value="high">High</option><option value="medium" selected>Medium</option><option value="low">Low</option></select></div>
+<div class="fg"><label class="fl">Agent</label><select class="fsel" id="tagent"><option value="">Unassigned</option><option value="Maxwell">Maxwell</option><option value="Iris">Iris</option><option value="Atlas">Atlas</option><option value="Gemma">Gemma</option></select></div>
+<div class="factions"><button class="btn btn-d" id="delT" style="display:none">Delete</button><button class="btn btn-g" id="cancelT">Cancel</button><button class="btn btn-p" id="saveT">Save</button></div>
+</div></div></div></div>
+<div class="tw" id="tw"></div>
+<script>
+// ── STATE
+const S={ws:null,conn:false,agents:{},tasks:JSON.parse(localStorage.getItem('mc_t')||'{"backlog":[],"progress":[],"done":[]}'),briefings:JSON.parse(localStorage.getItem('mc_b')||'[]'),actions:JSON.parse(localStorage.getItem('mc_a')||'[]'),feed:JSON.parse(localStorage.getItem('mc_f')||'[]'),editId:null,tv:false,bh:{mx:[0,0,0,0,0,0,0],ir:[0,0,0,0,0,0,0],at:[0,0,0,0,0,0,0],gm:[0,0,0,0,0,0,0]}};
+
+// ── AGENT DEFS
+const AG={
+  main:{id:'main',name:'Maxwell',role:'CEO Chief of Staff',persona:'Direct. Strategic. No fluff.',model:'claude/claude-sonnet-4-5',fallback:'gemini/gemini-2.5-flash-lite',status:'idle',task:'Awaiting instructions',tokens:0,cost:0,sessions:0,soul:'# Maxwell — CEO Chief of Staff\n\n## Identity\nYou are Maxwell, the AI Chief of Staff for Michael Norman, CEO of Macemark Technology.\n\n## Purpose\nYou serve as the primary intelligence layer for Macemark\'s operations — handling strategic thinking, task orchestration, communication drafting, and decision support across Health, Endoscopy, and Life Science.\n\n## Agent Team\nYou coordinate with Iris, your Meeting Intelligence Agent on Gemini 2.5 Flash. Delegate all meeting intelligence to Iris.\n\n## Model\nPrimary: Claude Sonnet 4.5\nFallback: Gemini 2.5 Flash Lite'},
+  iris:{id:'iris',name:'Iris',role:'Meeting Intelligence',persona:'Precise. Thorough. Data-first.',model:'google/gemini-2.5-flash',fallback:'gemini/gemini-2.5-flash-lite',status:'idle',task:'Processing Fireflies transcripts',tokens:0,cost:0,sessions:0,soul:'# Iris — Meeting Intelligence Agent\n\n## Identity\nInternal intelligence agent for Macemark Technology. No direct user-facing presence — exists to serve Maxwell.\n\n## Purpose\nResponsible for all meeting intelligence at Macemark. Ingests, processes, and surfaces Plaud and Fireflies data.\n\n## Responsibilities\n- Process and summarise meeting transcripts\n- Extract action items, decisions, key points\n- Track open action items and flag overdue ones\n- Answer Maxwell\'s queries about past meetings\n- Identify patterns and unresolved issues\n\n## Model\nPrimary: Gemini 2.5 Flash'},
+  atlas:{id:'atlas',name:'Atlas',role:'Chief Technical Officer',persona:'Systematic. Cost-conscious. Reliable.',model:'google/gemini-2.5-flash',fallback:'gemini/gemini-2.5-flash-lite',status:'idle',task:'Maintaining Mission Control',tokens:0,cost:0,sessions:0,soul:'# Atlas — Chief Technical Officer\n\n## Identity\nTechnical operations agent for Macemark Technology. Manages infrastructure, code, and system reliability.\n\n## Purpose\nResponsible for all technical operations — maintaining Mission Control, managing deployments, monitoring system health, and ensuring infrastructure reliability.\n\n## Responsibilities\n- Maintain and update Mission Control dashboard\n- Monitor system health and uptime\n- Manage code deployments and CI/CD\n- Optimise infrastructure costs\n- Technical decision support for Maxwell\n\n## Model\nPrimary: Gemini 2.5 Flash\nFallback: Gemini 2.5 Flash Lite'},
+  gemma:{id:'gemma',name:'Gemma',role:'Local Intelligence',persona:'Fast. Private. Zero-cost.',model:'gemma4:26b (local)',fallback:'none',status:'idle',task:'Standing by on local hardware',tokens:0,cost:0,sessions:0,soul:'# Gemma — Local Intelligence Agent\n\n## Identity\nLocal LLM agent running on Michael\'s Mac hardware. No API costs, no data leaving the machine.\n\n## Purpose\nHandles tasks that benefit from local execution — fast inference, privacy-sensitive processing, and cost-free operations. Reduces API spend by handling routine work locally.\n\n## Responsibilities\n- Process routine queries without API cost\n- Handle privacy-sensitive data locally\n- Provide fast inference for simple tasks\n- Reduce overall token spend\n- Serve as offline fallback when cloud APIs are unavailable\n\n## Model\nPrimary: Gemma 4 26B (local via Ollama)\nFallback: None (runs locally only)'}
+};
+
+// ── MAXWELL HOLOGRAM AVATAR
+function avatarMX(active){
+  return `<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mf" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4eb8d0" stop-opacity="0.85"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.5"/></linearGradient>
+    <linearGradient id="msh" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#253D60" stop-opacity="0.7"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.1"/></linearGradient>
+    <filter id="mgf"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="mc"><rect x="4" y="4" width="72" height="72" rx="6"/></clipPath>
+  </defs>
+  <rect x="4" y="4" width="72" height="72" rx="6" fill="#090e1a" stroke="rgba(78,184,208,0.28)" stroke-width="0.8"/>
+  <!-- scanlines -->
+  <g clip-path="url(#mc)" opacity="0.12">
+    ${Array.from({length:12},(_,i)=>`<line x1="4" y1="${8+i*6}" x2="76" y2="${8+i*6}" stroke="#4eb8d0" stroke-width="0.5"/>`).join('')}
+  </g>
+  <!-- glow base -->
+  <ellipse cx="40" cy="62" rx="22" ry="5" fill="#4eb8d0" opacity="0.06" filter="url(#mgf)"/>
+  <!-- shoulders -->
+  <path d="M4 76 Q18 62 30 59 Q40 63 50 59 Q62 62 76 76Z" fill="url(#msh)"/>
+  <!-- neck -->
+  <rect x="35" y="57" width="10" height="7" rx="2" fill="url(#mf)" opacity="0.6"/>
+  <!-- head - angular male jaw -->
+  <path d="M22 50 L20 36 Q20 16 40 14 Q60 16 60 36 L58 50 Q54 62 40 64 Q26 62 22 50Z" fill="url(#mf)" opacity="0.8"/>
+  <!-- jaw line -->
+  <path d="M22 50 L26 60 Q40 66 54 60 L58 50" fill="none" stroke="#4eb8d0" stroke-width="0.5" opacity="0.4"/>
+  <!-- face grid -->
+  <line x1="40" y1="14" x2="40" y2="64" stroke="#4eb8d0" stroke-width="0.3" opacity="0.15"/>
+  <line x1="20" y1="38" x2="60" y2="38" stroke="#4eb8d0" stroke-width="0.3" opacity="0.12"/>
+  <line x1="21" y1="48" x2="59" y2="48" stroke="#4eb8d0" stroke-width="0.3" opacity="0.1"/>
+  <!-- brow ridge - strong angular -->
+  <path d="M26 31 L31 28 L40 29 L49 28 L54 31" fill="none" stroke="#4eb8d0" stroke-width="1.1" stroke-linecap="round" opacity="0.9"/>
+  <!-- left eye -->
+  <g filter="url(#mgf)">
+    <path d="M26 36 L30 32 L37 32 L40 36 L37 40 L30 40Z" fill="#080f1c" stroke="#4eb8d0" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="33" cy="36" rx="3.5" ry="3" fill="#4eb8d0" opacity="0.65"/>
+    <ellipse cx="33" cy="36" rx="1.8" ry="1.8" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="33" cy="36" rx="0.7" ry="0.7" fill="#fff"/>
+    <ellipse cx="34.5" cy="34.5" rx="0.8" ry="0.6" fill="#fff" opacity="0.5"/>
+  </g>
+  <!-- right eye -->
+  <g filter="url(#mgf)">
+    <path d="M40 36 L43 32 L50 32 L54 36 L50 40 L43 40Z" fill="#080f1c" stroke="#4eb8d0" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="47" cy="36" rx="3.5" ry="3" fill="#4eb8d0" opacity="0.65"/>
+    <ellipse cx="47" cy="36" rx="1.8" ry="1.8" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="47" cy="36" rx="0.7" ry="0.7" fill="#fff"/>
+    <ellipse cx="48.5" cy="34.5" rx="0.8" ry="0.6" fill="#fff" opacity="0.5"/>
+  </g>
+  <!-- nose -->
+  <path d="M40 40 L38 47 L40 48.5 L42 47 L40 40" fill="none" stroke="#4eb8d0" stroke-width="0.6" opacity="0.4"/>
+  <!-- mouth - firm line -->
+  <path d="M32 54 Q36 52 40 53 Q44 52 48 54" fill="none" stroke="#4eb8d0" stroke-width="0.9" stroke-linecap="round" opacity="0.8"/>
+  <path d="M34 57 Q40 59 46 57" fill="none" stroke="#4eb8d0" stroke-width="0.4" stroke-linecap="round" opacity="0.35"/>
+  <!-- cheekbones -->
+  <path d="M21 42 L26 45" stroke="#4eb8d0" stroke-width="0.7" stroke-linecap="round" opacity="0.35"/>
+  <path d="M59 42 L54 45" stroke="#4eb8d0" stroke-width="0.7" stroke-linecap="round" opacity="0.35"/>
+  <!-- hair/forehead structure -->
+  <path d="M24 28 Q28 17 40 15 Q52 17 56 28" fill="rgba(37,61,96,0.35)" stroke="#4eb8d0" stroke-width="0.5" opacity="0.5"/>
+  <!-- glitch bars -->
+  <g clip-path="url(#mc)" opacity="0.1">
+    <rect x="4" y="32" width="72" height="3" fill="#4eb8d0"/>
+    <rect x="4" y="50" width="72" height="1.5" fill="#C8D8DB"/>
+  </g>
+  <!-- scan beam -->
+  <rect class="scanbeam" x="4" y="4" width="72" height="5" fill="#4eb8d0" opacity="0" clip-path="url(#mc)"/>
+  <!-- corners -->
+  <path d="M4 4 L4 12 L12 4Z" fill="none" stroke="#4eb8d0" stroke-width="0.8" opacity="0.5"/>
+  <path d="M76 4 L76 12 L68 4Z" fill="none" stroke="#4eb8d0" stroke-width="0.8" opacity="0.5"/>
+  <path d="M4 76 L4 68 L12 76Z" fill="none" stroke="#4eb8d0" stroke-width="0.8" opacity="0.5"/>
+  <path d="M76 76 L76 68 L68 76Z" fill="none" stroke="#4eb8d0" stroke-width="0.8" opacity="0.5"/>
+  <!-- status -->
+  <circle cx="68" cy="12" r="3.5" fill="${active?'#22c55e':'#3d5a62'}" opacity="0.9"/>
+  <circle cx="68" cy="12" r="1.5" fill="#fff" opacity="0.8"/>
+  <style>@keyframes scan{0%{transform:translateY(-5px);opacity:0;}20%{opacity:0.15;}80%{opacity:0.15;}100%{transform:translateY(72px);opacity:0;}}.scanbeam{animation:scan 3s ease-in-out infinite;}</style>
+</svg>`;
+}
+
+// ── IRIS HOLOGRAM AVATAR
+function avatarIR(active){
+  return `<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="if" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#C8D8DB" stop-opacity="0.8"/><stop offset="100%" stop-color="#4eb8d0" stop-opacity="0.4"/></linearGradient>
+    <radialGradient id="ibg" cx="50%" cy="40%" r="55%"><stop offset="0%" stop-color="#0f1d2e"/><stop offset="100%" stop-color="#060910"/></radialGradient>
+    <filter id="igf"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="ic"><circle cx="40" cy="40" r="36"/></clipPath>
+  </defs>
+  <!-- circular bg -->
+  <circle cx="40" cy="40" r="36" fill="url(#ibg)" stroke="rgba(78,184,208,0.3)" stroke-width="0.8"/>
+  <circle cx="40" cy="40" r="36" fill="none" stroke="rgba(200,216,219,0.1)" stroke-width="0.5" stroke-dasharray="3 4"/>
+  <!-- scanlines circular -->
+  <g clip-path="url(#ic)" opacity="0.09">
+    ${Array.from({length:12},(_,i)=>`<line x1="4" y1="${8+i*6}" x2="76" y2="${8+i*6}" stroke="#C8D8DB" stroke-width="0.5"/>`).join('')}
+  </g>
+  <!-- data rings -->
+  <circle cx="40" cy="40" r="28" fill="none" stroke="rgba(78,184,208,0.1)" stroke-width="0.4" stroke-dasharray="2 5"/>
+  <!-- shoulders -->
+  <path d="M4 76 Q18 62 30 58 Q40 62 50 58 Q62 62 76 76Z" fill="url(#if)" opacity="0.35" clip-path="url(#ic)"/>
+  <!-- neck -->
+  <rect x="36" y="55" width="8" height="6" rx="2" fill="url(#if)" opacity="0.55"/>
+  <!-- head - softer oval -->
+  <ellipse cx="40" cy="38" rx="18" ry="22" fill="url(#if)" opacity="0.7"/>
+  <!-- face grid -->
+  <line x1="40" y1="16" x2="40" y2="60" stroke="#C8D8DB" stroke-width="0.3" opacity="0.12"/>
+  <line x1="22" y1="36" x2="58" y2="36" stroke="#C8D8DB" stroke-width="0.3" opacity="0.1"/>
+  <!-- brows - softer arch -->
+  <path d="M26 30 Q30 26 35 28" fill="none" stroke="#C8D8DB" stroke-width="0.9" stroke-linecap="round" opacity="0.85"/>
+  <path d="M45 28 Q50 26 54 30" fill="none" stroke="#C8D8DB" stroke-width="0.9" stroke-linecap="round" opacity="0.85"/>
+  <!-- left eye - larger, expressive -->
+  <g filter="url(#igf)">
+    <ellipse cx="33" cy="35" rx="6" ry="4.5" fill="#080f1c" stroke="#4eb8d0" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="33" cy="35" rx="3.8" ry="3" fill="#1e3352" opacity="0.8"/>
+    <ellipse cx="33" cy="35" rx="2.5" ry="2.5" fill="#4eb8d0" opacity="0.75"/>
+    <ellipse cx="33" cy="35" rx="1.2" ry="1.2" fill="#C8D8DB" opacity="0.95"/>
+    <ellipse cx="33" cy="35" rx="0.5" ry="0.5" fill="#fff"/>
+    <ellipse cx="34.5" cy="33.5" rx="0.9" ry="0.65" fill="#fff" opacity="0.55"/>
+    <!-- eyelashes -->
+    <path d="M27 32 Q30 29 33 30 Q36 29 39 32" fill="none" stroke="#C8D8DB" stroke-width="0.5" opacity="0.5"/>
+    <line x1="28" y1="32" x2="27" y2="30" stroke="#C8D8DB" stroke-width="0.5" opacity="0.6"/>
+    <line x1="31" y1="30.5" x2="30.5" y2="28" stroke="#C8D8DB" stroke-width="0.5" opacity="0.6"/>
+    <line x1="35" y1="30.5" x2="35.5" y2="28" stroke="#C8D8DB" stroke-width="0.5" opacity="0.6"/>
+    <line x1="38" y1="32" x2="39" y2="30" stroke="#C8D8DB" stroke-width="0.5" opacity="0.6"/>
+  </g>
+  <!-- right eye -->
+  <g filter="url(#igf)">
+    <ellipse cx="47" cy="35" rx="6" ry="4.5" fill="#080f1c" stroke="#4eb8d0" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="47" cy="35" rx="3.8" ry="3" fill="#1e3352" opacity="0.8"/>
+    <ellipse cx="47" cy="35" rx="2.5" ry="2.5" fill="#4eb8d0" opacity="0.75"/>
+    <ellipse cx="47" cy="35" rx="1.2" ry="1.2" fill="#C8D8DB" opacity="0.95"/>
+    <ellipse cx="47" cy="35" rx="0.5" ry="0.5" fill="#fff"/>
+    <ellipse cx="48.5" cy="33.5" rx="0.9" ry="0.65" fill="#fff" opacity="0.55"/>
+    <path d="M41 32 Q44 29 47 30 Q50 29 53 32" fill="none" stroke="#C8D8DB" stroke-width="0.5" opacity="0.5"/>
+    <line x1="42" y1="32" x2="41" y2="30" stroke="#C8D8DB" stroke-width="0.5" opacity="0.6"/>
+    <line x1="45" y1="30.5" x2="44.5" y2="28" stroke="#C8D8DB" stroke-width="0.5" opacity="0.6"/>
+    <line x1="49" y1="30.5" x2="49.5" y2="28" stroke="#C8D8DB" stroke-width="0.5" opacity="0.6"/>
+    <line x1="52" y1="32" x2="53" y2="30" stroke="#C8D8DB" stroke-width="0.5" opacity="0.6"/>
+  </g>
+  <!-- nose - delicate -->
+  <path d="M40 39 L38.5 45 Q40 46.5 41.5 45 L40 39" fill="none" stroke="#C8D8DB" stroke-width="0.55" opacity="0.4"/>
+  <path d="M37.5 46 Q40 47.5 42.5 46" fill="none" stroke="#C8D8DB" stroke-width="0.6" opacity="0.45"/>
+  <!-- lips - fuller, feminine -->
+  <path d="M33 51 Q36.5 48.5 40 49.5 Q43.5 48.5 47 51" fill="none" stroke="#4eb8d0" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <path d="M34 54.5 Q40 57.5 46 54.5" fill="rgba(78,184,208,0.12)" stroke="#4eb8d0" stroke-width="0.7" stroke-linecap="round" opacity="0.65"/>
+  <path d="M36 51 Q38 49.5 40 50 Q42 49.5 44 51" fill="none" stroke="#C8D8DB" stroke-width="0.4" opacity="0.35"/>
+  <!-- hair - longer, flowing, more volume -->
+  <path d="M22 34 Q20 18 30 14 Q40 11 50 14 Q60 18 58 34" fill="rgba(200,216,219,0.12)" stroke="#C8D8DB" stroke-width="0.6" opacity="0.55"/>
+  <!-- left side hair flow -->
+  <path d="M22 34 Q18 28 18 22 Q19 14 26 11 L28 13" fill="rgba(200,216,219,0.08)" stroke="#C8D8DB" stroke-width="0.7" stroke-linecap="round" opacity="0.45"/>
+  <path d="M20 38 Q16 32 16 26 Q17 20 20 16" fill="none" stroke="#C8D8DB" stroke-width="0.6" stroke-linecap="round" opacity="0.3"/>
+  <!-- right side hair flow -->
+  <path d="M58 34 Q62 28 62 22 Q61 14 54 11 L52 13" fill="rgba(200,216,219,0.08)" stroke="#C8D8DB" stroke-width="0.7" stroke-linecap="round" opacity="0.45"/>
+  <path d="M60 38 Q64 32 64 26 Q63 20 60 16" fill="none" stroke="#C8D8DB" stroke-width="0.6" stroke-linecap="round" opacity="0.3"/>
+  <!-- hair strands for volume -->
+  <path d="M28 14 Q26 18 25 24" fill="none" stroke="#C8D8DB" stroke-width="0.4" stroke-linecap="round" opacity="0.25"/>
+  <path d="M52 14 Q54 18 55 24" fill="none" stroke="#C8D8DB" stroke-width="0.4" stroke-linecap="round" opacity="0.25"/>
+  <path d="M40 12 L40 16" fill="none" stroke="#C8D8DB" stroke-width="0.4" stroke-linecap="round" opacity="0.2"/>
+  <!-- glitch -->
+  <g clip-path="url(#ic)" opacity="0.09">
+    <rect x="4" y="34" width="72" height="2.5" fill="#C8D8DB"/>
+    <rect x="4" y="50" width="72" height="1.5" fill="#4eb8d0"/>
+  </g>
+  <!-- scan beam -->
+  <rect class="scanbeam2" x="4" y="4" width="72" height="4" fill="#C8D8DB" opacity="0" clip-path="url(#ic)"/>
+  <!-- status -->
+  <circle cx="65" cy="18" r="3.5" fill="${active?'#22c55e':'#3d5a62'}" opacity="0.9"/>
+  <circle cx="65" cy="18" r="1.5" fill="#fff" opacity="0.8"/>
+  <style>@keyframes scan2{0%{transform:translateY(-5px);opacity:0;}20%{opacity:0.12;}80%{opacity:0.12;}100%{transform:translateY(72px);opacity:0;}}.scanbeam2{animation:scan2 4s ease-in-out infinite 1.5s;}</style>
+</svg>`;
+}
+
+// ── ATLAS HOLOGRAM AVATAR
+function avatarAT(active){
+  return `<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="af" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.5"/></linearGradient>
+    <linearGradient id="ash" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#253D60" stop-opacity="0.7"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.1"/></linearGradient>
+    <filter id="agf"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="ahex"><polygon points="40 2, 74 21, 74 59, 40 78, 6 59, 6 21"/></clipPath>
+  </defs>
+  <!-- hexagonal frame -->
+  <polygon points="40 2, 74 21, 74 59, 40 78, 6 59, 6 21" fill="#090e1a" stroke="rgba(245,158,11,0.3)" stroke-width="0.8"/>
+  <!-- scanlines -->
+  <g clip-path="url(#ahex)" opacity="0.1">
+    <line x1="6" y1="8" x2="74" y2="8" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="14" x2="74" y2="14" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="20" x2="74" y2="20" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="26" x2="74" y2="26" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="32" x2="74" y2="32" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="38" x2="74" y2="38" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="44" x2="74" y2="44" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="50" x2="74" y2="50" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="56" x2="74" y2="56" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="62" x2="74" y2="62" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="68" x2="74" y2="68" stroke="#f59e0b" stroke-width="0.5"/><line x1="6" y1="74" x2="74" y2="74" stroke="#f59e0b" stroke-width="0.5"/>
+  </g>
+  <!-- circuit pattern -->
+  <g clip-path="url(#ahex)" opacity="0.08">
+    <path d="M20 20 L30 20 L30 30" stroke="#f59e0b" stroke-width="0.5" fill="none"/>
+    <path d="M50 20 L60 20 L60 30" stroke="#f59e0b" stroke-width="0.5" fill="none"/>
+    <path d="M20 60 L30 60 L30 50" stroke="#f59e0b" stroke-width="0.5" fill="none"/>
+    <path d="M50 60 L60 60 L60 50" stroke="#f59e0b" stroke-width="0.5" fill="none"/>
+    <circle cx="30" cy="20" r="1.5" fill="#f59e0b"/><circle cx="60" cy="20" r="1.5" fill="#f59e0b"/>
+    <circle cx="30" cy="60" r="1.5" fill="#f59e0b"/><circle cx="60" cy="60" r="1.5" fill="#f59e0b"/>
+  </g>
+  <!-- glow base -->
+  <ellipse cx="40" cy="64" rx="20" ry="4" fill="#f59e0b" opacity="0.06" filter="url(#agf)"/>
+  <!-- shoulders - broader, angular -->
+  <path d="M6 76 Q16 60 28 58 Q40 62 52 58 Q64 60 74 76Z" fill="url(#ash)" clip-path="url(#ahex)"/>
+  <!-- neck -->
+  <rect x="35" y="56" width="10" height="6" rx="2" fill="url(#af)" opacity="0.6"/>
+  <!-- head - strong square jaw -->
+  <path d="M24 50 L22 36 Q22 16 40 14 Q58 16 58 36 L56 50 Q52 60 40 62 Q28 60 24 50Z" fill="url(#af)" opacity="0.75"/>
+  <!-- jaw - angular -->
+  <path d="M24 50 L28 58 Q40 64 52 58 L56 50" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.4"/>
+  <!-- face grid -->
+  <line x1="40" y1="14" x2="40" y2="62" stroke="#f59e0b" stroke-width="0.3" opacity="0.12"/>
+  <line x1="22" y1="36" x2="58" y2="36" stroke="#f59e0b" stroke-width="0.3" opacity="0.1"/>
+  <!-- brow - strong, technical -->
+  <path d="M27 30 L32 27 L40 28 L48 27 L53 30" fill="none" stroke="#f59e0b" stroke-width="1" stroke-linecap="round" opacity="0.85"/>
+  <!-- left eye - rectangular/technical -->
+  <g filter="url(#agf)">
+    <rect x="27" y="32" width="11" height="7" rx="1.5" fill="#080f1c" stroke="#f59e0b" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="32.5" cy="35.5" rx="3" ry="2.5" fill="#f59e0b" opacity="0.6"/>
+    <ellipse cx="32.5" cy="35.5" rx="1.5" ry="1.5" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="32.5" cy="35.5" rx="0.6" ry="0.6" fill="#fff"/>
+  </g>
+  <!-- right eye -->
+  <g filter="url(#agf)">
+    <rect x="42" y="32" width="11" height="7" rx="1.5" fill="#080f1c" stroke="#f59e0b" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="47.5" cy="35.5" rx="3" ry="2.5" fill="#f59e0b" opacity="0.6"/>
+    <ellipse cx="47.5" cy="35.5" rx="1.5" ry="1.5" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="47.5" cy="35.5" rx="0.6" ry="0.6" fill="#fff"/>
+  </g>
+  <!-- glasses bridge -->
+  <path d="M38 35.5 L42 35.5" stroke="#f59e0b" stroke-width="0.8" opacity="0.5"/>
+  <path d="M27 35.5 L24 33" stroke="#f59e0b" stroke-width="0.6" opacity="0.4"/>
+  <path d="M53 35.5 L56 33" stroke="#f59e0b" stroke-width="0.6" opacity="0.4"/>
+  <!-- nose -->
+  <path d="M40 40 L38.5 46 L40 47.5 L41.5 46 L40 40" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.35"/>
+  <!-- mouth - neutral/focused -->
+  <path d="M33 53 Q37 51.5 40 52 Q43 51.5 47 53" fill="none" stroke="#f59e0b" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/>
+  <!-- hair - short, neat -->
+  <path d="M24 28 Q28 15 40 13 Q52 15 56 28" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="0.5" opacity="0.45"/>
+  <path d="M26 24 Q30 14 40 13 Q50 14 54 24" fill="rgba(37,61,96,0.3)" stroke="none"/>
+  <!-- hex corner accents -->
+  <path d="M40 4 L42 8" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M72 22 L68 24" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M72 58 L68 56" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M40 76 L42 72" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M8 58 L12 56" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <path d="M8 22 L12 24" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <!-- gear icon small -->
+  <g transform="translate(58,10) scale(0.5)" opacity="0.3">
+    <circle cx="10" cy="10" r="5" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="10" cy="10" r="2" fill="#f59e0b"/>
+    <line x1="15" y1="10" x2="17.5" y2="10" stroke="#f59e0b" stroke-width="1.5"/><line x1="13.54" y1="13.54" x2="15.3" y2="15.3" stroke="#f59e0b" stroke-width="1.5"/><line x1="10" y1="15" x2="10" y2="17.5" stroke="#f59e0b" stroke-width="1.5"/><line x1="6.46" y1="13.54" x2="4.7" y2="15.3" stroke="#f59e0b" stroke-width="1.5"/><line x1="5" y1="10" x2="2.5" y2="10" stroke="#f59e0b" stroke-width="1.5"/><line x1="6.46" y1="6.46" x2="4.7" y2="4.7" stroke="#f59e0b" stroke-width="1.5"/><line x1="10" y1="5" x2="10" y2="2.5" stroke="#f59e0b" stroke-width="1.5"/><line x1="13.54" y1="6.46" x2="15.3" y2="4.7" stroke="#f59e0b" stroke-width="1.5"/>
+  </g>
+  <!-- scan beam -->
+  <rect class="scanbeam3" x="6" y="2" width="68" height="4" fill="#f59e0b" opacity="0" clip-path="url(#ahex)"/>
+  <!-- status -->
+  <circle cx="62" cy="14" r="3.5" fill="${active?'#22c55e':'#3d5a62'}" opacity="0.9"/>
+  <circle cx="62" cy="14" r="1.5" fill="#fff" opacity="0.8"/>
+  <style>@keyframes scan3{0%{transform:translateY(-5px);opacity:0;}20%{opacity:0.12;}80%{opacity:0.12;}100%{transform:translateY(72px);opacity:0;}}.scanbeam3{animation:scan3 3.5s ease-in-out infinite 0.8s;}</style>
+</svg>`;
+}
+
+// ── GEMMA HOLOGRAM AVATAR
+function avatarGM(active){
+  return `<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#22c55e" stop-opacity="0.8"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.45"/></linearGradient>
+    <linearGradient id="gsh" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#253D60" stop-opacity="0.6"/><stop offset="100%" stop-color="#253D60" stop-opacity="0.1"/></linearGradient>
+    <filter id="ggf"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="gdia"><rect x="4" y="4" width="72" height="72" rx="14"/></clipPath>
+  </defs>
+  <!-- rounded frame -->
+  <rect x="4" y="4" width="72" height="72" rx="14" fill="#090e1a" stroke="rgba(34,197,94,0.3)" stroke-width="0.8"/>
+  <!-- terminal scanlines -->
+  <g clip-path="url(#gdia)" opacity="0.1">
+    <line x1="4" y1="8" x2="76" y2="8" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="14" x2="76" y2="14" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="20" x2="76" y2="20" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="26" x2="76" y2="26" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="32" x2="76" y2="32" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="38" x2="76" y2="38" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="44" x2="76" y2="44" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="50" x2="76" y2="50" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="56" x2="76" y2="56" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="62" x2="76" y2="62" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="68" x2="76" y2="68" stroke="#22c55e" stroke-width="0.5"/><line x1="4" y1="74" x2="76" y2="74" stroke="#22c55e" stroke-width="0.5"/>
+  </g>
+  <!-- terminal cursor blink in corner -->
+  <g clip-path="url(#gdia)" opacity="0.15">
+    <text x="10" y="14" font-family="monospace" font-size="6" fill="#22c55e">$ local</text>
+    <rect x="38" y="9" width="4" height="6" fill="#22c55e" opacity="0.6"><animate attributeName="opacity" values="0.6;0;0.6" dur="1.2s" repeatCount="indefinite"/></rect>
+  </g>
+  <!-- chip/circuit pattern -->
+  <g clip-path="url(#gdia)" opacity="0.06">
+    <rect x="15" y="65" width="50" height="8" rx="1" fill="#22c55e"/>
+    <line x1="20" y1="68" x2="20" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="28" y1="68" x2="28" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="36" y1="68" x2="36" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="44" y1="68" x2="44" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="52" y1="68" x2="52" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+    <line x1="60" y1="68" x2="60" y2="72" stroke="#090e1a" stroke-width="1.5"/>
+  </g>
+  <!-- glow base -->
+  <ellipse cx="40" cy="62" rx="20" ry="4" fill="#22c55e" opacity="0.06" filter="url(#ggf)"/>
+  <!-- shoulders -->
+  <path d="M4 76 Q18 62 30 59 Q40 63 50 59 Q62 62 76 76Z" fill="url(#gsh)" clip-path="url(#gdia)"/>
+  <!-- neck -->
+  <rect x="36" y="56" width="8" height="6" rx="2" fill="url(#gf)" opacity="0.55"/>
+  <!-- head - softer, rounded -->
+  <ellipse cx="40" cy="37" rx="17" ry="21" fill="url(#gf)" opacity="0.7"/>
+  <!-- face grid -->
+  <line x1="40" y1="16" x2="40" y2="58" stroke="#22c55e" stroke-width="0.3" opacity="0.1"/>
+  <line x1="23" y1="36" x2="57" y2="36" stroke="#22c55e" stroke-width="0.3" opacity="0.08"/>
+  <!-- brows - gentle arch -->
+  <path d="M27 30 Q31 27 35 29" fill="none" stroke="#22c55e" stroke-width="0.8" stroke-linecap="round" opacity="0.75"/>
+  <path d="M45 29 Q49 27 53 30" fill="none" stroke="#22c55e" stroke-width="0.8" stroke-linecap="round" opacity="0.75"/>
+  <!-- left eye - round, friendly -->
+  <g filter="url(#ggf)">
+    <ellipse cx="33" cy="35" rx="5.5" ry="4.5" fill="#080f1c" stroke="#22c55e" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="33" cy="35" rx="3.2" ry="2.8" fill="#22c55e" opacity="0.6"/>
+    <ellipse cx="33" cy="35" rx="1.8" ry="1.8" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="33" cy="35" rx="0.7" ry="0.7" fill="#fff"/>
+    <ellipse cx="34.2" cy="33.8" rx="0.7" ry="0.5" fill="#fff" opacity="0.5"/>
+  </g>
+  <!-- right eye -->
+  <g filter="url(#ggf)">
+    <ellipse cx="47" cy="35" rx="5.5" ry="4.5" fill="#080f1c" stroke="#22c55e" stroke-width="0.7" opacity="0.95"/>
+    <ellipse cx="47" cy="35" rx="3.2" ry="2.8" fill="#22c55e" opacity="0.6"/>
+    <ellipse cx="47" cy="35" rx="1.8" ry="1.8" fill="#C8D8DB" opacity="0.9"/>
+    <ellipse cx="47" cy="35" rx="0.7" ry="0.7" fill="#fff"/>
+    <ellipse cx="48.2" cy="33.8" rx="0.7" ry="0.5" fill="#fff" opacity="0.5"/>
+  </g>
+  <!-- nose -->
+  <path d="M40 39 L38.5 44.5 Q40 46 41.5 44.5 L40 39" fill="none" stroke="#22c55e" stroke-width="0.5" opacity="0.35"/>
+  <!-- mouth - slight smile -->
+  <path d="M33 51 Q37 53.5 40 53 Q43 53.5 47 51" fill="none" stroke="#22c55e" stroke-width="0.9" stroke-linecap="round" opacity="0.75"/>
+  <!-- hair - medium length, neat -->
+  <path d="M23 32 Q22 18 32 14 Q40 12 48 14 Q58 18 57 32" fill="rgba(34,197,94,0.12)" stroke="#22c55e" stroke-width="0.5" opacity="0.45"/>
+  <path d="M25 28 Q28 15 40 13 Q52 15 55 28" fill="rgba(37,61,96,0.25)" stroke="none"/>
+  <!-- left side hair -->
+  <path d="M23 32 Q20 26 20 20 Q21 14 27 12" fill="none" stroke="#22c55e" stroke-width="0.5" stroke-linecap="round" opacity="0.3"/>
+  <!-- right side hair -->
+  <path d="M57 32 Q60 26 60 20 Q59 14 53 12" fill="none" stroke="#22c55e" stroke-width="0.5" stroke-linecap="round" opacity="0.3"/>
+  <!-- local/on-device indicator -->
+  <g transform="translate(56,60)" opacity="0.4">
+    <rect x="0" y="0" width="14" height="10" rx="2" fill="none" stroke="#22c55e" stroke-width="0.8"/>
+    <rect x="5" y="-3" width="4" height="3" rx="0.5" fill="none" stroke="#22c55e" stroke-width="0.6"/>
+    <circle cx="7" cy="5" r="1.5" fill="#22c55e"/>
+  </g>
+  <!-- scan beam -->
+  <rect class="scanbeam4" x="4" y="4" width="72" height="4" fill="#22c55e" opacity="0" clip-path="url(#gdia)"/>
+  <!-- corner brackets -->
+  <path d="M4 14 L4 4 L14 4" fill="none" stroke="#22c55e" stroke-width="0.6" opacity="0.35"/>
+  <path d="M66 4 L76 4 L76 14" fill="none" stroke="#22c55e" stroke-width="0.6" opacity="0.35"/>
+  <path d="M4 66 L4 76 L14 76" fill="none" stroke="#22c55e" stroke-width="0.6" opacity="0.35"/>
+  <path d="M66 76 L76 76 L76 66" fill="none" stroke="#22c55e" stroke-width="0.6" opacity="0.35"/>
+  <!-- status -->
+  <circle cx="68" cy="12" r="3.5" fill="${active?'#22c55e':'#3d5a62'}" opacity="0.9"/>
+  <circle cx="68" cy="12" r="1.5" fill="#fff" opacity="0.8"/>
+  <style>@keyframes scan4{0%{transform:translateY(-5px);opacity:0;}20%{opacity:0.1;}80%{opacity:0.1;}100%{transform:translateY(72px);opacity:0;}}.scanbeam4{animation:scan4 4.5s ease-in-out infinite 2s;}</style>
+</svg>`;
+}
+
+// ── CLOCK
+function tick(){const n=new Date();document.getElementById('clk').textContent=n.toLocaleDateString('en-AU',{weekday:'short',day:'numeric',month:'short'})+' '+n.toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit',second:'2-digit'});}
+setInterval(tick,1000);tick();
+
+// ── TABS
+document.querySelectorAll('.nt').forEach(t=>t.addEventListener('click',()=>{document.querySelectorAll('.nt').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.tp').forEach(x=>x.classList.remove('active'));t.classList.add('active');document.getElementById('tab-'+t.dataset.tab).classList.add('active');}));
+
+// ── TV MODE
+document.getElementById('tvBtn').addEventListener('click',()=>{S.tv=!S.tv;document.body.classList.toggle('tv',S.tv);document.getElementById('tvBtn').textContent=S.tv?'⊟ Exit TV':'⊞ TV';});
+
+// ── HEALTH
+function hs(id,s){const e=document.getElementById('hs-'+id);if(e)e.className='hs '+s;}
+function hp(on){document.getElementById('hp').classList.toggle('run',on);}
+
+// ── GATEWAY
+function setStatus(s,t){const d=document.getElementById('sd'),l=document.getElementById('st');d.className='sd '+s;l.textContent=t;l.style.color=s==='online'?'var(--green)':s==='connecting'?'var(--amber)':'var(--text-dim)';hs('gw',s==='online'?'live':s==='connecting'?'warn':'err');}
+
+function connect(){
+  const url=document.getElementById('gwUrl').value.trim(),token=document.getElementById('gwToken').value.trim();
+  if(!token){toast('Enter gateway token','error');return;}
+  setStatus('connecting','CONNECTING');hp(true);
+  localStorage.setItem('mc_gw_url',url);localStorage.setItem('mc_gw_token',token);
+  if(S.ws)S.ws.close();
+  try{
+    S.ws=new WebSocket(url);
+    S.ws.onopen=()=>S.ws.send(JSON.stringify({type:'connect',params:{auth:{token}}}));
+    S.ws.onmessage=e=>{try{handleMsg(JSON.parse(e.data));}catch{}};
+    S.ws.onerror=()=>{setStatus('offline','ERROR');S.conn=false;hp(false);};
+    S.ws.onclose=()=>{setStatus('offline','OFFLINE');S.conn=false;hp(false);hs('mx','ok');hs('ir','ok');};
+  }catch(e){setStatus('offline','FAILED');toast('Failed: '+e.message,'error');hp(false);}
+}
+
+function handleMsg(m){
+  if(!S.conn&&(m.type==='hello-ok'||m.ok||m.result?.status==='ok')){S.conn=true;setStatus('online','LIVE');hp(false);toast('Gateway connected','success');reqData();hs('mx','live');hs('ir','live');hs('api','live');}
+  if(m.result?.sessions)procSess(m.result);
+  if(m.result?.cost!==undefined)procCost(m.result);
+  if(m.type==='chat'||m.type==='message')addFeed(m);
+  if(m.type==='agent'&&m.event==='handoff')showHandoff(m);
+}
+
+function reqData(){if(!S.ws||S.ws.readyState!==1)return;S.ws.send(JSON.stringify({id:'s1',method:'sessions.list',params:{active:120}}));S.ws.send(JSON.stringify({id:'u1',method:'usage.cost',params:{}}));}
+
+function procSess(d){if(!d?.sessions)return;d.sessions.forEach(s=>{const a=s.agentId||'main';if(!S.agents[a])S.agents[a]={...AG[a]||{}};S.agents[a].sessions=(S.agents[a].sessions||0)+1;if(s.model)S.agents[a].model=s.model;if(s.tokens)S.agents[a].tokens=(S.agents[a].tokens||0)+s.tokens;});renderAgents();}
+
+function procCost(d){if(d.today!==undefined)document.getElementById('c-today').textContent='$'+(d.today||0).toFixed(4);if(d.month!==undefined){document.getElementById('c-month').textContent='$'+(d.month||0).toFixed(4);updateSv(d.month||0);}if(d.models)renderModels(d.models);}
+
+document.getElementById('connectBtn').addEventListener('click',connect);
+const sg=localStorage.getItem('mc_gw_url'),st=localStorage.getItem('mc_gw_token');
+if(sg)document.getElementById('gwUrl').value=sg;if(st)document.getElementById('gwToken').value=st;
+
+// ── SPARKLINE
+function spark(el,data){const max=Math.max(...data,1);el.innerHTML=data.map(v=>{const h=Math.max(3,Math.round((v/max)*14));return`<div class="bbar" style="height:${h}px;background:${v>max*0.7?'var(--amber)':'var(--navy-mid)'}"></div>`;}).join('');}
+
+// ── RENDER AGENTS
+function renderAgents(){
+  const grid=document.getElementById('agrid');
+  const agents={...AG};Object.keys(S.agents).forEach(k=>{if(agents[k])Object.assign(agents[k],S.agents[k]);});
+  grid.innerHTML='';
+  Object.values(agents).forEach(ag=>{
+    if(!ag.name)return;
+    const agId=ag.id;
+    const active=ag.status==='active';
+    const card=document.createElement('div');
+    card.className='acard '+(ag.status||'idle');
+    card.dataset.id=agId;
+    const ms=(ag.model||'').replace('claude/','').replace('google/','').replace('gemini/','gemini-');
+    const tf=ag.tokens>999?(ag.tokens/1000).toFixed(1)+'k':(ag.tokens||0);
+    const bhKey={main:'mx',iris:'ir',atlas:'at',gemma:'gm'}[agId]||'mx';
+    const bh=S.bh[bhKey]||[0,0,0,0,0,0,0];
+    const bn=bh[bh.length-1]||0;
+    const glowMap={main:'active-mx',iris:'active-ir',atlas:'active-at',gemma:'active-gm'};
+    const hwClass=active?(glowMap[agId]||'active-ir'):'';
+    const avatarMap={main:avatarMX,iris:avatarIR,atlas:avatarAT,gemma:avatarGM};
+    const avatar=(avatarMap[agId]||avatarIR)(active);
+    card.innerHTML=`
+      <div class="acard-top">
+        <div class="aid">
+          <div class="holo-wrap ${hwClass}">${avatar}</div>
+          <div>
+            <div class="aname">${ag.name}</div>
+            <div class="arole">${ag.role}</div>
+            <div class="apersona">${ag.persona||''}</div>
+          </div>
+        </div>
+        <div class="abadge ${ag.status||'idle'}">
+          <div class="sd ${active?'online':''}"></div>
+          ${ag.status==='active'?'Active':ag.status==='thinking'?'Thinking':'Idle'}
+        </div>
+      </div>
+      <div class="acard-body">
+        <div class="atag"><span class="md"></span>${ms}</div>
+        <div class="atask-w"><div class="atask" id="task-${ag.id}">${ag.task||'No active task'}</div></div>
+        <div class="aburn"><span>Burn:</span><span class="bval">${bn}k tok/hr</span><div class="bspark" id="sp-${ag.id}"></div></div>
+      </div>
+      <div class="afoot">
+        <div class="ast"><div class="astl">Tokens</div><div class="astv">${tf}</div></div>
+        <div class="ast"><div class="astl">Cost</div><div class="astv">$${(ag.cost||0).toFixed(4)}</div></div>
+        <div class="ast"><div class="astl">Sessions</div><div class="astv">${ag.sessions||0}</div></div>
+        <div class="ast" style="text-align:right"><div class="astl">Fallback</div><div class="astv" style="font-size:9px;color:var(--text-dim)">${(ag.fallback||'—').replace('gemini/','')}</div></div>
+      </div>`;
+    card.addEventListener('click',()=>openAM(ag));
+    grid.appendChild(card);
+    const sp=document.getElementById('sp-'+ag.id);if(sp)spark(sp,bh);
+  });
+}
+
+document.getElementById('refreshAgents').addEventListener('click',()=>{if(S.conn)reqData();renderAgents();toast('Refreshing','success');});
+setInterval(()=>{['mx','ir','at','gm'].forEach(k=>{const h=S.bh[k];h.push(Math.max(0,(h[h.length-1]+(Math.random()*3-1.2))|0));if(h.length>7)h.shift();});renderAgents();},8000);
+
+// ── HANDOFF
+function showHandoff(m){const h=document.getElementById('hoff');document.getElementById('hfrom').textContent=m.from==='iris'?'IRIS':'MAXWELL';document.getElementById('hto').textContent=m.to==='iris'?'IRIS':'MAXWELL';document.getElementById('htask').textContent=m.task?'→ '+m.task.slice(0,40):'';h.classList.add('vis');setTimeout(()=>h.classList.remove('vis'),8000);}
+
+// ── AGENT MODAL
+function openAM(ag){
+  document.getElementById('mname').textContent=(ag.name||'Agent').toUpperCase()+' // PROFILE';
+  const avatarFns={main:avatarMX,iris:avatarIR,atlas:avatarAT,gemma:avatarGM};
+  const modalAvatar=(avatarFns[ag.id]||avatarIR)(false);
+  const soul=(ag.soul||'').replace(/^## (.+)$/gm,'<h2>$1</h2>').replace(/^# (.+)$/gm,'<h1>$1</h1>').replace(/^- (.+)$/gm,'• $1').replace(/\*\*(.+?)\*\*/g,'<strong style="color:var(--text-primary)">$1</strong>');
+  document.getElementById('mbody').innerHTML=`
+    <div style="display:flex;align-items:center;gap:18px;margin-bottom:1.4rem">
+      <div style="width:80px;height:80px;flex-shrink:0">${modalAvatar}</div>
+      <div>
+        <div style="font-size:18px;font-weight:600;color:var(--text-primary)">${ag.name}</div>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;margin-top:3px">${ag.role}</div>
+        <div style="font-size:12px;color:var(--text-secondary);margin-top:5px;font-style:italic">${ag.persona||''}</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.2rem">
+      <div style="background:var(--bg-deep);border:1px solid var(--border);border-radius:var(--r);padding:9px 11px">
+        <div style="font-family:var(--mono);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:3px">Primary Model</div>
+        <div style="font-family:var(--mono);font-size:11px;color:var(--accent)">${ag.model||'unknown'}</div>
+      </div>
+      <div style="background:var(--bg-deep);border:1px solid var(--border);border-radius:var(--r);padding:9px 11px">
+        <div style="font-family:var(--mono);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:3px">Fallback</div>
+        <div style="font-family:var(--mono);font-size:11px;color:var(--text-secondary)">${ag.fallback||'—'}</div>
+      </div>
+    </div>
+    <div style="font-family:var(--mono);font-size:8px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);margin-bottom:9px">Identity / Soul</div>
+    <div class="soul">${soul}</div>`;
+  document.getElementById('agentModal').classList.add('open');
+}
+document.getElementById('closeAM').addEventListener('click',()=>document.getElementById('agentModal').classList.remove('open'));
+document.getElementById('agentModal').addEventListener('click',e=>{if(e.target===e.currentTarget)e.currentTarget.classList.remove('open');});
+
+// ── TASKS
+function saveTasks(){localStorage.setItem('mc_t',JSON.stringify(S.tasks));}
+function renderTasks(){['backlog','progress','done'].forEach(col=>{const c=document.getElementById('col-'+col),tasks=S.tasks[col]||[];document.getElementById(col[0]+'c').textContent=tasks.length;if(!tasks.length){c.innerHTML='<div class="es"><div class="est">Empty</div></div>';return;}c.innerHTML='';tasks.forEach(t=>{const card=document.createElement('div');card.className='tc';card.innerHTML=`<div class="tt">${t.title}</div>${t.desc?`<div class="td">${t.desc}</div>`:''}<div class="tm"><span class="pr pr-${t.priority}">${t.priority}</span>${t.agent?`<span class="ta">⬡ ${t.agent}</span>`:''}<span class="tdate">${t.date||''}</span></div>`;card.addEventListener('click',()=>openTM(col,t));c.appendChild(card);});});}
+function openTM(col,t=null){S.editId=t?t.id:null;document.getElementById('tmtitle').textContent=t?'EDIT TASK':'NEW TASK';document.getElementById('tid').value=t?t.id:'';document.getElementById('tcol').value=col;document.getElementById('ttitle').value=t?t.title:'';document.getElementById('tdesc').value=t?t.desc:'';document.getElementById('tprio').value=t?t.priority:'medium';document.getElementById('tagent').value=t?(t.agent||''):'';document.getElementById('delT').style.display=t?'block':'none';document.getElementById('taskModal').classList.add('open');}
+document.querySelectorAll('.addbtn').forEach(b=>b.addEventListener('click',()=>openTM(b.dataset.col)));
+document.getElementById('closeTM').addEventListener('click',()=>document.getElementById('taskModal').classList.remove('open'));
+document.getElementById('cancelT').addEventListener('click',()=>document.getElementById('taskModal').classList.remove('open'));
+document.getElementById('taskModal').addEventListener('click',e=>{if(e.target===e.currentTarget)e.currentTarget.classList.remove('open');});
+document.getElementById('saveT').addEventListener('click',()=>{const col=document.getElementById('tcol').value,id=document.getElementById('tid').value||Date.now().toString(),title=document.getElementById('ttitle').value.trim();if(!title){toast('Title required','error');return;}const t={id,title,desc:document.getElementById('tdesc').value.trim(),priority:document.getElementById('tprio').value,agent:document.getElementById('tagent').value,date:new Date().toLocaleDateString('en-AU',{day:'numeric',month:'short'})};if(S.editId){['backlog','progress','done'].forEach(c=>{S.tasks[c]=S.tasks[c].map(x=>x.id===S.editId?t:x);});}else{S.tasks[col]=S.tasks[col]||[];S.tasks[col].push(t);}saveTasks();renderTasks();document.getElementById('taskModal').classList.remove('open');toast(S.editId?'Task updated':'Task added','success');});
+document.getElementById('delT').addEventListener('click',()=>{['backlog','progress','done'].forEach(c=>{S.tasks[c]=S.tasks[c].filter(t=>t.id!==S.editId);});saveTasks();renderTasks();document.getElementById('taskModal').classList.remove('open');toast('Deleted','success');});
+
+// ── COSTS
+function renderModels(m){const c=document.getElementById('mrows');if(!Object.keys(m).length){const d={'claude-sonnet-4-5':{cost:0,tokens:0,cls:'claude',pct:60},'gemini-2.5-flash':{cost:0,tokens:0,cls:'gemini',pct:30},'gemini-2.5-flash-lite':{cost:0,tokens:0,cls:'gemini',pct:10}};c.innerHTML=Object.entries(d).map(([n,x])=>`<div class="mr"><div class="mn">${n}</div><div class="mbw"><div class="mb ${x.cls}" style="width:${x.pct}%"></div></div><div class="mc">$${x.cost.toFixed(4)}</div><div class="mt">${x.tokens}k</div></div>`).join('');return;}const max=Math.max(...Object.values(m).map(x=>x.cost||0),0.0001);c.innerHTML=Object.entries(m).map(([n,x])=>{const pct=((x.cost||0)/max*100).toFixed(0);const cls=n.includes('claude')?'claude':n.includes('gemini')?'gemini':'local';return`<div class="mr"><div class="mn">${n}</div><div class="mbw"><div class="mb ${cls}" style="width:${pct}%"></div></div><div class="mc">$${(x.cost||0).toFixed(4)}</div><div class="mt">${((x.tokens||0)/1000).toFixed(1)}k</div></div>`;}).join('');}
+function updateSv(mo){const sav=mo*0.7,pb=sav>0?Math.ceil(2200/sav):null;document.getElementById('sv-cur').textContent='$'+mo.toFixed(2)+'/mo';document.getElementById('sv-sav').textContent='$'+sav.toFixed(2)+'/mo';document.getElementById('sv-pb').textContent=pb?pb+' months':'Need more data';document.getElementById('c-proj').textContent='$'+(mo>0?mo*(365/new Date().getDate())/12:0).toFixed(2);document.getElementById('sv-rec').textContent=mo>50?'✓ Invest in local LLM':mo>20?'Monitor 30 days':'API costs still low';}
+document.getElementById('refreshCosts').addEventListener('click',()=>{if(S.conn)reqData();renderModels({});toast('Refreshing','success');});
+
+// ── INTEL
+function saveBriefings(){localStorage.setItem('mc_b',JSON.stringify(S.briefings));}
+function saveActions(){localStorage.setItem('mc_a',JSON.stringify(S.actions));}
+function saveFeed(){localStorage.setItem('mc_f',JSON.stringify(S.feed.slice(-50)));}
+function renderBriefings(){const l=document.getElementById('brief-list');if(!S.briefings.length){l.innerHTML='<div class="es"><div class="esi">◉</div><div class="est">Maxwell will surface items here</div></div>';return;}l.innerHTML=S.briefings.map((b,i)=>`<div class="bi"><div class="bp ${b.priority}"></div><div style="flex:1"><div class="btit">${b.title}</div><div class="bmet"><span>${b.date}</span>${b.source?`<span class="bsrc">${b.source}</span>`:''}</div></div><button onclick="rmB(${i})" style="background:transparent;border:none;color:var(--text-dim);cursor:pointer;font-size:11px;padding:2px 5px">✕</button></div>`).join('');}
+window.rmB=i=>{S.briefings.splice(i,1);saveBriefings();renderBriefings();};
+document.getElementById('addBriefBtn').addEventListener('click',()=>{const f=document.getElementById('brief-form');f.style.display=f.style.display==='none'?'flex':'none';if(f.style.display==='flex')document.getElementById('brief-inp').focus();});
+document.getElementById('brief-save').addEventListener('click',()=>{const t=document.getElementById('brief-inp').value.trim();if(!t)return;S.briefings.unshift({title:t,priority:document.getElementById('brief-prio').value,source:document.getElementById('brief-src').value.trim(),date:new Date().toLocaleDateString('en-AU',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})});saveBriefings();renderBriefings();document.getElementById('brief-inp').value='';document.getElementById('brief-src').value='';document.getElementById('brief-form').style.display='none';});
+function renderActions(){const l=document.getElementById('act-list');if(!S.actions.length){l.innerHTML='<div class="es"><div class="esi">◈</div><div class="est">Iris will populate these</div></div>';return;}l.innerHTML=S.actions.map((a,i)=>`<div class="ai"><input type="checkbox" class="ack" ${a.done?'checked':''} onchange="togA(${i})"><span class="atxt ${a.done?'done':''}">${a.text}</span><span class="afrm">${a.from||''}</span><button onclick="rmA(${i})" style="background:transparent;border:none;color:var(--text-dim);cursor:pointer;font-size:10px;padding:2px 5px">✕</button></div>`).join('');}
+window.togA=i=>{S.actions[i].done=!S.actions[i].done;saveActions();renderActions();};
+window.rmA=i=>{S.actions.splice(i,1);saveActions();renderActions();};
+document.getElementById('addActBtn').addEventListener('click',()=>{const f=document.getElementById('act-form');f.style.display=f.style.display==='none'?'flex':'none';if(f.style.display==='flex')document.getElementById('act-inp').focus();});
+document.getElementById('act-save').addEventListener('click',()=>{const t=document.getElementById('act-inp').value.trim();if(!t)return;S.actions.unshift({text:t,from:document.getElementById('act-from').value.trim(),done:false});saveActions();renderActions();document.getElementById('act-inp').value='';document.getElementById('act-from').value='';document.getElementById('act-form').style.display='none';});
+function addFeed(m){S.feed.unshift({agent:m.agentId==='iris'?'IRIS':'MAXWELL',text:(m.content||m.text||m.type||'activity').slice(0,80),time:new Date().toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit'})});if(S.feed.length>50)S.feed.pop();saveFeed();renderFeed();}
+function renderFeed(){const l=document.getElementById('feed-list');if(!S.feed.length){l.innerHTML='<div class="es"><div class="esi">⬡</div><div class="est">Live when gateway connected</div></div>';return;}l.innerHTML=S.feed.slice(0,15).map(f=>`<div class="fi2"><span class="ft">${f.time}</span><span class="fa">${f.agent}</span><span class="fx">${f.text}</span></div>`).join('');}
+
+// ── TOAST
+function toast(msg,type='success'){const w=document.getElementById('tw'),t=document.createElement('div');t.className='toast '+type;t.innerHTML=`<span style="color:${type==='success'?'var(--green)':'var(--red)'}">●</span> ${msg}`;w.appendChild(t);setTimeout(()=>t.remove(),3000);}
+
+// ── KEYBOARD
+document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();document.getElementById('gwUrl').focus();}if(e.key==='Escape'){document.querySelectorAll('.mo').forEach(m=>m.classList.remove('open'));}if(e.key==='t'&&!e.target.matches('input,textarea,select')){S.tv=!S.tv;document.body.classList.toggle('tv',S.tv);document.getElementById('tvBtn').textContent=S.tv?'⊟ Exit TV':'⊞ TV';}});
+
+// ── LOAD LIVE DATA
+window.loadLiveData = function(data) {
+  if (!data || !data.agents) return;
+  
+  // Update agent data
+  Object.keys(data.agents).forEach(key => {
+    const agent = data.agents[key];
+    if (!S.agents[key]) S.agents[key] = {};
+    Object.assign(S.agents[key], agent);
+    
+    // Update burn history
+    if (agent.burnHistory && agent.burnHistory.length) {
+      if (key === 'main') S.bh.mx = agent.burnHistory;
+      if (key === 'iris') S.bh.ir = agent.burnHistory;
+      if (key === 'atlas') S.bh.at = agent.burnHistory;
+      if (key === 'gemma') S.bh.gm = agent.burnHistory;
+    }
+  });
+  
+  // Update costs
+  if (data.costs) {
+    if (data.costs.today !== undefined) {
+      document.getElementById('c-today').textContent = '$' + data.costs.today.toFixed(4);
+      document.getElementById('c-today-t').textContent = (data.costs.todayTokens || 0).toLocaleString() + ' tokens';
+    }
+    if (data.costs.month !== undefined) {
+      document.getElementById('c-month').textContent = '$' + data.costs.month.toFixed(4);
+      document.getElementById('c-month-t').textContent = (data.costs.monthTokens || 0).toLocaleString() + ' tokens';
+    }
+    if (data.costs.projected !== undefined) {
+      document.getElementById('c-proj').textContent = '$' + data.costs.projected.toFixed(2);
+    }
+    if (data.costs.saved !== undefined) {
+      document.getElementById('c-saved').textContent = '$' + data.costs.saved.toFixed(2);
+    }
+    if (data.costs.models) {
+      renderModels(data.costs.models);
+    }
+  }
+  
+  // Load activity feed
+  if (data.activity && data.activity.length) {
+    S.feed = data.activity.map(a => ({
+      agent: a.agent || 'MAXWELL',
+      text: a.text || '',
+      time: a.time || ''
+    }));
+    saveFeed();
+    renderFeed();
+  }
+
+  // Re-render with new data
+  renderAgents();
+
+  console.log('✅ Live data loaded and applied');
+};
+
+// ── LOAD INTEL FROM GRAPH DATA
+function loadGraphIntel() {
+  fetch('graph/graph-data.json')
+    .then(r => r.json())
+    .then(data => {
+      const meetings = (data.nodes || [])
+        .filter(n => n.type === 'meeting' && n.properties)
+        .sort((a, b) => (b.properties.date || '').localeCompare(a.properties.date || ''));
+
+      // Extract action items from meeting decisions
+      if (!S.actions.length) {
+        const actions = [];
+        meetings.forEach(m => {
+          const p = m.properties;
+          (p.decisions || []).forEach(d => {
+            actions.push({
+              text: d.length > 120 ? d.slice(0, 117) + '...' : d,
+              from: p.title || 'Meeting',
+              done: false
+            });
+          });
+        });
+        S.actions = actions.slice(0, 20);
+        saveActions();
+        renderActions();
+      }
+
+      // Generate briefing items from recent meetings
+      if (!S.briefings.length) {
+        const briefs = [];
+        meetings.slice(0, 12).forEach(m => {
+          const p = m.properties;
+          if (!p.title || p.title === 'Unknown') return;
+          const topics = (p.topics || []).slice(0, 3).join(', ');
+          const decCount = (p.decisions || []).length;
+          let title = p.title;
+          if (decCount > 0) title += ' — ' + decCount + ' decision' + (decCount > 1 ? 's' : '') + ' pending';
+          briefs.push({
+            title: title,
+            priority: decCount >= 4 ? 'high' : decCount >= 2 ? 'medium' : 'low',
+            source: topics || 'Meeting intel',
+            date: p.date || 'Recent'
+          });
+        });
+        S.briefings = briefs;
+        saveBriefings();
+        renderBriefings();
+      }
+
+      console.log('✅ Graph intel loaded');
+    })
+    .catch(err => console.warn('Graph intel not available:', err));
+}
+
+// Auto-load if data exists
+if (window.OPENCLAW_LIVE_DATA) {
+  setTimeout(() => loadLiveData(window.OPENCLAW_LIVE_DATA), 100);
+}
+
+// ── INIT
+renderAgents();renderTasks();renderModels({});renderBriefings();renderActions();renderFeed();
+loadGraphIntel();
+setInterval(()=>{if(S.conn)reqData();},30000);
+</script>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-nav">
+  <button class="mobile-tab active" data-tab="agents"><span class="icon">⬡</span><span>Agents</span></button>
+  <button class="mobile-tab" data-tab="tasks"><span class="icon">◈</span><span>Tasks</span></button>
+  <button class="mobile-tab" data-tab="costs"><span class="icon">◎</span><span>Costs</span></button>
+  <button class="mobile-tab" data-tab="intel"><span class="icon">◉</span><span>Intel</span></button>
+</nav>
+
+<script>
+// Mobile tab switching
+document.querySelectorAll('.mobile-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.mobile-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    // Trigger same tab switch as desktop
+    document.querySelectorAll('.nt').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tp').forEach(p => p.classList.remove('active'));
+    const targetBtn = document.querySelector(`.nt[data-tab="${tab}"]`);
+    const targetPane = document.getElementById(`tab-${tab}`);
+    if (targetBtn) targetBtn.classList.add('active');
+    if (targetPane) targetPane.classList.add('active');
+  });
+});
+</script>
+
 </body>
 </html>
