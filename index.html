@@ -299,11 +299,11 @@ body.tv .main{padding:1rem;max-width:100%;}
 }
 </style>
 
-<!-- OpenClaw Live Data (Generated: 2026-04-18T02:15:08.055Z) -->
+<!-- OpenClaw Live Data (Generated: 2026-04-18T02:16:38.526Z) -->
 <script>
 window.OPENCLAW_LIVE_DATA = {
-  "timestamp": 1776478508053,
-  "lastUpdated": "2026-04-18T02:15:08.053Z",
+  "timestamp": 1776478598525,
+  "lastUpdated": "2026-04-18T02:16:38.525Z",
   "agents": {
     "main": {
       "id": "main",
@@ -418,22 +418,22 @@ window.OPENCLAW_LIVE_DATA = {
   },
   "activity": [
     {
-      "time": "12:15",
+      "time": "12:16",
       "agent": "ATLAS",
       "text": "Mission Control data refresh"
     },
     {
-      "time": "12:00",
+      "time": "12:01",
       "agent": "MAXWELL",
       "text": "Monitoring operations"
     },
     {
-      "time": "11:15",
+      "time": "11:16",
       "agent": "IRIS",
       "text": "Processing meeting transcripts"
     },
     {
-      "time": "10:15",
+      "time": "10:16",
       "agent": "GEMMA",
       "text": "Local batch processing"
     }
@@ -1177,14 +1177,18 @@ function loadGraphIntel() {
         .sort((a, b) => (b.properties.date || '').localeCompare(a.properties.date || ''));
 
       // Extract action items from meeting decisions
-      if (!S.actions.length) {
+      // Refresh if graph has newer meetings than cached actions
+      const latestMeetingDate = meetings[0]?.properties?.date || '';
+      const lastActionDate = S.actions[0]?.meetingDate || '';
+      if (!S.actions.length || latestMeetingDate > lastActionDate) {
         const actions = [];
         meetings.forEach(m => {
           const p = m.properties;
           (p.decisions || []).forEach(d => {
             actions.push({
               text: d.length > 120 ? d.slice(0, 117) + '...' : d,
-              from: p.title || 'Meeting',
+              from: p.title?.replace(/^\[Plaud-AutoFlow\]\s*/, '') || 'Meeting',
+              meetingDate: p.date || '',
               done: false
             });
           });
@@ -1195,22 +1199,26 @@ function loadGraphIntel() {
       }
 
       // Generate briefing items from recent meetings
-      if (!S.briefings.length) {
-        const briefs = [];
-        meetings.slice(0, 12).forEach(m => {
-          const p = m.properties;
-          if (!p.title || p.title === 'Unknown') return;
-          const topics = (p.topics || []).slice(0, 3).join(', ');
-          const decCount = (p.decisions || []).length;
-          let title = p.title;
-          if (decCount > 0) title += ' — ' + decCount + ' decision' + (decCount > 1 ? 's' : '') + ' pending';
-          briefs.push({
-            title: title,
-            priority: decCount >= 4 ? 'high' : decCount >= 2 ? 'medium' : 'low',
-            source: topics || 'Meeting intel',
-            date: p.date || 'Recent'
-          });
+      // Always regenerate from graph data (not cached localStorage)
+      const briefs = [];
+      meetings.slice(0, 12).forEach(m => {
+        const p = m.properties;
+        if (!p.title || p.title === 'Unknown') return;
+        const topics = (p.topics || []).slice(0, 3).join(', ');
+        const decCount = (p.decisions || []).length;
+        let title = p.title.replace(/^\[Plaud-AutoFlow\]\s*/, '');
+        if (decCount > 0) title += ' — ' + decCount + ' decision' + (decCount > 1 ? 's' : '') + ' pending';
+        briefs.push({
+          title: title,
+          priority: decCount >= 4 ? 'high' : decCount >= 2 ? 'medium' : 'low',
+          source: topics || 'Meeting intel',
+          date: p.date || 'Recent'
         });
+      });
+      // Only overwrite if graph has newer data than cached briefings
+      const latestGraphDate = meetings[0]?.properties?.date || '';
+      const cachedLatestDate = S.briefings[0]?.date || '';
+      if (!S.briefings.length || latestGraphDate > cachedLatestDate) {
         S.briefings = briefs;
         saveBriefings();
         renderBriefings();
