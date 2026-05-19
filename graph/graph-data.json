@@ -6477,6 +6477,509 @@
         "trend": "stable",
         "context": "Discussed in 1 meeting(s) during April 14-17"
       }
+    },
+    {
+      "id": "meeting-may300",
+      "type": "meeting",
+      "label": "04-20 Review of AI-Driven Development and Strategic Path Forward",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-20 Review of AI-Driven Development and Strategic Path Forward",
+        "date": "2026-04-21",
+        "processing_time": 33.903634292,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-04-21 — "
+      }
+    },
+    {
+      "id": "meeting-may301",
+      "type": "meeting",
+      "label": "04-20 Sales Team Devises a Discount Strategy for a Machine and Chemical Deal",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-20 Sales Team Devises a Discount Strategy for a Machine and Chemical Deal",
+        "date": "2026-04-21",
+        "processing_time": 29.455376667,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-04-21 — "
+      }
+    },
+    {
+      "id": "meeting-may302",
+      "type": "meeting",
+      "label": "04-20 Four-Day On-Site Sales Audit with Operational Risk Controls (PO Issuance and Brisbane Stock)",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-20 Four-Day On-Site Sales Audit with Operational Risk Controls (PO Issuance and Brisbane Stock)",
+        "date": "2026-04-21",
+        "processing_time": 31.093142458,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-04-21 — "
+      }
+    },
+    {
+      "id": "meeting-may303",
+      "type": "meeting",
+      "label": "04-20 Strategic and Operational Planning Meeting",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-20 Strategic and Operational Planning Meeting",
+        "date": "2026-04-21",
+        "processing_time": 29.874999083,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-04-21 — "
+      }
+    },
+    {
+      "id": "meeting-may304",
+      "type": "meeting",
+      "label": "04-21 Balancing Speed and Stability: The Trade-Offs of Using Low-Code Tools for Rapid Prototyping",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-21 Balancing Speed and Stability: The Trade-Offs of Using Low-Code Tools for Rapid Prototyping",
+        "date": "2026-04-21",
+        "processing_time": 26.967870166,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-04-21 — "
+      }
+    },
+    {
+      "id": "meeting-may305",
+      "type": "meeting",
+      "label": "04-23 Website Product List Compilation and Project Updates",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-23 Website Product List Compilation and Project Updates",
+        "date": "2026-04-23",
+        "processing_time": 29.500680625,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-04-23 — "
+      }
+    },
+    {
+      "id": "meeting-may306",
+      "type": "meeting",
+      "label": "04-23 Proposal for a Strategic Partnership in Medical Tracking Software",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-23 Proposal for a Strategic Partnership in Medical Tracking Software",
+        "date": "2026-04-23",
+        "processing_time": 38.008068375,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-04-23 — "
+      }
+    },
+    {
+      "id": "meeting-may307",
+      "type": "meeting",
+      "label": "04-23 Strategic Partnership to Penetrate the Australian Endoscopy Market",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-23 Strategic Partnership to Penetrate the Australian Endoscopy Market",
+        "date": "2026-05-01",
+        "processing_time": 30.235179875,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-01 — "
+      }
+    },
+    {
+      "id": "meeting-may308",
+      "type": "meeting",
+      "label": "04-28 Supplier Strategy for Expanded Medical Equipment Procurement for Kiribati Hospital Project",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 04-28 Supplier Strategy for Expanded Medical Equipment Procurement for Kiribati Hospital Project",
+        "date": "2026-05-01",
+        "processing_time": 34.576252,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-01 — "
+      }
+    },
+    {
+      "id": "meeting-may309",
+      "type": "meeting",
+      "label": "05-05 Fast-Tracking a Website Launch for a Conference Amidst Product Data Bottlenecks",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-05 Fast-Tracking a Website Launch for a Conference Amidst Product Data Bottlenecks",
+        "date": "2026-05-05",
+        "processing_time": 37.9171125,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-05 — "
+      }
+    },
+    {
+      "id": "meeting-may310",
+      "type": "meeting",
+      "label": "05-06 Endoscopy Product Line Launch and Jenka Conference Strategy",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-06 Endoscopy Product Line Launch and Jenka Conference Strategy",
+        "date": "2026-05-06",
+        "processing_time": 32.441752208,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-06 — "
+      }
+    },
+    {
+      "id": "meeting-may311",
+      "type": "meeting",
+      "label": "05-06 Strategic Pivot: Swapping an IQ6 for an In-Stock IQ5 to Secure a High-Margin Sale Amid Logisti",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-06 Strategic Pivot: Swapping an IQ6 for an In-Stock IQ5 to Secure a High-Margin Sale Amid Logistical Risks",
+        "date": "2026-05-06",
+        "processing_time": 32.81465,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-06 — "
+      }
+    },
+    {
+      "id": "meeting-may312",
+      "type": "meeting",
+      "label": "05-11 Instrument Tracking System Demonstration for Hospital CSSD",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-11 Instrument Tracking System Demonstration for Hospital CSSD",
+        "date": "2026-05-11",
+        "processing_time": 33.618615916,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-11 — "
+      }
+    },
+    {
+      "id": "meeting-may313",
+      "type": "meeting",
+      "label": "05-11 Free-on-Loan TPS Pump Strategy for National Endoscopy: Qualification, Pricing Governance, and ",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-11 Free-on-Loan TPS Pump Strategy for National Endoscopy: Qualification, Pricing Governance, and Contract-to-Install Workflow",
+        "date": "2026-05-11",
+        "processing_time": 30.988112292,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-11 — "
+      }
+    },
+    {
+      "id": "meeting-may314",
+      "type": "meeting",
+      "label": "05-11 Sales and Operations Coordination Meeting",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-11 Sales and Operations Coordination Meeting",
+        "date": "2026-05-11",
+        "processing_time": 40.723100125,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-11 — "
+      }
+    },
+    {
+      "id": "meeting-may315",
+      "type": "meeting",
+      "label": "05-12 Mace Mark Event Assets Plan: Phone-Optimized A4 Brochures, TPS Pump Promo, Auto Sink Showcase,",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-12 Mace Mark Event Assets Plan: Phone-Optimized A4 Brochures, TPS Pump Promo, Auto Sink Showcase, and Endoscopy Validation Messaging",
+        "date": "2026-05-12",
+        "processing_time": 29.474253292,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-12 — "
+      }
+    },
+    {
+      "id": "meeting-may316",
+      "type": "meeting",
+      "label": "05-12 Managing Sales Friction and Upsell Strategy in Medical Device Deals",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-12 Managing Sales Friction and Upsell Strategy in Medical Device Deals",
+        "date": "2026-05-12",
+        "processing_time": 36.090515209,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-12 — "
+      }
+    },
+    {
+      "id": "meeting-may317",
+      "type": "meeting",
+      "label": "05-13 Partnership Exploration: Verify AI and MaySmart",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-13 Partnership Exploration: Verify AI and MaySmart",
+        "date": "2026-05-13",
+        "processing_time": 34.490903708,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-13 — "
+      }
+    },
+    {
+      "id": "meeting-may318",
+      "type": "meeting",
+      "label": "05-13 Management Strategy for the New RBWH Sanitizer Contract",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-13 Management Strategy for the New RBWH Sanitizer Contract",
+        "date": "2026-05-13",
+        "processing_time": 32.987380542,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-13 — "
+      }
+    },
+    {
+      "id": "meeting-may319",
+      "type": "meeting",
+      "label": "05-13 Strategic Pivot at Medical Device Firm: Navigating Acquisition Threat and Shifting to a Propri",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-13 Strategic Pivot at Medical Device Firm: Navigating Acquisition Threat and Shifting to a Proprietary IP Model",
+        "date": "2026-05-13",
+        "processing_time": 37.111759417,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "flagged": "M&A",
+        "summary": "⚠️ M&A DISCUSSION — 2026-05-13: "
+      }
+    },
+    {
+      "id": "meeting-may320",
+      "type": "meeting",
+      "label": "05-19 Exploratory M&A Discussion Between Mediquip and MaceMarkTech",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-19 Exploratory M&A Discussion Between Mediquip and MaceMarkTech",
+        "date": "2026-05-19",
+        "processing_time": 30.887579125,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "flagged": "M&A",
+        "summary": "⚠️ M&A DISCUSSION — 2026-05-19: "
+      }
+    },
+    {
+      "id": "meeting-may321",
+      "type": "meeting",
+      "label": "05-11 Sales & Product Strategy Meeting",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-11 Sales & Product Strategy Meeting",
+        "date": "2026-05-19",
+        "processing_time": 36.02732375,
+        "attendees": [
+          "Tim, Scott, Ken, Maria McGowan, Simon"
+        ],
+        "topics": [],
+        "decisions": [
+          "Eight additional sanitizers are being deployed, with branding applied while detergent is withheld.",
+          "QIMR's trolley requirements are noted as a potential reference point for upcoming tenders.",
+          "A detailed technical evaluation is pending for the proposed RO unit, specifically concerning disinfection methods and loop feasibility."
+        ],
+        "keywords": [
+          "Sanitizer",
+          "Dosing cable",
+          "QIMR",
+          "Endersvale",
+          "IQ 5",
+          "IQ 6",
+          "RO",
+          "OQ4",
+          "Tender",
+          "Hospital Equipment"
+        ],
+        "summary": "2026-05-19 — "
+      }
+    },
+    {
+      "id": "meeting-may322",
+      "type": "meeting",
+      "label": "05-11 Partnership Faces Hardware Dilemma Over Overpriced Laser Marker, Threatening Software Deal",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-11 Partnership Faces Hardware Dilemma Over Overpriced Laser Marker, Threatening Software Deal",
+        "date": "2026-05-19",
+        "processing_time": 31.321561209,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-19 — "
+      }
+    },
+    {
+      "id": "meeting-may323",
+      "type": "meeting",
+      "label": "05-19 Bundled Pump Placement to Drive ManualMax Chemistry Adoption with Revenue-Equivalent Partner E",
+      "properties": {
+        "title": "[Plaud-AutoFlow] 05-19 Bundled Pump Placement to Drive ManualMax Chemistry Adoption with Revenue-Equivalent Partner Economics",
+        "date": "2026-05-19",
+        "processing_time": 32.466170083,
+        "attendees": [],
+        "topics": [],
+        "decisions": [],
+        "keywords": [],
+        "summary": "2026-05-19 — "
+      }
+    },
+    {
+      "id": "person-32cd2c44",
+      "type": "person",
+      "label": "Tim, Scott, Ken, Maria McGowan, Simon",
+      "properties": {
+        "name": "Tim, Scott, Ken, Maria McGowan, Simon",
+        "meetings": [
+          "meeting-may321"
+        ],
+        "meetingCount": 1
+      }
+    },
+    {
+      "id": "concept-2ef7ed4d",
+      "type": "concept",
+      "label": "Sanitizer",
+      "properties": {
+        "name": "Sanitizer",
+        "mentions": 1,
+        "meetings": [
+          "meeting-may321"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) Apr 21–May 19"
+      }
+    },
+    {
+      "id": "concept-d4ad4627",
+      "type": "concept",
+      "label": "Dosing cable",
+      "properties": {
+        "name": "Dosing cable",
+        "mentions": 1,
+        "meetings": [
+          "meeting-may321"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) Apr 21–May 19"
+      }
+    },
+    {
+      "id": "concept-9f01f385",
+      "type": "concept",
+      "label": "QIMR",
+      "properties": {
+        "name": "QIMR",
+        "mentions": 1,
+        "meetings": [
+          "meeting-may321"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) Apr 21–May 19"
+      }
+    },
+    {
+      "id": "concept-0b8f773d",
+      "type": "concept",
+      "label": "Endersvale",
+      "properties": {
+        "name": "Endersvale",
+        "mentions": 1,
+        "meetings": [
+          "meeting-may321"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) Apr 21–May 19"
+      }
+    },
+    {
+      "id": "concept-34057d1c",
+      "type": "concept",
+      "label": "IQ 5",
+      "properties": {
+        "name": "IQ 5",
+        "mentions": 1,
+        "meetings": [
+          "meeting-may321"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) Apr 21–May 19"
+      }
+    },
+    {
+      "id": "concept-33db3d83",
+      "type": "concept",
+      "label": "IQ 6",
+      "properties": {
+        "name": "IQ 6",
+        "mentions": 1,
+        "meetings": [
+          "meeting-may321"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) Apr 21–May 19"
+      }
+    },
+    {
+      "id": "concept-3605c251",
+      "type": "concept",
+      "label": "RO",
+      "properties": {
+        "name": "RO",
+        "mentions": 1,
+        "meetings": [
+          "meeting-may321"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) Apr 21–May 19"
+      }
+    },
+    {
+      "id": "concept-37632524",
+      "type": "concept",
+      "label": "OQ4",
+      "properties": {
+        "name": "OQ4",
+        "mentions": 1,
+        "meetings": [
+          "meeting-may321"
+        ],
+        "trend": "stable",
+        "context": "Discussed in 1 meeting(s) Apr 21–May 19"
+      }
     }
   ],
   "edges": [
@@ -8471,20 +8974,88 @@
       "target": "concept-545aaa79",
       "type": "discusses",
       "weight": 1
+    },
+    {
+      "source": "meeting-may321",
+      "target": "person-32cd2c44",
+      "type": "attended",
+      "weight": 1
+    },
+    {
+      "source": "meeting-may321",
+      "target": "concept-2ef7ed4d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-may321",
+      "target": "concept-d4ad4627",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-may321",
+      "target": "concept-9f01f385",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-may321",
+      "target": "concept-0b8f773d",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-may321",
+      "target": "concept-34057d1c",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-may321",
+      "target": "concept-33db3d83",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-may321",
+      "target": "concept-3605c251",
+      "type": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "meeting-may321",
+      "target": "concept-37632524",
+      "type": "discusses",
+      "weight": 1
     }
   ],
   "metadata": {
-    "generated": "2026-04-18T01:43:00.246Z",
-    "source": "merged-april-14-17",
-    "dateRange": "2026-01-07 to 2026-04-17",
-    "totalNodes": 388,
-    "totalEdges": 332,
+    "generated": "2026-05-19T21:45:45.458Z",
+    "source": "merged-apr21-may19",
+    "dateRange": "2026-01-07 to 2026-05-19",
+    "totalNodes": 421,
+    "totalEdges": 341,
     "breakdown": {
-      "meetings": 66,
-      "people": 15,
+      "meetings": 90,
+      "people": 16,
       "projects": 101,
-      "concepts": 206,
+      "concepts": 214,
       "decisions": 0
-    }
+    },
+    "flagged": [
+      {
+        "id": "meeting-may319",
+        "label": "05-13 Strategic Pivot at Medical Device Firm: Navigating Acquisition Threat and Shifting to a Propri",
+        "flag": "M&A",
+        "date": "2026-05-13"
+      },
+      {
+        "id": "meeting-may320",
+        "label": "05-19 Exploratory M&A Discussion Between Mediquip and MaceMarkTech",
+        "flag": "M&A",
+        "date": "2026-05-19"
+      }
+    ]
   }
 }
